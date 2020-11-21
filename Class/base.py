@@ -32,6 +32,18 @@ class Base:
     def close(self):
         browser.close()
 
+    def letProviders(self):
+        dataDir = os.getcwd()+"/data/lowendtalk/offers/"
+        files = os.listdir(dataDir)
+        providers = []
+        for file in files:
+            with open(dataDir+file, 'r') as f:
+                data = json.load(f)
+            if not data['user'] in providers:
+                providers.append(data['user'])
+        with open(os.getcwd()+"/data/lowendtalk/providers.json", 'w') as f:
+            json.dump(providers, f)
+
     def let(self,cat):
         currentOffers,count,src = "",1,"https://www.lowendtalk.com/categories/"+cat+"/p"
         dataDir = os.getcwd()+"/data/lowendtalk/"+cat+"/"
