@@ -32,8 +32,8 @@ class Base:
     def close(self):
         browser.close()
 
-    def letProviders(self):
-        dataDir = os.getcwd()+"/data/lowendtalk/offers/"
+    def getProviders(self,cat,site):
+        dataDir = os.getcwd()+"/data/"+site+"/"+cat+"/"
         files = os.listdir(dataDir)
         providers = []
         for file in files:
@@ -41,15 +41,15 @@ class Base:
                 data = json.load(f)
             if not data['user'] in providers:
                 providers.append(data['user'])
-        with open(os.getcwd()+"/data/lowendtalk/providers.json", 'w') as f:
+        with open(os.getcwd()+"/data/"+site+"/providers.json", 'w') as f:
             json.dump(providers, f)
 
-    def let(self,cat):
-        currentOffers,count,src = "",1,"https://www.lowendtalk.com/categories/"+cat+"/p"
-        dataDir = os.getcwd()+"/data/lowendtalk/"+cat+"/"
+    def vanilla(self,cat,site):
+        currentOffers,count,src = "",1,"https://"+site+".com/categories/"+cat+"/p"
+        dataDir = os.getcwd()+"/data/"+site+"/"+cat+"/"
 
-        print("Checking Lowendtalk")
-        response = self.fetch("https://lowendtalk.com")
+        print("Checking",site)
+        response = self.fetch("https://"+site+".com")
         if "Cloudflare" in response:
             print("Failed to bypass CF")
             browser.close()

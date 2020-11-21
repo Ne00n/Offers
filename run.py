@@ -2,7 +2,9 @@
 from Class.base import Base
 
 Base = Base()
-Base.let("offers")
-Base.let("shared-hosting-offers")
-Base.letProviders()
+Base.vanilla("offers","lowendtalk")
+Base.vanilla("shared-hosting-offers","lowendtalk")
+Base.getProviders("offers","lowendtalk")
+Base.vanilla("offers","talk.lowendspirit")
+Base.getProviders("offers","talk.lowendspirit")
 Base.close()
