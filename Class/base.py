@@ -29,9 +29,12 @@ class Base:
         time.sleep(randint(7,30))
         return browser.page_source
 
-    def let(self):
-        currentOffers,count,src = "",1,"https://www.lowendtalk.com/categories/offers/p"
-        dataDir = os.getcwd()+"/data/lowendtalk/"
+    def close(self):
+        browser.close()
+
+    def let(self,cat):
+        currentOffers,count,src = "",1,"https://www.lowendtalk.com/categories/"+cat+"/p"
+        dataDir = os.getcwd()+"/data/lowendtalk/"+cat+"/"
 
         print("Checking Lowendtalk")
         response = self.fetch("https://lowendtalk.com")
@@ -42,20 +45,20 @@ class Base:
 
         while True:
 
-            print("Getting Offers")
+            print("Getting",cat)
             response = self.fetch(src+str(str(count)+".json"))
             rawJson = re.sub('<[^<]+?>', '', response)
             try:
                 currentOffers = json.loads(rawJson)
             except ValueError as e:
                 print("Failed to parse json")
-                break
+                return False
 
             if "Code" in currentOffers:
                 print("End of line")
-                break
+                return True
 
-            print("Checking Offers")
+            print("Checking",cat)
             if not os.path.exists(dataDir):
                 os.makedirs(dataDir)
             for discussion in currentOffers['Discussions']:
@@ -70,5 +73,3 @@ class Base:
                     return True
 
             count = count +1
-
-        browser.close()
