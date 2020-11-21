@@ -38,6 +38,7 @@ class Base:
         if "Cloudflare" in response:
             print("Failed to bypass CF")
             browser.close()
+            return False
 
         while True:
 
@@ -48,11 +49,11 @@ class Base:
                 currentOffers = json.loads(rawJson)
             except ValueError as e:
                 print("Failed to parse json")
-                browser.close()
+                break
 
             if "Code" in currentOffers:
                 print("End of line")
-                browser.close()
+                break
 
             print("Checking Offers")
             if not os.path.exists(dataDir):
