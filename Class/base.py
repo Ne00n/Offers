@@ -25,8 +25,11 @@ class Base:
         browser = webdriver.Chrome(options=options)
 
     def fetch(self,url):
+        wait = randint(7,80)
+        print("Getting",url)
         browser.get(url)
-        time.sleep(randint(7,30))
+        print("Waiting",wait,"seconds")
+        time.sleep(wait)
         return browser.page_source
 
     def close(self):
@@ -43,6 +46,27 @@ class Base:
                 providers.append(data['user'])
         with open(os.getcwd()+"/data/"+site+"/providers.json", 'w') as f:
             json.dump(providers, f)
+
+    def lowendbox(self):
+        count,src = 1,"https://lowendbox.com/post-sitemap"
+        dataDir = os.getcwd()+"/data/lowendbox/posts/"
+
+        while True:
+            print("Checking Sitemap")
+            if not os.path.exists(dataDir):
+                os.makedirs(dataDir)
+            response = self.fetch(src+str(count)+".xml")
+            urls = re.findall("href=\"(https:\/\/lowendbox.com\/blog/(.*?)\/)\">",response, re.MULTILINE)
+            for url in urls:
+                file = dataDir+url[1]+".json"
+                if not Path(file).is_file():
+                    response = self.fetch(url[0])
+                    post = re.findall("(<div class=\"post-([0-9]+) post.*?\>.*?feedback\"></div></div>)",response, re.MULTILINE | re.DOTALL)
+                    data = {'id':post[0][1],'post':post[0][0]}
+                    with open(file, 'w') as f:
+                        json.dump(data, f)
+                else:
+                    print("Skipping",url[1])
 
     def vanilla(self,cat,site):
         currentOffers,count,src = "",1,"https://"+site+".com/categories/"+cat+"/p"

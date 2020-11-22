@@ -8,5 +8,5 @@ pip3 install fake-useragent
 
 **Updating**<br />
 ```
-python3 run.py
+python3 update.py
 ```
