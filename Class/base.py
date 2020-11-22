@@ -7,11 +7,11 @@ import time, json, re, os
 
 class Base:
     def __init__(self):
-        print("Staring Selenium")
         self.selenium()
 
     def selenium(self):
         global browser
+        print("Staring Selenium")
         options = webdriver.ChromeOptions()
         ua = UserAgent()
         userAgent = ua.chrome
@@ -34,18 +34,6 @@ class Base:
 
     def close(self):
         browser.close()
-
-    def getProviders(self,cat,site):
-        dataDir = os.getcwd()+"/data/"+site+"/"+cat+"/"
-        files = os.listdir(dataDir)
-        providers = []
-        for file in files:
-            with open(dataDir+file, 'r') as f:
-                data = json.load(f)
-            if not data['user'] in providers:
-                providers.append(data['user'])
-        with open(os.getcwd()+"/data/"+site+"/providers.json", 'w') as f:
-            json.dump(providers, f)
 
     def lowendbox(self):
         count,src = 1,"https://lowendbox.com/post-sitemap"
