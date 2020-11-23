@@ -37,7 +37,7 @@ class Base:
 
     def lowendbox(self):
         count,src = 1,"https://lowendbox.com/post-sitemap"
-        dataDir = os.getcwd()+"/data/lowendbox/posts/"
+        dataDir = os.getcwd()+"/src/lowendbox/posts/"
 
         while True:
             print("Checking Sitemap")
@@ -59,7 +59,7 @@ class Base:
 
     def vanilla(self,cat,site):
         currentOffers,count,src = "",1,"https://"+site+".com/categories/"+cat+"/p"
-        dataDir = os.getcwd()+"/data/"+site+"/"+cat+"/"
+        dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
 
         print("Checking",site)
         response = self.fetch("https://"+site+".com")
