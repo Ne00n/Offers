@@ -17,6 +17,7 @@ class Data:
         return providers
 
     def saveProviders(self,site,providers):
+        providers.sort()
         with open(os.getcwd()+"/data/"+site+"/providers.json", 'w') as f:
             json.dump(providers, f, indent=2)
 
