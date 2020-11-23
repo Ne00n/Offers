@@ -55,7 +55,7 @@ class Base:
                         json.dump(data, f)
                 else:
                     print("Skipping",url[1])
-                count = count +1
+            count = count +1
 
     def vanilla(self,cat,site):
         currentOffers,count,src = "",1,"https://"+site+".com/categories/"+cat+"/p"
