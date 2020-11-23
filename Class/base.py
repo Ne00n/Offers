@@ -4,6 +4,7 @@ from fake_useragent import UserAgent
 from pathlib import Path
 from random import randint
 import time, json, re, os
+import urllib.parse
 
 class Base:
     def __init__(self):
@@ -46,7 +47,7 @@ class Base:
             response = self.fetch(src+str(count)+".xml")
             urls = re.findall("href=\"(https:\/\/lowendbox.com\/blog/(.*?)\/)\">",response, re.MULTILINE)
             for url in urls:
-                file = dataDir+url[1]+".json"
+                file = dataDir+urllib.parse.unquote(url[1])+".json"
                 if not Path(file).is_file():
                     response = self.fetch(url[0])
                     post = re.findall("(<div class=\"post-([0-9]+) post.*?\>.*?feedback\"></div></div>)",response, re.MULTILINE | re.DOTALL)
