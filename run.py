@@ -14,6 +14,9 @@ elif sys.argv[1] == "generate":
     Data.saveProviders("lowendtalk",list)
     list = Data.getProviders("offers","talk.lowendspirit")
     Data.saveProviders("talk.lowendspirit",list)
+    Data.getUrls("offers","talk.lowendspirit")
+    Data.getUrls("offers","lowendtalk")
+    Data.getUrls("shared-hosting-offers","lowendtalk")
 elif sys.argv[1] == "update":
     Base = Base()
     Base.vanilla("offers","lowendtalk")
