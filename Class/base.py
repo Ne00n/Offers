@@ -50,9 +50,12 @@ class Base:
                 if not Path(file).is_file():
                     response = self.fetch(url[0])
                     post = re.findall("(<div class=\"post-([0-9]+) post.*?\>.*?feedback\"></div></div>)",response, re.MULTILINE | re.DOTALL)
-                    data = {'id':post[0][1],'post':post[0][0]}
-                    with open(file, 'w') as f:
-                        json.dump(data, f)
+                    try:
+                        data = {'id':post[0][1],'post':post[0][0]}
+                        with open(file, 'w') as f:
+                            json.dump(data, f)
+                    except:
+                        print("Skipping",url[1],"regex error")
                 else:
                     print("Skipping",url[1])
             count = count +1
