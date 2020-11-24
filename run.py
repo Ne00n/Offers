@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 from Class.base import Base
 from Class.data import Data
+from Class.stats import Stats
 import sys
 
 param = sys.argv
 if len(param) == 1:
-    print("update generate")
+    print("update generate stats")
 elif sys.argv[1] == "generate":
     Data = Data()
     offers = Data.getProviders("offers","lowendtalk")
@@ -24,3 +25,5 @@ elif sys.argv[1] == "update":
     Base.vanilla("offers","talk.lowendspirit")
     Base.lowendbox()
     Base.close()
+elif sys.argv[1] == "stats":
+    Stats = Stats()
