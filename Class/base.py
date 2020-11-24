@@ -45,6 +45,11 @@ class Base:
             if not os.path.exists(dataDir):
                 os.makedirs(dataDir)
             response = self.fetch(src+str(count)+".xml")
+            
+            if "The Page you requested was not found" in response:
+                print("End of line")
+                return True
+
             urls = re.findall("href=\"(https:\/\/lowendbox.com\/blog/(.*?)\/)\">",response, re.MULTILINE)
             for url in urls:
                 file = dataDir+urllib.parse.unquote(url[1])+".json"
