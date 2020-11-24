@@ -9,7 +9,11 @@ pip3 install fake-useragent
 pip3 install matplotlib
 ```
 
-**Updating**<br />
+**Updating dataset**<br />
 ```
 python3 run.py update
 ```
+
+**Updating /data**<br />
+```
+python3 run.py generate
