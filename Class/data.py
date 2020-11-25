@@ -54,6 +54,7 @@ class Data:
             urlsRaw = re.findall("(https?:\/\/[A-Za-z0-9.\/?=&;_-]*)",post['post'], re.MULTILINE | re.DOTALL)
             #urls = self.filterUrls(urlsRaw)
             urls = list(set(urlsRaw))
+            urls.sort()
             filtered = {}
             for url in urls:
                 if resolve:
@@ -84,7 +85,7 @@ class Data:
                             alive.append(domain)
                         sleep(0.10)
                         filtered[domain] = nameservers
-                    domains[post['user']] = {'urls':filtered}
+            domains[post['user']] = {'urls':filtered}
             data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
         data = sorted(data, key=lambda k: k['id'],  reverse=True)
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
