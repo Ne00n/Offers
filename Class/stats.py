@@ -7,12 +7,14 @@ import numpy as np
 class Stats:
     def __init__(self):
         print("Stats")
-        data = self.getLEB()
-        self.postsLEB(data)
-        self.postsLEBCat(data)
+        data = self.get("lowendbox","posts")
+        self.posts(data,'lowendbox')
+        self.postsCat(data,'lowendbox')
+        data = self.get('lowendtalk','offers')
+        self.posts(data,'lowendtalk',30)
 
-    def getLEB(self):
-        dataDir = os.getcwd()+"/src/lowendbox/posts/"
+    def get(self,site,cat):
+        dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
         files = os.listdir(dataDir)
 
         print("Loading deadpool.json")
@@ -28,36 +30,40 @@ class Stats:
             with open(dataDir+file, 'r') as f:
                 post = json.load(f)
 
-            nameRaw = re.findall(", by (.*?)<\/div>",post['post'], re.MULTILINE | re.DOTALL)
+            if site == "lowendbox":
+                nameRaw = re.findall(", by (.*?)<\/div>",post['post'], re.MULTILINE | re.DOTALL)
+                name = nameRaw[0]
+            elif site == "lowendtalk":
+                name = post['user']
 
-            if not nameRaw[0] in data['total']:
-                data['total'][nameRaw[0]] = 0
-            if not nameRaw[0] in data['other']:
-                data['other'][nameRaw[0]] = 0
-            if not nameRaw[0] in data['deadpool']:
-                data['deadpool'][nameRaw[0]] = 0
-            if not nameRaw[0] in data['colocrossing']:
-                data['colocrossing'][nameRaw[0]] = 0
+            if not name in data['total']:
+                data['total'][name] = 0
+            if not name in data['other']:
+                data['other'][name] = 0
+            if not name in data['deadpool']:
+                data['deadpool'][name] = 0
+            if not name in data['colocrossing']:
+                data['colocrossing'][name] = 0
 
             if any(deadpool in post['post'] for deadpool in deadpoolJson):
-                data['deadpool'][nameRaw[0]] = data['deadpool'][nameRaw[0]] +1
+                data['deadpool'][name] = data['deadpool'][name] +1
             elif any(colocrossing in post['post'] for colocrossing in colocrossingJson):
-                data['colocrossing'][nameRaw[0]] = data['colocrossing'][nameRaw[0]] +1
+                data['colocrossing'][name] = data['colocrossing'][name] +1
             else:
-                data['other'][nameRaw[0]] = data['other'][nameRaw[0]] +1
+                data['other'][name] = data['other'][name] +1
 
-            data['total'][nameRaw[0]] = data['total'][nameRaw[0]] +1
+            data['total'][name] = data['total'][name] +1
             data['posts'] = data['posts'] +1
 
         data['total'] = {k: v for k, v in sorted(data['total'].items(), key=lambda item: item[1], reverse=True)}
         return data
 
-    def postsLEB(self,data):
-        print("Lowendbox Posts")
+    def posts(self,data,site,length=14):
+        print(site,"Posts")
         today = date.today()
 
-        labels = list(data['total'].keys())
-        posts = list(data['total'].values())
+        labels = list(data['total'].keys())[:80]
+        posts = list(data['total'].values())[:80]
         width = 0.35
 
         fig, ax = plt.subplots()
@@ -65,19 +71,19 @@ class Stats:
         ax.bar(labels, posts, width, label='Posts')
 
         ax.set_ylabel('Posts')
-        ax.set_title('Lowendbox.com '+str(data['posts'])+' Posts, '+str(today.strftime("%d/%m/%Y")))
+        ax.set_title(site+'.com '+str(data['posts'])+' Posts, '+str(today.strftime("%d/%m/%Y")))
         ax.legend()
 
         plt.xticks(rotation=65)
         fig.tight_layout()
 
         figure = plt.gcf()
-        figure.set_size_inches(14, 8)
+        figure.set_size_inches(length, 8)
 
-        plt.savefig('img/lowendboxPosts.png', dpi=300)
+        plt.savefig('img/'+site+'Posts.png', dpi=300)
 
-    def postsLEBCat(self,data):
-        print("Lowendbox Posts Categories")
+    def postsCat(self,data,site):
+        print(site,"Posts Categories")
         today = date.today()
 
         labels = list(data['other'].keys())
@@ -102,4 +108,4 @@ class Stats:
         figure = plt.gcf()
         figure.set_size_inches(14, 8)
 
-        plt.savefig('img/lowendboxPostsCategories.png', dpi=300)
+        plt.savefig('img/'+site+'PostsCategories.png', dpi=300)
