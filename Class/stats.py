@@ -26,8 +26,6 @@ class Stats:
         dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
         files = os.listdir(dataDir)
 
-
-
         data =  {}
         data['posts'],data['total'],data['other'],data['deadpool'],data['colocrossing'] = 0,{},{},{},{}
         for file in files:
