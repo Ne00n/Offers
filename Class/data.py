@@ -73,8 +73,8 @@ class Data:
                             dead.append(domain)
                         sleep(0.05)
                         filtered[domain] = nameservers
-                data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
-                domains[post['user']] = {'urls':filtered}
+                    domains[post['user']] = {'urls':filtered}
+            data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
         data = sorted(data, key=lambda k: k['id'],  reverse=True)
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
             json.dump(data, f, indent=2)
