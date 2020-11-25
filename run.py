@@ -6,7 +6,7 @@ import sys
 
 param = sys.argv
 if len(param) == 1:
-    print("update generate stats")
+    print("update generate dns stats")
 elif sys.argv[1] == "generate":
     Data = Data()
     offers = Data.getProviders("offers","lowendtalk")
@@ -19,6 +19,11 @@ elif sys.argv[1] == "generate":
     Data.getUrls("offers","talk.lowendspirit")
     Data.getUrls("offers","lowendtalk")
     Data.getUrls("shared-hosting-offers","lowendtalk")
+elif sys.argv[1] == "dns":
+    Data = Data()
+    Data.getUrls("offers","talk.lowendspirit",True)
+    Data.getUrls("offers","lowendtalk",True)
+    Data.getUrls("shared-hosting-offers","lowendtalk",True)
 elif sys.argv[1] == "update":
     Base = Base()
     Base.vanilla("offers","lowendtalk")

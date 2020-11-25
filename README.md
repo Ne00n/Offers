@@ -6,7 +6,9 @@
 ```
 pip3 install selenium
 pip3 install fake-useragent
-pip3 install matplotlib
+pip3 install dnspython  #generate
+pip3 install tldextract #generate
+pip3 install matplotlib #stats
 ```
 
 **Updating dataset**<br />
