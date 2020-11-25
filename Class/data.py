@@ -26,12 +26,12 @@ class Data:
 
     def filterUrls(self,url):
         drop = ['twitter.com','facebook.com','imgur.com','github.com','speedtest.net','he.net','google.com','trustpilot.com','arin.net','webhostingtalk.com','discord.gg',
-        'youtube.com','tenor.com']
+        'youtube.com','tenor.com','instagram.com']
         if any(domain in url for domain in drop):
             return True
         return False
 
-    def getUrls(self,cat,site,dns=False):
+    def getUrls(self,cat,site,resolve=False):
         dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
         files = os.listdir(dataDir)
         data,domains,dead,alive = [],{},[],[]
@@ -43,11 +43,16 @@ class Data:
             urls = list(set(urlsRaw))
             filtered = {}
             for url in urls:
-                if dns:
+                if resolve:
                     domain = tldextract.extract(url).domain + "." + tldextract.extract(url).suffix
                     if self.filterUrls(domain):
                         continue
+                    if domain in filtered:
+                        continue
+                    if domain in dead:
+                        continue
                     if domain in dnsCache:
+                        print("Getting NS from Cache for",domain)
                         filtered[domain] = dnsCache[domain]
                         continue
                     try:
@@ -55,26 +60,25 @@ class Data:
                         print("Filtered",domain)
                         continue
                     except:
-                        if not domain in filtered:
-                            try:
-                                nameservers = []
-                                print("Getting NS for",domain)
-                                answers = dns.resolver.query(domain,'NS')
-                                for server in answers:
-                                    nameservers.append(server.target.to_text())
-                                dnsCache[domain] = nameservers
-                                alive.append(domain)
-                            except:
-                                print("NS not found for",domain)
-                                dead.append(domain)
-                            sleep(0.05)
-                            filtered[domain] = nameservers
+                        try:
+                            nameservers = []
+                            print("Getting NS for",domain)
+                            answers = dns.resolver.query(domain,'NS')
+                            for server in answers:
+                                nameservers.append(server.target.to_text())
+                            dnsCache[domain] = nameservers
+                            alive.append(domain)
+                        except:
+                            print("NS not found for",domain)
+                            dead.append(domain)
+                        sleep(0.05)
+                        filtered[domain] = nameservers
                 data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
                 domains[post['user']] = {'urls':filtered}
         data = sorted(data, key=lambda k: k['id'],  reverse=True)
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
             json.dump(data, f, indent=2)
-        if dns:
+        if resolve:
             with open(os.getcwd()+"/data/"+site+"-domains-"+cat+".json", 'w') as f:
                 json.dump(domains, f, indent=2)
             with open(os.getcwd()+"/data/"+site+"-domain-dead-"+cat+".json", 'w') as f:
