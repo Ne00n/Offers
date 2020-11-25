@@ -38,6 +38,7 @@ class Data:
                 answers = dns.resolver.query(domain,'NS')
                 for server in answers:
                     nameservers.append(server.target.to_text())
+                nameservers.sort()
                 return nameservers
             except:
                 sleep(0.5)
@@ -91,6 +92,9 @@ class Data:
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
             json.dump(data, f, indent=2)
         if resolve:
+            domains = {k: domains[k] for k in sorted(domains)}
+            alive.sort()
+            dead.sort()
             with open(os.getcwd()+"/data/"+site+"-domains-"+cat+".json", 'w') as f:
                 json.dump(domains, f, indent=2)
             with open(os.getcwd()+"/data/"+site+"-domain-dead-"+cat+".json", 'w') as f:
