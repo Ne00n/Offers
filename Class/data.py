@@ -26,9 +26,22 @@ class Data:
 
     def filterUrls(self,url):
         drop = ['twitter.com','facebook.com','imgur.com','github.com','speedtest.net','he.net','google.com','trustpilot.com','arin.net','webhostingtalk.com','discord.gg',
-        'youtube.com','tenor.com','instagram.com']
+        'youtube.com','tenor.com','instagram.com','githubusercontent.com']
         if any(domain in url for domain in drop):
             return True
+        return False
+
+    def resolve(self,domain):
+        nameservers,count = [],0
+        while count < 3:
+            try:
+                answers = dns.resolver.query(domain,'NS')
+                for server in answers:
+                    nameservers.append(server.target.to_text())
+                return nameservers
+            except:
+                sleep(0.5)
+            count += 1
         return False
 
     def getUrls(self,cat,site,resolve=False):
@@ -60,18 +73,16 @@ class Data:
                         print("Filtered",domain)
                         continue
                     except:
-                        try:
-                            nameservers = []
-                            print("Getting NS for",domain)
-                            answers = dns.resolver.query(domain,'NS')
-                            for server in answers:
-                                nameservers.append(server.target.to_text())
-                            dnsCache[domain] = nameservers
-                            alive.append(domain)
-                        except:
+                        nameservers = []
+                        print("Getting NS for",domain)
+                        nameservers = self.resolve(domain)
+                        if nameservers == False:
                             print("NS not found for",domain)
                             dead.append(domain)
-                        sleep(0.05)
+                        else:
+                            dnsCache[domain] = nameservers
+                            alive.append(domain)
+                        sleep(0.10)
                         filtered[domain] = nameservers
                     domains[post['user']] = {'urls':filtered}
             data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
