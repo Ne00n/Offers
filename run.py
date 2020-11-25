@@ -11,8 +11,9 @@ elif sys.argv[1] == "generate":
     Data = Data()
     offers = Data.getProviders("offers","lowendtalk")
     shared = Data.getProviders("shared-hosting-offers","lowendtalk")
-    list = offers + shared
-    Data.saveProviders("lowendtalk",list)
+    providers = offers + shared
+    providers = list(set(providers))
+    Data.saveProviders("lowendtalk",providers)
     list = Data.getProviders("offers","talk.lowendspirit")
     Data.saveProviders("talk.lowendspirit",list)
     Data.getUrls("offers","talk.lowendspirit")
