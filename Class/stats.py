@@ -7,22 +7,26 @@ import numpy as np
 class Stats:
     def __init__(self):
         print("Stats")
-        data = self.get("lowendbox","posts")
-        self.posts(data,'lowendbox')
-        self.postsCat(data,'lowendbox')
-        data = self.get('lowendtalk','offers')
-        self.posts(data,'lowendtalk',30)
-
-    def get(self,site,cat):
-        dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
-        files = os.listdir(dataDir)
-
         print("Loading deadpool.json")
         with open(os.getcwd()+"/src/deadpool.json", 'r') as f:
             deadpoolJson = json.load(f)
         print("Loading colocrossing.json")
         with open(os.getcwd()+"/src/colocrossing.json", 'r') as f:
             colocrossingJson = json.load(f)
+
+        data = self.get("lowendbox","posts",deadpoolJson,colocrossingJson)
+        self.posts(data,'lowendbox')
+        self.postsCat(data,'lowendbox')
+        data = self.get('lowendtalk','offers',deadpoolJson,colocrossingJson)
+        self.posts(data,'lowendtalk',30)
+        data = self.get('talk.lowendspirit','offers',deadpoolJson,colocrossingJson)
+        self.posts(data,'talk.lowendspirit',30)
+
+    def get(self,site,cat,deadpoolJson,colocrossingJson):
+        dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
+        files = os.listdir(dataDir)
+
+
 
         data =  {}
         data['posts'],data['total'],data['other'],data['deadpool'],data['colocrossing'] = 0,{},{},{},{}
@@ -33,7 +37,7 @@ class Stats:
             if site == "lowendbox":
                 nameRaw = re.findall(", by (.*?)<\/div>",post['post'], re.MULTILINE | re.DOTALL)
                 name = nameRaw[0]
-            elif site == "lowendtalk":
+            elif site == "lowendtalk" or "talk.Lowendspirit":
                 name = post['user']
 
             if not name in data['total']:
