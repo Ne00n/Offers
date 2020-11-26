@@ -1,23 +1,27 @@
 #!/usr/bin/python3
-from selenium import webdriver
+from pyvirtualdisplay import Display
 from fake_useragent import UserAgent
+from selenium import webdriver
 from pathlib import Path
 from random import randint
 import time, json, re, os
 import urllib.parse
 
 class Base:
-    def __init__(self):
-        self.selenium()
+    def __init__(self,headless):
+        self.selenium(headless)
 
-    def selenium(self):
-        global browser
-        print("Staring Selenium")
+    def selenium(self,headless):
+        global browser,display
+        if headless:
+            print("Starting virtual display")
+            display = Display(visible=0, size=(1920, 1080))
+            display.start()
+        print("Starting Selenium")
         options = webdriver.ChromeOptions()
         ua = UserAgent()
         userAgent = ua.chrome
         print(userAgent)
-        options.add_argument("--disable-blink-features")
         options.add_argument(f'user-agent={userAgent}')
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("start-maximized")
@@ -33,8 +37,10 @@ class Base:
         time.sleep(wait)
         return browser.page_source
 
-    def close(self):
+    def close(self,headless):
         browser.close()
+        if headless:
+            display.stop()
 
     def lowendbox(self):
         count,src = 1,"https://lowendbox.com/post-sitemap"
@@ -45,7 +51,7 @@ class Base:
             if not os.path.exists(dataDir):
                 os.makedirs(dataDir)
             response = self.fetch(src+str(count)+".xml")
-            
+
             if "The Page you requested was not found" in response:
                 print("End of line")
                 return True
