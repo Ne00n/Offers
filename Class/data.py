@@ -45,6 +45,11 @@ class Data:
             count += 1
         return False
 
+    def appendDic(self,dict,list,user):
+        for entry in list:
+            dict[user]['urls'][entry] = list[entry]
+        return dict
+
     def getUrls(self,cat,site,resolve=False):
         dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
         files = os.listdir(dataDir)
@@ -89,7 +94,13 @@ class Data:
                             alive.append(domain)
                         sleep(0.10)
                         filtered[domain] = nameservers
-            domains[post['user']] = {'urls':filtered}
+            if post['user'] in domains:
+                if domains[post['user']]['urls'] == None and filtered != None:
+                    domains[post['user']] = {'urls':filtered}
+                else:
+                    domains = self.appendDic(domains,filtered,post['user'])
+            else:
+                domains[post['user']] = {'urls':filtered}
             data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
         data = sorted(data, key=lambda k: k['id'],  reverse=True)
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
