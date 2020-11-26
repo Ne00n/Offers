@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 import matplotlib.pyplot as plt
 from datetime import date
-import pprint, json, os, re
-import numpy as np
+import tldextract, pprint, json, os, re
 
 class Stats:
     def __init__(self):
@@ -21,6 +20,8 @@ class Stats:
         self.posts(data,'lowendtalk',30)
         data = self.get('talk.lowendspirit','offers',deadpoolJson,colocrossingJson)
         self.posts(data,'talk.lowendspirit',30)
+        data = self.getNS()
+        self.getNSPie(data)
 
     def get(self,site,cat,deadpoolJson,colocrossingJson):
         dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
@@ -111,3 +112,51 @@ class Stats:
         figure.set_size_inches(14, 8)
 
         plt.savefig('img/'+site+'PostsCategories.png', dpi=300)
+
+    def getNS(self):
+        dataDir = os.getcwd()+"/data/"
+        files = os.listdir(dataDir)
+        data,filter,total = {},[],0
+        for file in files:
+            if "domains" in file and not "dead" in file and not "alive" in file:
+                with open(dataDir+file, 'r') as f:
+                    domains = json.load(f)
+                for key,value in domains.items():
+                    for domain,nameservers in value['urls'].items():
+
+                        if nameservers != False and domain not in filter:
+                            for ns in nameservers:
+                                provider = tldextract.extract(ns).domain + "." + tldextract.extract(ns).suffix
+                                if not provider in data:
+                                    data[provider] = 1
+                                else:
+                                    data[provider] = data[provider] +1
+                            filter.append(domain)
+
+        for entry,count in list(data.items()):
+            if count < 25:
+                del data[entry]
+            else:
+                total = total + count
+
+        for entry,count in list(data.items()):
+            data[entry] = round(count / total * 100,1)
+
+        return data
+
+    def getNSPie(self,data):
+        today = date.today()
+        labels = list(data.keys())
+        percentage = list(data.values())
+
+        fig, ax = plt.subplots()
+        ax.pie(percentage, labels=labels, autopct='%1.1f%%',
+                shadow=True, startangle=90)
+        ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+        fig.set_size_inches(10, 10)
+        fig.tight_layout()
+
+        ax.set_title('Lowendtalk/talk.lowendspirit Nameservers, '+str(today.strftime("%d/%m/%Y")))
+
+        plt.savefig('img/nameserver.png', dpi=300)
