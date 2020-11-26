@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import dns.resolver, ipaddress, tldextract, time, pprint, json, re, os
+import dns.resolver, ipaddress, tldextract, time, pprint, json, html, re, os
 from time import sleep
 
 class Data:
@@ -58,6 +58,9 @@ class Data:
             urls.sort()
             filtered = {}
             for url in urls:
+                url = re.sub('&lt;br$', '', url)
+                url = re.sub('<[^<]+?>', '', html.unescape(url))
+                url = url.replace("_","")
                 if resolve:
                     domain = tldextract.extract(url).domain + "." + tldextract.extract(url).suffix
                     if self.filterUrls(domain):
