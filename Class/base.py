@@ -74,7 +74,7 @@ class Base:
 
     def vanilla(self,cat,site):
         currentOffers,count,src = "",1,"https://"+site+".com/categories/"+cat+"/p"
-        dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
+        dataDir,scans = os.getcwd()+"/src/"+site+"/"+cat+"/",0
 
         print("Checking",site)
         response = self.fetch("https://"+site+".com")
@@ -110,6 +110,8 @@ class Base:
                         json.dump(data, f)
                 else:
                     print(discussion['DiscussionID'],"already exist")
-                    return True
+                    scans = scans +1
+                    if scans == 20:
+                        return True
 
             count = count +1
