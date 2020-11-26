@@ -19,3 +19,9 @@ python3 run.py update
 **Updating /data**<br />
 ```
 python3 run.py generate
+```
+
+**Updating /data + domains.json**<br />
+```
+python3 run.py dns
+```
