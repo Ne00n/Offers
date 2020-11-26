@@ -111,7 +111,7 @@ class Data:
             dead.sort()
             with open(os.getcwd()+"/data/"+site+"-domains-"+cat+".json", 'w') as f:
                 json.dump(domains, f, indent=2)
-            with open(os.getcwd()+"/data/"+site+"-domain-dead-"+cat+".json", 'w') as f:
+            with open(os.getcwd()+"/data/"+site+"-domains-dead-"+cat+".json", 'w') as f:
                 json.dump(dead, f, indent=2)
-            with open(os.getcwd()+"/data/"+site+"-domain-alive-"+cat+".json", 'w') as f:
+            with open(os.getcwd()+"/data/"+site+"-domains-alive-"+cat+".json", 'w') as f:
                 json.dump(alive, f, indent=2)
