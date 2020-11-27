@@ -15,7 +15,7 @@ class Data:
         providers = []
         for file in files:
             if slow:
-                sleep(0.05)
+                sleep(0.02)
             print("Reading",file)
             with open(dataDir+file, 'r') as f:
                 data = json.load(f)
@@ -60,7 +60,7 @@ class Data:
         data,domains,dead,alive = [],{},[],[]
         for file in files:
             if slow:
-                sleep(0.05)
+                sleep(0.02)
             print("Reading",file)
             with open(dataDir+file, 'r') as f:
                 post = json.load(f)
