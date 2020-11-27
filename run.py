@@ -12,21 +12,26 @@ def update(headless=False):
     Update.lowendbox()
     Update.close(headless)
 
+def generate(slow=False):
+    Update = Data(slow)
+    offers = Update.getProviders("offers","lowendtalk")
+    shared = Update.getProviders("shared-hosting-offers","lowendtalk")
+    providers = offers + shared
+    providers = list(set(providers))
+    Update.saveProviders("lowendtalk",providers)
+    providers = Update.getProviders("offers","talk.lowendspirit")
+    Update.saveProviders("talk.lowendspirit",providers)
+    Update.getUrls("offers","talk.lowendspirit")
+    Update.getUrls("offers","lowendtalk")
+    Update.getUrls("shared-hosting-offers","lowendtalk")
+
 param = sys.argv
 if len(param) == 1:
     print("update generate dns stats")
+elif sys.argv[1] == "generate" and len(sys.argv) > 2 and sys.argv[2] == "slow":
+    generate(True)
 elif sys.argv[1] == "generate":
-    Data = Data()
-    offers = Data.getProviders("offers","lowendtalk")
-    shared = Data.getProviders("shared-hosting-offers","lowendtalk")
-    providers = offers + shared
-    providers = list(set(providers))
-    Data.saveProviders("lowendtalk",providers)
-    list = Data.getProviders("offers","talk.lowendspirit")
-    Data.saveProviders("talk.lowendspirit",list)
-    Data.getUrls("offers","talk.lowendspirit")
-    Data.getUrls("offers","lowendtalk")
-    Data.getUrls("shared-hosting-offers","lowendtalk")
+    generate()
 elif sys.argv[1] == "dns":
     Data = Data()
     Data.getUrls("offers","talk.lowendspirit",True)

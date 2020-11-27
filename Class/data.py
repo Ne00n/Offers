@@ -3,9 +3,10 @@ import dns.resolver, ipaddress, tldextract, time, pprint, json, html, re, os
 from time import sleep
 
 class Data:
-    def __init__(self):
-        global dnsCache
+    def __init__(self,slowIn):
+        global dnsCache,slow
         dnsCache = {}
+        slow = slowIn
         print("Generate")
 
     def getProviders(self,cat,site):
@@ -13,6 +14,9 @@ class Data:
         files = os.listdir(dataDir)
         providers = []
         for file in files:
+            if slow:
+                sleep(0.10)
+            print("Reading",file)
             with open(dataDir+file, 'r') as f:
                 data = json.load(f)
             if not data['user'] in providers:
@@ -55,6 +59,9 @@ class Data:
         files = os.listdir(dataDir)
         data,domains,dead,alive = [],{},[],[]
         for file in files:
+            if slow:
+                sleep(0.10)
+            print("Reading",file)
             with open(dataDir+file, 'r') as f:
                 post = json.load(f)
             urlsRaw = re.findall("(https?:\/\/[A-Za-z0-9.\/?=&;_-]*)",post['post'], re.MULTILINE | re.DOTALL)
