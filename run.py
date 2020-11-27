@@ -33,7 +33,7 @@ elif sys.argv[1] == "generate" and len(sys.argv) > 2 and sys.argv[2] == "slow":
 elif sys.argv[1] == "generate":
     generate()
 elif sys.argv[1] == "dns":
-    Data = Data()
+    Data = Data(False)
     Data.getUrls("offers","talk.lowendspirit",True)
     Data.getUrls("offers","lowendtalk",True)
     Data.getUrls("shared-hosting-offers","lowendtalk",True)
