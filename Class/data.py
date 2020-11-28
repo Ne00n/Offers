@@ -101,6 +101,14 @@ class Data:
                             alive.append(domain)
                         sleep(0.10)
                         filtered[domain] = nameservers
+            if site == "lowendbox":
+                dataRaw = re.findall("Date\/Time:.*?> (.*?), by (.*?)<\/div>",post['post'], re.MULTILINE | re.DOTALL)
+                post['user'] = dataRaw[0][1]
+                post['date'] = dataRaw[0][0]
+                post['id'] = int(post['id'])
+                for url in list(urls):
+                    if "lowendbox.com" in url:
+                        urls.remove(url)
             if post['user'] in domains:
                 if domains[post['user']]['urls'] == None and filtered != None:
                     domains[post['user']] = {'urls':filtered}
