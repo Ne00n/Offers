@@ -30,12 +30,22 @@ class Base:
         browser = webdriver.Chrome(options=options)
 
     def fetch(self,url):
-        wait = randint(7,80)
+        wait,count = randint(7,80),0
         print("Getting",url)
-        browser.get(url)
-        print("Waiting",wait,"seconds")
-        time.sleep(wait)
-        return browser.page_source
+        while count < 3:
+            try:
+                browser.get(url)
+                print("Waiting",wait,"seconds")
+                time.sleep(wait)
+                return browser.page_source
+            except Exception as e:
+                print("Error",e)
+                wait = randint(120,300)
+                print("Waiting",wait,"seconds")
+                time.sleep(wait)
+            count = count +1
+        return False
+
 
     def close(self,headless):
         browser.close()
@@ -51,6 +61,7 @@ class Base:
             if not os.path.exists(dataDir):
                 os.makedirs(dataDir)
             response = self.fetch(src+str(count)+".xml")
+            if response == False: return False
 
             if "The Page you requested was not found" in response:
                 print("End of line")
@@ -61,6 +72,7 @@ class Base:
                 file = dataDir+urllib.parse.unquote(url[1])+".json"
                 if not Path(file).is_file():
                     response = self.fetch(url[0])
+                    if response == False: return False
                     post = re.findall("(<div class=\"post-([0-9]+) post.*?\>.*?feedback\"></div></div>)",response, re.MULTILINE | re.DOTALL)
                     try:
                         data = {'id':post[0][1],'post':post[0][0]}
@@ -78,6 +90,7 @@ class Base:
 
         print("Checking",site)
         response = self.fetch("https://"+site+".com")
+        if response == False: return False
         if "Cloudflare" in response:
             print("Failed to bypass CF")
             browser.close()
@@ -87,6 +100,7 @@ class Base:
 
             print("Getting",cat)
             response = self.fetch(src+str(str(count)+".json"))
+            if response == False: return False
             rawJson = re.sub('<[^<]+?>', '', response)
             try:
                 currentOffers = json.loads(rawJson)
