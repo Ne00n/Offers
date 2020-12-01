@@ -122,14 +122,7 @@
         "dns1.registrar-servers.com.",
         "dns2.registrar-servers.com."
       ],
-      "skylonhost.com": [
-        "dns1.easydns.com.",
-        "dns3.easydns.ca.",
-        "ns1.dnsimple.com.",
-        "ns2.dnsimple.com.",
-        "ns3.dnsimple.com.",
-        "ns4.dnsimple.com."
-      ],
+      "skylonhost.com": false,
       "launchvps.com": [
         "lia.ns.cloudflare.com.",
         "nitin.ns.cloudflare.com."
@@ -244,10 +237,7 @@
         "ac1.cloudcone.net.",
         "ac2.cloudcone.net."
       ],
-      "cloudc.one": [
-        "c3.cloudcone.net.",
-        "c4.cloudcone.net."
-      ],
+      "cloudc.one": false,
       "cloudcone.com": [
         "c3.cloudcone.net.",
         "c4.cloudcone.net."
@@ -293,16 +283,7 @@
     }
   },
   "FHR": {
-    "urls": {
-      "skylonhost.com": [
-        "dns1.easydns.com.",
-        "dns3.easydns.ca.",
-        "ns1.dnsimple.com.",
-        "ns2.dnsimple.com.",
-        "ns3.dnsimple.com.",
-        "ns4.dnsimple.com."
-      ]
-    }
+    "urls": {}
   },
   "Fiberhub-Billy": {
     "urls": {}
@@ -458,7 +439,10 @@
         "ns-1958.awsdns-52.co.uk.",
         "ns-754.awsdns-30.net."
       ],
-      "maxkvm.com": false,
+      "maxkvm.com": [
+        "clyde.ns.cloudflare.com.",
+        "katja.ns.cloudflare.com."
+      ],
       "lowendspirit.com": [
         "leah.ns.cloudflare.com.",
         "sid.ns.cloudflare.com."
@@ -501,7 +485,12 @@
         "ns-393.awsdns-49.com.",
         "ns-692.awsdns-22.net."
       ],
-      "metalvps.com": false,
+      "metalvps.com": [
+        "curitiba.porkbun.com.",
+        "fortaleza.porkbun.com.",
+        "maceio.porkbun.com.",
+        "salvador.porkbun.com."
+      ],
       "lowendspirit.com": [
         "leah.ns.cloudflare.com.",
         "sid.ns.cloudflare.com."
@@ -751,11 +740,7 @@
   },
   "freerangecloud": {
     "urls": {
-      "freerangecloud.com": [
-        "ns5.frc.is.",
-        "ns6.frc.is.",
-        "ns7.frc.is."
-      ]
+      "freerangecloud.com": false
     }
   },
   "funkywizard": {
@@ -1105,9 +1090,7 @@
         "ns11.constellix.com.",
         "ns21.constellix.com.",
         "ns31.constellix.com.",
-        "ns41.constellix.net.",
-        "ns51.constellix.net.",
-        "ns61.constellix.net."
+        "ns41.constellix.net."
       ]
     }
   },
