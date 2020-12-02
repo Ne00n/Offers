@@ -427,7 +427,10 @@
   },
   "HappyBee": {
     "urls": {
-      "happybeehost.com": false
+      "happybeehost.com": [
+        "june.ns.cloudflare.com.",
+        "lynn.ns.cloudflare.com."
+      ]
     }
   },
   "HostBastic": {
@@ -910,7 +913,10 @@
   },
   "hostEONS": {
     "urls": {
-      "hosteons.com": false
+      "hosteons.com": [
+        "elle.ns.cloudflare.com.",
+        "todd.ns.cloudflare.com."
+      ]
     }
   },
   "hosterlabs": {
@@ -1007,7 +1013,12 @@
   },
   "lentro": {
     "urls": {
-      "cloudfront.net": false,
+      "cloudfront.net": [
+        "ns-1306.awsdns-35.org.",
+        "ns-1597.awsdns-07.co.uk.",
+        "ns-418.awsdns-52.com.",
+        "ns-666.awsdns-19.net."
+      ],
       "fluidstack.io": [
         "ns-1266.awsdns-30.org.",
         "ns-1786.awsdns-31.co.uk.",
@@ -1033,8 +1044,15 @@
   },
   "martijnk": {
     "urls": {
-      "novos.be": false,
-      "dcstar.be": false
+      "novos.be": [
+        "norm.ns.cloudflare.com.",
+        "pat.ns.cloudflare.com."
+      ],
+      "dcstar.be": [
+        "ext.lcpnet.com.",
+        "lcpnos1.corp.lcpnet.com.",
+        "ns3.corp.lcpnet.com."
+      ]
     }
   },
   "mikho": {
@@ -1051,7 +1069,10 @@
   },
   "nullroute": {
     "urls": {
-      "purplehost.com.br": false
+      "purplehost.com.br": [
+        "darl.ns.cloudflare.com.",
+        "dina.ns.cloudflare.com."
+      ]
     }
   },
   "qps": {
@@ -1124,9 +1145,22 @@
         "ns-387.awsdns-48.com.",
         "ns-724.awsdns-26.net."
       ],
-      "forms.gle": false,
-      "youtu.be": false,
-      "kappit.com": false,
+      "forms.gle": [
+        "ns1.googledomains.com.",
+        "ns2.googledomains.com.",
+        "ns3.googledomains.com.",
+        "ns4.googledomains.com."
+      ],
+      "youtu.be": [
+        "ns1.google.com.",
+        "ns2.google.com.",
+        "ns3.google.com.",
+        "ns4.google.com."
+      ],
+      "kappit.com": [
+        "kristin.ns.cloudflare.com.",
+        "thomas.ns.cloudflare.com."
+      ],
       "thinknice.com": [
         "ns1175.hostgator.com.",
         "ns1176.hostgator.com."
@@ -1230,7 +1264,12 @@
         "pns33.cloudns.net.",
         "pns34.cloudns.net."
       ],
-      "fsix.no": false
+      "fsix.no": [
+        "pns31.cloudns.net.",
+        "pns32.cloudns.net.",
+        "pns33.cloudns.net.",
+        "pns34.cloudns.net."
+      ]
     }
   },
   "tetahost": {

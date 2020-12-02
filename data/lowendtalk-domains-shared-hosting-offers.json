@@ -1389,7 +1389,10 @@
   },
   "starservices": {
     "urls": {
-      "getwebhosting.co.uk": false,
+      "getwebhosting.co.uk": [
+        "ns1.owndns.co.uk.",
+        "ns2.owndns.co.uk."
+      ],
       "ownbox.co.uk": [
         "derek.ns.cloudflare.com.",
         "violet.ns.cloudflare.com."
@@ -1400,7 +1403,10 @@
         "ns3.eubox.co.uk.",
         "ns4.eubox.co.uk."
       ],
-      "powerfulbox.co.uk": false
+      "powerfulbox.co.uk": [
+        "ns1.owndns.co.uk.",
+        "ns2.owndns.co.uk."
+      ]
     }
   },
   "tetahost": {
