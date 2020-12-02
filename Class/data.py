@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import dns.resolver, ipaddress, tldextract, time, pprint, json, html, re, os
+import dns.resolver, ipaddress, tldextract, random, time, pprint, json, html, re, os
 from time import sleep
 
 class Data:
@@ -36,7 +36,7 @@ class Data:
         return False
 
     def resolve(self,domain):
-        nameservers,count = [],0
+        nameservers,count = [],1
         while count < 3:
             try:
                 answers = dns.resolver.query(domain,'NS')
@@ -45,7 +45,9 @@ class Data:
                 nameservers.sort()
                 return nameservers
             except:
-                sleep(0.5)
+                wait = round(random.uniform(0.5,6), 2) * count
+                print("Waiting",wait,"seconds")
+                sleep(wait)
             count += 1
         return False
 
