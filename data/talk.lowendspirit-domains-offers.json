@@ -122,7 +122,14 @@
         "dns1.registrar-servers.com.",
         "dns2.registrar-servers.com."
       ],
-      "skylonhost.com": false,
+      "skylonhost.com": [
+        "dns1.easydns.com.",
+        "dns3.easydns.ca.",
+        "ns1.dnsimple.com.",
+        "ns2.dnsimple.com.",
+        "ns3.dnsimple.com.",
+        "ns4.dnsimple.com."
+      ],
       "launchvps.com": [
         "lia.ns.cloudflare.com.",
         "nitin.ns.cloudflare.com."
@@ -178,6 +185,102 @@
       "me.me": [
         "ns23.domaincontrol.com.",
         "ns24.domaincontrol.com."
+      ],
+      "ovh.net": [
+        "dns10.ovh.net.",
+        "dns11.ovh.net.",
+        "dns12.ovh.net.",
+        "dns13.ovh.net.",
+        "dns15.ovh.net.",
+        "ns10.ovh.net.",
+        "ns11.ovh.net.",
+        "ns12.ovh.net.",
+        "ns13.ovh.net.",
+        "ns15.ovh.net."
+      ],
+      "apac-tools.ovh": [
+        "dns200.anycast.me.",
+        "ns200.anycast.me."
+      ],
+      "ioflood.com": [
+        "ns1.ioflood.com.",
+        "ns2.ioflood.com.",
+        "ns3.ioflood.com."
+      ],
+      "1tbvps.com": [
+        "candy.ns.cloudflare.com.",
+        "matt.ns.cloudflare.com."
+      ],
+      "Khanwebhost.com": [
+        "ns1.Khanwebhost.com.",
+        "ns2.Khanwebhost.com."
+      ],
+      "cloudcone.com": [
+        "c3.cloudcone.net.",
+        "c4.cloudcone.net."
+      ],
+      "ethwebs.net": [
+        "ethweb.earth.orderbox-dns.com.",
+        "ethweb.mars.orderbox-dns.com.",
+        "ethweb.mercury.orderbox-dns.com.",
+        "ethweb.venus.orderbox-dns.com."
+      ],
+      "visualwebtechnologies.com": [
+        "arya.ns.cloudflare.com.",
+        "clay.ns.cloudflare.com."
+      ],
+      "artnet.pl": [
+        "dns1.artnet.com.pl.",
+        "dns2.artnet.com.pl.",
+        "dns3.artnet.com.pl."
+      ],
+      "desivps.com": [
+        "anna.ns.cloudflare.com.",
+        "lex.ns.cloudflare.com."
+      ],
+      "geeksolutions.ca": [
+        "cody.ns.cloudflare.com.",
+        "ines.ns.cloudflare.com."
+      ],
+      "hostslick.com": [
+        "elsa.ns.cloudflare.com.",
+        "max.ns.cloudflare.com."
+      ],
+      "purevoltage.com": [
+        "april.ns.cloudflare.com.",
+        "ken.ns.cloudflare.com."
+      ],
+      "softshellweb.com": [
+        "april.ns.cloudflare.com.",
+        "coby.ns.cloudflare.com."
+      ],
+      "albahost.net": [
+        "dns1.registrar-servers.com.",
+        "dns2.registrar-servers.com."
+      ],
+      "alwyzon.com": [
+        "keyla.ns.cloudflare.com.",
+        "micah.ns.cloudflare.com."
+      ],
+      "ovh.com.au": [
+        "dns107.ovh.net.",
+        "dns200.anycast.me.",
+        "ns107.ovh.net.",
+        "ns200.anycast.me."
+      ],
+      "ovh.com": [
+        "dns.ovh.net.",
+        "dns10.ovh.net.",
+        "dns200.anycast.me.",
+        "ns.ovh.net.",
+        "ns10.ovh.net.",
+        "ns200.anycast.me."
+      ],
+      "ovhcloud.com": [
+        "dns104.ovh.net.",
+        "dns200.anycast.me.",
+        "ns104.ovh.net.",
+        "ns200.anycast.me."
       ],
       "geekbench.com": [
         "ns-112.awsdns-14.com.",
@@ -237,7 +340,10 @@
         "ac1.cloudcone.net.",
         "ac2.cloudcone.net."
       ],
-      "cloudc.one": false,
+      "cloudc.one": [
+        "c3.cloudcone.net.",
+        "c4.cloudcone.net."
+      ],
       "cloudcone.com": [
         "c3.cloudcone.net.",
         "c4.cloudcone.net."
@@ -283,7 +389,16 @@
     }
   },
   "FHR": {
-    "urls": {}
+    "urls": {
+      "skylonhost.com": [
+        "dns1.easydns.com.",
+        "dns3.easydns.ca.",
+        "ns1.dnsimple.com.",
+        "ns2.dnsimple.com.",
+        "ns3.dnsimple.com.",
+        "ns4.dnsimple.com."
+      ]
+    }
   },
   "Fiberhub-Billy": {
     "urls": {}
@@ -312,10 +427,7 @@
   },
   "HappyBee": {
     "urls": {
-      "happybeehost.com": [
-        "june.ns.cloudflare.com.",
-        "lynn.ns.cloudflare.com."
-      ]
+      "happybeehost.com": false
     }
   },
   "HostBastic": {
@@ -740,7 +852,11 @@
   },
   "freerangecloud": {
     "urls": {
-      "freerangecloud.com": false
+      "freerangecloud.com": [
+        "ns5.frc.is.",
+        "ns6.frc.is.",
+        "ns7.frc.is."
+      ]
     }
   },
   "funkywizard": {
@@ -794,10 +910,7 @@
   },
   "hostEONS": {
     "urls": {
-      "hosteons.com": [
-        "elle.ns.cloudflare.com.",
-        "todd.ns.cloudflare.com."
-      ]
+      "hosteons.com": false
     }
   },
   "hosterlabs": {
@@ -894,12 +1007,7 @@
   },
   "lentro": {
     "urls": {
-      "cloudfront.net": [
-        "ns-1306.awsdns-35.org.",
-        "ns-1597.awsdns-07.co.uk.",
-        "ns-418.awsdns-52.com.",
-        "ns-666.awsdns-19.net."
-      ],
+      "cloudfront.net": false,
       "fluidstack.io": [
         "ns-1266.awsdns-30.org.",
         "ns-1786.awsdns-31.co.uk.",
@@ -925,15 +1033,8 @@
   },
   "martijnk": {
     "urls": {
-      "novos.be": [
-        "norm.ns.cloudflare.com.",
-        "pat.ns.cloudflare.com."
-      ],
-      "dcstar.be": [
-        "ext.lcpnet.com.",
-        "lcpnos1.corp.lcpnet.com.",
-        "ns3.corp.lcpnet.com."
-      ]
+      "novos.be": false,
+      "dcstar.be": false
     }
   },
   "mikho": {
@@ -950,10 +1051,7 @@
   },
   "nullroute": {
     "urls": {
-      "purplehost.com.br": [
-        "darl.ns.cloudflare.com.",
-        "dina.ns.cloudflare.com."
-      ]
+      "purplehost.com.br": false
     }
   },
   "qps": {
@@ -1026,22 +1124,9 @@
         "ns-387.awsdns-48.com.",
         "ns-724.awsdns-26.net."
       ],
-      "forms.gle": [
-        "ns1.googledomains.com.",
-        "ns2.googledomains.com.",
-        "ns3.googledomains.com.",
-        "ns4.googledomains.com."
-      ],
-      "youtu.be": [
-        "ns1.google.com.",
-        "ns2.google.com.",
-        "ns3.google.com.",
-        "ns4.google.com."
-      ],
-      "kappit.com": [
-        "kristin.ns.cloudflare.com.",
-        "thomas.ns.cloudflare.com."
-      ],
+      "forms.gle": false,
+      "youtu.be": false,
+      "kappit.com": false,
       "thinknice.com": [
         "ns1175.hostgator.com.",
         "ns1176.hostgator.com."
@@ -1090,7 +1175,9 @@
         "ns11.constellix.com.",
         "ns21.constellix.com.",
         "ns31.constellix.com.",
-        "ns41.constellix.net."
+        "ns41.constellix.net.",
+        "ns51.constellix.net.",
+        "ns61.constellix.net."
       ]
     }
   },
@@ -1143,12 +1230,7 @@
         "pns33.cloudns.net.",
         "pns34.cloudns.net."
       ],
-      "fsix.no": [
-        "pns31.cloudns.net.",
-        "pns32.cloudns.net.",
-        "pns33.cloudns.net.",
-        "pns34.cloudns.net."
-      ]
+      "fsix.no": false
     }
   },
   "tetahost": {
