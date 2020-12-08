@@ -49,6 +49,7 @@ class Base:
 
     def close(self,headless):
         browser.close()
+        browser.quit()
         if headless:
             display.stop()
 
