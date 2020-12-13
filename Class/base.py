@@ -19,10 +19,13 @@ class Base:
             display.start()
         print("Starting Selenium")
         options = webdriver.ChromeOptions()
-        ua = UserAgent()
-        userAgent = ua.chrome
-        print(userAgent)
-        options.add_argument(f'user-agent={userAgent}')
+        try:
+            ua = UserAgent()
+            userAgent = ua.chrome
+            print(userAgent)
+            options.add_argument(f'user-agent={userAgent}')
+        except Exception as e:
+            print("Error",e)
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("start-maximized")
         options.add_argument("disable-infobars")
