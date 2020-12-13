@@ -44,3 +44,6 @@ elif sys.argv[1] == "headless":
     update(True)
 elif sys.argv[1] == "stats":
     Stats = Stats()
+elif sys.argv[1] == "webserver":
+    Data = Data(False)
+    Data.webserver()

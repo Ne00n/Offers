@@ -133,3 +133,16 @@ class Data:
                 json.dump(dead, f, indent=2)
             with open(os.getcwd()+"/data/"+site+"-domains-alive-"+cat+".json", 'w') as f:
                 json.dump(alive, f, indent=2)
+
+    def webserver(self):
+        dataDir = os.getcwd()+"/data/"
+        files = os.listdir(dataDir)
+        for file in files:
+            if "domains" in file and not "dead" in file and not "alive" in file:
+                with open(dataDir+file, 'r') as f:
+                    domains = json.load(f)
+                for key,value in domains.items():
+                    for domain,nameservers in value['urls'].items():
+                        print(domain)
+                        print(nameservers)
+                        return False
