@@ -108,7 +108,6 @@ class Base:
         if response == False: return False
         if self.checkCF(response):
             print("Failed to bypass CF")
-            browser.close()
             return False
 
         while True:
