@@ -36,13 +36,17 @@ class Data:
             return True
         return False
 
-    def resolve(self,domain):
+    def resolve(self,domain,type="NS"):
         nameservers,count = [],1
+        print("Getting "+type+" for",domain)
         while count < 3:
             try:
-                answers = dns.resolver.query(domain,'NS')
+                answers = dns.resolver.query(domain,type)
                 for server in answers:
-                    nameservers.append(server.target.to_text())
+                    if type is "NS":
+                        nameservers.append(server.target.to_text())
+                    else:
+                        nameservers.append(server.to_text())
                 nameservers.sort()
                 return nameservers
             except:
@@ -86,24 +90,31 @@ class Data:
                         continue
                     if domain in dnsCache:
                         print("Getting NS from Cache for",domain)
-                        filtered[domain] = dnsCache[domain]
+                        filtered[domain] = {}
+                        filtered[domain]['ns'] = dnsCache[domain]['ns']
+                        filtered[domain]['a'] = dnsCache[domain]['a']
                         continue
                     try:
                         ipaddress.ip_address(domain[:-1])
                         print("Filtered",domain)
                         continue
                     except:
-                        nameservers = []
-                        print("Getting NS for",domain)
+                        nameservers,aRecords = [],[]
                         nameservers = self.resolve(domain)
                         if nameservers == False:
                             print("NS not found for",domain)
+                            aRecords = False
                             dead.append(domain)
                         else:
-                            dnsCache[domain] = nameservers
+                            aRecords = self.resolve(domain,'A')
+                            dnsCache[domain] = {}
+                            dnsCache[domain]['ns'] = nameservers
+                            dnsCache[domain]['a'] = aRecords
                             alive.append(domain)
                         sleep(0.10)
-                        filtered[domain] = nameservers
+                        filtered[domain] = {}
+                        filtered[domain]['ns'] = nameservers
+                        filtered[domain]['a'] = aRecords
             if site == "lowendbox":
                 dataRaw = re.findall("Date\/Time:.*?> (.*?), by (.*?)<\/div>",post['post'], re.MULTILINE | re.DOTALL)
                 post['user'] = dataRaw[0][1]
