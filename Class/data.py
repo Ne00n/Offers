@@ -36,7 +36,7 @@ class Data:
             return True
         return False
 
-    def resolve(self,domain,type="NS"):
+    def resolve(self,domain,type="NS",deadDomains=list()):
         nameservers,count = [],1
         print("Getting "+type+" for",domain)
         while count < 3:
@@ -50,6 +50,9 @@ class Data:
                 nameservers.sort()
                 return nameservers
             except:
+                if domain in deadDomains:
+                    print("Skipping dead",domain)
+                    return False
                 wait = round(random.uniform(0.5,6), 2) * count
                 print("Waiting",wait,"seconds")
                 sleep(wait)
@@ -64,6 +67,11 @@ class Data:
     def getUrls(self,cat,site,resolve=False):
         dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
         files = os.listdir(dataDir)
+        deadPath = os.getcwd()+"/data/"+site+"-domains-dead-"+cat+".json"
+        if os.path.exists(deadPath):
+            print("Loading "+site+"-domains-dead-"+cat+".json")
+            with open(deadPath, 'r') as f:
+                deadDomains = json.load(f)
         data,domains,dead,alive,ip = [],{},[],[],{}
         for file in files:
             if slow:
@@ -103,7 +111,7 @@ class Data:
                         continue
                     except:
                         nameservers,aRecords = [],[]
-                        nameservers = self.resolve(domain)
+                        nameservers = self.resolve(domain,'NS',deadDomains)
                         if nameservers == False:
                             print("NS not found for",domain)
                             aRecords = False
