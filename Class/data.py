@@ -72,6 +72,8 @@ class Data:
             print("Loading "+site+"-domains-dead-"+cat+".json")
             with open(deadPath, 'r') as f:
                 deadDomains = json.load(f)
+        else:
+            deadDomains = list()
         data,domains,dead,alive,ip = [],{},[],[],{}
         for file in files:
             if slow:
