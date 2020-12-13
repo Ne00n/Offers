@@ -64,7 +64,7 @@ class Data:
     def getUrls(self,cat,site,resolve=False):
         dataDir = os.getcwd()+"/src/"+site+"/"+cat+"/"
         files = os.listdir(dataDir)
-        data,domains,dead,alive = [],{},[],[]
+        data,domains,dead,alive,ip = [],{},[],[],{}
         for file in files:
             if slow:
                 sleep(0.02)
@@ -72,9 +72,12 @@ class Data:
             with open(dataDir+file, 'r') as f:
                 post = json.load(f)
             urlsRaw = re.findall("(https?:\/\/[A-Za-z0-9.\/?=&;_-]*)",post['post'], re.MULTILINE | re.DOTALL)
+            ipsRaw = re.findall("[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}",post['post'], re.MULTILINE | re.DOTALL)
             #urls = self.filterUrls(urlsRaw)
             urls = list(set(urlsRaw))
+            ips = list(set(ipsRaw))
             urls.sort()
+            ips.sort()
             filtered = {}
             for url in urls:
                 url = re.sub('&lt;br$', '', url)
@@ -130,10 +133,22 @@ class Data:
                     domains = self.appendDic(domains,filtered,post['user'])
             else:
                 domains[post['user']] = {'urls':filtered}
+            if post['user'] in ip and ips:
+                for entry in ips:
+                    ip[post['user']].append(entry)
+                    ip[post['user']] = list(set(ip[post['user']]))
+            elif ips:
+                ip[post['user']] = []
+                for entry in ips:
+                    ip[post['user']].append(entry)
+                    ip[post['user']] = list(set(ip[post['user']]))
             data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
         data = sorted(data, key=lambda k: k['id'],  reverse=True)
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
             json.dump(data, f, indent=2)
+        if ip:
+            with open(os.getcwd()+"/data/"+site+"-ips-"+cat+".json", 'w') as f:
+                json.dump(ip, f, indent=2)
         if resolve:
             domains = {k: domains[k] for k in sorted(domains)}
             alive.sort()
