@@ -56,6 +56,17 @@ class Base:
         if headless:
             display.stop()
 
+    def checkCF(self,html):
+        count = 0
+        if "Attention Required!" in html: count = count +1
+        if "Cloudflare" in html: count = count +1
+        if "Cloudflare Ray ID" in html: count = count +1
+        if "CAPTCHA" in html: count = count +1
+        if "Please turn JavaScript on and reload the page" in html: count = count +2
+        if "Please stand by, while we are checking your browser" in html: count = count +2
+        print("CF score",count)
+        if count >= 5: return True
+
     def lowendbox(self):
         count,src = 1,"https://lowendbox.com/post-sitemap"
         dataDir = os.getcwd()+"/src/lowendbox/posts/"
@@ -95,7 +106,7 @@ class Base:
         print("Checking",site)
         response = self.fetch("https://"+site+".com")
         if response == False: return False
-        if "Cloudflare" in response:
+        if self.checkCF(response):
             print("Failed to bypass CF")
             browser.close()
             return False
