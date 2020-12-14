@@ -106,7 +106,7 @@ class Base:
                     return user['id'],user['username']
 
     def discourse(self,cat,site):
-        currentOffers,count,src = "",0,"https://"+site+".com/categories/"+cat+"/p"
+        currentOffers,count = "",0
         dataDir,scans = os.getcwd()+"/src/"+site+"/"+cat+"/",0
 
         print("Checking",site)
@@ -133,7 +133,7 @@ class Base:
                 print("End of line")
                 return True
 
-            print("Checking",cat)
+            print("Getting",cat)
             if not os.path.exists(dataDir):
                 os.makedirs(dataDir)
             for topic in currentOffers["topic_list"]["topics"]:
@@ -155,6 +155,47 @@ class Base:
                         json.dump(data, f)
                 else:
                     print(topic['id'],"already exist")
+                    scans = scans +1
+                    if scans == 20:
+                        return True
+
+            count = count +1
+
+    def xenforo(self,cat,site):
+        currentOffers,count = "",0
+        dataDir,scans = os.getcwd()+"/src/"+site+"/"+cat+"/",0
+
+        print("Checking",site)
+        response = self.fetch("https://"+site)
+        if response == False: return False
+        if self.checkCF(response):
+            print("Failed to bypass CF")
+            return False
+
+        while True:
+
+            print("Getting",cat)
+            response = self.fetch("https:/"+site+"/forums/"+cat+"/page-"+str(count))
+            if response == False: return False
+
+            urls = re.findall('<li><a href="\/members\/([a-z-]*)\.[0-9]+.*?href="(\/threads\/.*?.\.([0-9]+))\/"',response, re.MULTILINE | re.DOTALL)
+            for url in urls:
+
+                print("Getting",cat)
+                if not os.path.exists(dataDir):
+                    os.makedirs(dataDir)
+                file = dataDir+url[2]+"-"+url[0]+".json"
+                print("Checking",url[2])
+                if not Path(file).is_file():
+                    response = self.fetch("https://"+site+url[1]+"/")
+                    if response == False: return False
+
+                    post = re.findall('<div class="message-userContent lbContainer.*? · (.*?)">.*?article.*?>(.*?)<\/article>',response, re.MULTILINE | re.DOTALL)
+                    data = {'id':url[2],'date':post[0][0],'user':url[0],'post':post[0][1]}
+                    with open(file, 'w') as f:
+                        json.dump(data, f)
+                else:
+                    print(url[2],"already exist")
                     scans = scans +1
                     if scans == 20:
                         return True

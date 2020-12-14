@@ -10,6 +10,7 @@ def update(headless=False):
     Update.vanilla("shared-hosting-offers","lowendtalk")
     Update.vanilla("offers","talk.lowendspirit")
     Update.discourse("offers","hostedtalk.net")
+    #Update.xenforo("vps-cloud-offers.10","vpsboard.com")
     Update.lowendbox()
     Update.close(headless)
 
