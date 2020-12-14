@@ -99,6 +99,68 @@ class Base:
                     print("Skipping",url[1])
             count = count +1
 
+    def discourseGetCreator(self,users,topic):
+        for poster in topic['posters']:
+            for user in users:
+                if poster['user_id'] == user['id'] and "Original Poster" in poster['description']:
+                    return user['id'],user['username']
+
+    def discourse(self,cat,site):
+        currentOffers,count,src = "",0,"https://"+site+".com/categories/"+cat+"/p"
+        dataDir,scans = os.getcwd()+"/src/"+site+"/"+cat+"/",0
+
+        print("Checking",site)
+        response = self.fetch("https://"+site)
+        if response == False: return False
+        if self.checkCF(response):
+            print("Failed to bypass CF")
+            return False
+
+        while True:
+
+            print("Getting",cat)
+            response = self.fetch("https://"+site+"/c/"+cat+".json?page="+str(count))
+            if response == False: return False
+            rawJson = re.sub('<[^<]+?>', '', response)
+
+            try:
+                currentOffers = json.loads(rawJson)
+            except ValueError as e:
+                print("Failed to parse json")
+                return False
+
+            if not currentOffers['topic_list']['topics']:
+                print("End of line")
+                return True
+
+            print("Checking",cat)
+            if not os.path.exists(dataDir):
+                os.makedirs(dataDir)
+            for topic in currentOffers["topic_list"]["topics"]:
+                creatorID,creator = self.discourseGetCreator(currentOffers['users'],topic)
+                file = dataDir+str(topic['id'])+"-"+creator+".json"
+                print("Checking",topic['id'])
+                if not Path(file).is_file():
+                    response = self.fetch("https://"+site+"/t/"+str(topic['id'])+".json")
+                    if response == False: return False
+                    rawJson = re.sub('<[^<]+?>', '', response)
+                    try:
+                        currentPost = json.loads(rawJson)
+                    except ValueError as e:
+                        print("Failed to parse json")
+                        return False
+                    posts = currentPost['post_stream']['posts']
+                    data = {'id':topic['id'],'date':posts[0]['created_at'],'user':posts[0]['username'],'post':posts[0]['cooked']}
+                    with open(file, 'w') as f:
+                        json.dump(data, f)
+                else:
+                    print(topic['id'],"already exist")
+                    scans = scans +1
+                    if scans == 20:
+                        return True
+
+            count = count +1
+
     def vanilla(self,cat,site):
         currentOffers,count,src = "",1,"https://"+site+".com/categories/"+cat+"/p"
         dataDir,scans = os.getcwd()+"/src/"+site+"/"+cat+"/",0

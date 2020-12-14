@@ -9,6 +9,7 @@ def update(headless=False):
     Update.vanilla("offers","lowendtalk")
     Update.vanilla("shared-hosting-offers","lowendtalk")
     Update.vanilla("offers","talk.lowendspirit")
+    Update.discourse("offers","hostedtalk.net")
     Update.lowendbox()
     Update.close(headless)
 
