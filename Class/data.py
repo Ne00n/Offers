@@ -81,7 +81,7 @@ class Data:
             print("Reading",file)
             with open(dataDir+file, 'r') as f:
                 post = json.load(f)
-            urlsRaw = re.findall("(https?:\/\/[A-Za-z0-9.\/?=&;_-]*)",post['post'], re.MULTILINE | re.DOTALL)
+            urlsRaw = re.findall("(https?:\/\/[A-Za-z0-9.\/?=&;_-]{1,}\.[A-Za-z0-9.\/?=&;_-]{1,})",post['post'], re.MULTILINE | re.DOTALL)
             ipsRaw = re.findall("[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}",post['post'], re.MULTILINE | re.DOTALL)
             #urls = self.filterUrls(urlsRaw)
             urls = list(set(urlsRaw))
