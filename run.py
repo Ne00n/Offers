@@ -41,6 +41,7 @@ elif sys.argv[1] == "dns":
     Data.getUrls("offers","lowendtalk",True)
     Data.getUrls("shared-hosting-offers","lowendtalk",True)
     Data.getUrls("posts","lowendbox",True)
+    Data.getUrls("offers","hostedtalk.net",True)
 elif sys.argv[1] == "update":
     update()
 elif sys.argv[1] == "headless":
