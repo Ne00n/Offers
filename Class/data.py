@@ -159,6 +159,7 @@ class Data:
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
             json.dump(data, f, indent=2)
         if ip:
+            ip = {k: ip[k] for k in sorted(ip)}
             with open(os.getcwd()+"/data/"+site+"-ips-"+cat+".json", 'w') as f:
                 json.dump(ip, f, indent=2)
         if resolve:
