@@ -162,7 +162,7 @@ class Base:
             count = count +1
 
     def xenforo(self,cat,site):
-        currentOffers,count = "",0
+        currentOffers,count = "",1
         dataDir,scans = os.getcwd()+"/src/"+site+"/"+cat+"/",0
 
         print("Checking",site)
