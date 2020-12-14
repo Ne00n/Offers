@@ -147,11 +147,13 @@ class Data:
                 for entry in ips:
                     ip[post['user']].append(entry)
                     ip[post['user']] = list(set(ip[post['user']]))
+                    ip[post['user']].sort()
             elif ips:
                 ip[post['user']] = []
                 for entry in ips:
                     ip[post['user']].append(entry)
                     ip[post['user']] = list(set(ip[post['user']]))
+                    ip[post['user']].sort()
             data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
         data = sorted(data, key=lambda k: k['id'],  reverse=True)
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
