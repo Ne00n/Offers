@@ -26,6 +26,7 @@ def generate(slow=False):
     Update.getUrls("offers","lowendtalk")
     Update.getUrls("shared-hosting-offers","lowendtalk")
     Update.getUrls("posts","lowendbox")
+    Update.getUrls("offers","hostedtalk.net")
 
 param = sys.argv
 if len(param) == 1:
