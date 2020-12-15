@@ -177,6 +177,9 @@ class Base:
             print("Getting",cat)
             response = self.fetch("https:/"+site+"/forums/"+cat+"/page-"+str(count))
             if response == False: return False
+            if self.checkCF(response):
+                print("Failed to bypass CF")
+                return False
 
             urls = re.findall('<li><a href="\/members\/([a-z-]*)\.[0-9]+.*?href="(\/threads\/.*?.\.([0-9]+))\/"',response, re.MULTILINE | re.DOTALL)
             for url in urls:
