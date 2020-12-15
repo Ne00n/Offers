@@ -95,6 +95,7 @@ class Data:
                 url = url.replace("_","")
                 if resolve:
                     domain = tldextract.extract(url).domain + "." + tldextract.extract(url).suffix
+                    domain = domain.lower()
                     if self.filterUrls(domain):
                         continue
                     if domain in filtered:
