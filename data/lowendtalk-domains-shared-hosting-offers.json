@@ -6,18 +6,20 @@
           "ben.ns.cloudflare.com.",
           "jill.ns.cloudflare.com."
         ],
-        "a": [
-          "209.141.51.34"
-        ]
+        "a": {
+          "209.141.51.34": [
+            "s2.fastadminpanel.co."
+          ]
+        }
       },
       "inspiresolutions.co": {
         "ns": [
           "ben.ns.cloudflare.com.",
           "jill.ns.cloudflare.com."
         ],
-        "a": [
-          "209.141.47.32"
-        ]
+        "a": {
+          "209.141.47.32": false
+        }
       }
     }
   },
@@ -29,20 +31,22 @@
           "pdns2.mxroute.com.",
           "pdns3.mxroute.com."
         ],
-        "a": [
-          "173.199.122.39"
-        ]
+        "a": {
+          "173.199.122.39": [
+            "webstack.mxroute.com."
+          ]
+        }
       },
       "webhorizon.in": {
         "ns": [
           "carl.ns.cloudflare.com.",
           "tess.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.184.199",
-          "104.27.185.199",
-          "172.67.173.1"
-        ]
+        "a": {
+          "104.27.184.199": false,
+          "104.27.185.199": false,
+          "172.67.173.1": false
+        }
       }
     }
   },
@@ -53,9 +57,9 @@
           "anna.ns.cloudflare.com.",
           "kip.ns.cloudflare.com."
         ],
-        "a": [
-          "91.199.118.187"
-        ]
+        "a": {
+          "91.199.118.187": false
+        }
       }
     }
   },
@@ -66,22 +70,24 @@
           "gerardo.ns.cloudflare.com.",
           "sydney.ns.cloudflare.com."
         ],
-        "a": [
-          "136.243.36.57"
-        ]
+        "a": {
+          "136.243.36.57": [
+            "web.duelhost.dk."
+          ]
+        }
       },
       "medium.com": {
         "ns": [
           "alina.ns.cloudflare.com.",
           "kip.ns.cloudflare.com."
         ],
-        "a": [
-          "104.16.120.127",
-          "104.16.121.127",
-          "104.16.122.127",
-          "104.16.123.127",
-          "104.16.124.127"
-        ]
+        "a": {
+          "104.16.120.127": false,
+          "104.16.121.127": false,
+          "104.16.122.127": false,
+          "104.16.123.127": false,
+          "104.16.124.127": false
+        }
       }
     }
   },
@@ -92,20 +98,20 @@
           "adrian.ns.cloudflare.com.",
           "mario.ns.cloudflare.com."
         ],
-        "a": [
-          "89.45.35.7"
-        ]
+        "a": {
+          "89.45.35.7": false
+        }
       },
       "lowendtalk.com": {
         "ns": [
           "valentin.ns.cloudflare.com.",
           "walk.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.8.4",
-          "104.26.9.4",
-          "172.67.68.9"
-        ]
+        "a": {
+          "104.26.8.4": false,
+          "104.26.9.4": false,
+          "172.67.68.9": false
+        }
       }
     }
   },
@@ -116,11 +122,11 @@
           "leah.ns.cloudflare.com.",
           "sid.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.158.79",
-          "104.27.159.79",
-          "172.67.206.53"
-        ]
+        "a": {
+          "104.27.158.79": false,
+          "104.27.159.79": false,
+          "172.67.206.53": false
+        }
       },
       "cloudflare.com": {
         "ns": [
@@ -130,35 +136,37 @@
           "ns6.cloudflare.com.",
           "ns7.cloudflare.com."
         ],
-        "a": [
-          "104.16.132.229",
-          "104.16.133.229"
-        ]
+        "a": {
+          "104.16.132.229": false,
+          "104.16.133.229": false
+        }
       }
     }
   },
   "Arch": {
     "urls": {
+      "archhosting.net": {
+        "ns": [
+          "liv.ns.cloudflare.com.",
+          "micah.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.28.24.214": false,
+          "104.28.25.214": false,
+          "172.67.167.240": false
+        }
+      },
       "arch.ai": {
         "ns": [
           "ns1.101domain.com.",
           "ns2.101domain.com.",
           "ns5.101domain.com."
         ],
-        "a": [
-          "52.60.87.163"
-        ]
-      },
-      "archhosting.net": {
-        "ns": [
-          "liv.ns.cloudflare.com.",
-          "micah.ns.cloudflare.com."
-        ],
-        "a": [
-          "104.28.24.214",
-          "104.28.25.214",
-          "172.67.167.240"
-        ]
+        "a": {
+          "52.60.87.163": [
+            "ec2-52-60-87-163.ca-central-1.compute.amazonaws.com."
+          ]
+        }
       }
     }
   },
@@ -169,22 +177,22 @@
           "ivan.ns.cloudflare.com.",
           "lady.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.74.36",
-          "104.31.75.36",
-          "172.67.215.240"
-        ]
+        "a": {
+          "104.31.74.36": false,
+          "104.31.75.36": false,
+          "172.67.215.240": false
+        }
       },
       "subnetlabs.com": {
         "ns": [
           "ivan.ns.cloudflare.com.",
           "lady.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.88.35",
-          "104.31.89.35",
-          "172.67.216.190"
-        ]
+        "a": {
+          "104.31.88.35": false,
+          "104.31.89.35": false,
+          "172.67.216.190": false
+        }
       }
     }
   },
@@ -198,9 +206,11 @@
           "dns4.name-services.com.",
           "dns5.name-services.com."
         ],
-        "a": [
-          "3.11.98.162"
-        ]
+        "a": {
+          "3.11.98.162": [
+            "ec2-3-11-98-162.eu-west-2.compute.amazonaws.com."
+          ]
+        }
       }
     }
   },
@@ -211,9 +221,11 @@
           "pat.ns.cloudflare.com.",
           "rick.ns.cloudflare.com."
         ],
-        "a": [
-          "139.59.14.118"
-        ]
+        "a": {
+          "139.59.14.118": [
+            "qovic.com."
+          ]
+        }
       }
     }
   },
@@ -221,7 +233,7 @@
     "urls": {
       "dranzel.com": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -232,9 +244,9 @@
           "fay.ns.cloudflare.com.",
           "west.ns.cloudflare.com."
         ],
-        "a": [
-          "51.75.172.49"
-        ]
+        "a": {
+          "51.75.172.49": false
+        }
       }
     }
   },
@@ -245,20 +257,20 @@
           "ns1.couchmonkeymedia.com.",
           "ns2.couchmonkeymedia.com."
         ],
-        "a": [
-          "194.180.179.186"
-        ]
+        "a": {
+          "194.180.179.186": false
+        }
       },
       "lowendtalk.com": {
         "ns": [
           "valentin.ns.cloudflare.com.",
           "walk.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.8.4",
-          "104.26.9.4",
-          "172.67.68.9"
-        ]
+        "a": {
+          "104.26.8.4": false,
+          "104.26.9.4": false,
+          "172.67.68.9": false
+        }
       }
     }
   },
@@ -269,11 +281,11 @@
           "kate.ns.cloudflare.com.",
           "ray.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.142.203",
-          "104.27.143.203",
-          "172.67.152.122"
-        ]
+        "a": {
+          "104.27.142.203": false,
+          "104.27.143.203": false,
+          "172.67.152.122": false
+        }
       }
     }
   },
@@ -286,9 +298,11 @@
           "ns4.quadcone.com.",
           "ns5.quadcone.com."
         ],
-        "a": [
-          "173.82.54.11"
-        ]
+        "a": {
+          "173.82.54.11": [
+            "11-54-82-173-dedicated.multacom.com."
+          ]
+        }
       }
     }
   },
@@ -299,14 +313,26 @@
           "ns1.mytrafficmanagement.com.",
           "ns2.mytrafficmanagement.com."
         ],
-        "a": [
-          "198.58.118.167",
-          "45.33.2.79",
-          "45.33.23.183",
-          "45.56.79.23",
-          "45.79.19.196",
-          "96.126.123.244"
-        ]
+        "a": {
+          "198.58.118.167": [
+            "li647-167.members.linode.com."
+          ],
+          "45.33.2.79": [
+            "li956-79.members.linode.com."
+          ],
+          "45.33.23.183": [
+            "li977-183.members.linode.com."
+          ],
+          "45.56.79.23": [
+            "li929-23.members.linode.com."
+          ],
+          "45.79.19.196": [
+            "li1118-196.members.linode.com."
+          ],
+          "96.126.123.244": [
+            "li372-244.members.linode.com."
+          ]
+        }
       }
     }
   },
@@ -317,9 +343,11 @@
           "amy.ns.cloudflare.com.",
           "sid.ns.cloudflare.com."
         ],
-        "a": [
-          "69.12.86.181"
-        ]
+        "a": {
+          "69.12.86.181": [
+            "cycloneservers.net."
+          ]
+        }
       }
     }
   },
@@ -330,18 +358,22 @@
           "ns1.dewlance.com.",
           "ns2.dewlance.com."
         ],
-        "a": [
-          "51.161.18.79"
-        ]
+        "a": {
+          "51.161.18.79": [
+            "dewlance.com."
+          ]
+        }
       },
       "zeromb.com": {
         "ns": [
           "ns1.zeromb.com.",
           "ns2.zeromb.com."
         ],
-        "a": [
-          "162.252.87.236"
-        ]
+        "a": {
+          "162.252.87.236": [
+            "one.decentserver.com."
+          ]
+        }
       }
     }
   },
@@ -352,11 +384,11 @@
           "iris.ns.cloudflare.com.",
           "ram.ns.cloudflare.com."
         ],
-        "a": [
-          "104.20.73.215",
-          "104.20.74.215",
-          "172.67.0.62"
-        ]
+        "a": {
+          "104.20.73.215": false,
+          "104.20.74.215": false,
+          "172.67.0.62": false
+        }
       },
       "rosenhost.com": {
         "ns": [
@@ -365,18 +397,20 @@
           "dns5.cloudns.net.",
           "dns6.cloudns.net."
         ],
-        "a": [
-          "64.111.26.32"
-        ]
+        "a": {
+          "64.111.26.32": [
+            "mail3.bzybhosting.com."
+          ]
+        }
       },
       "rosenhost.info": {
         "ns": [
           "ns1.cocoaserver.com.",
           "ns2.cocoaserver.com."
         ],
-        "a": [
-          "210.224.176.76"
-        ]
+        "a": {
+          "210.224.176.76": false
+        }
       }
     }
   },
@@ -387,9 +421,11 @@
           "ns1.undeveloped.com.",
           "ns2.undeveloped.com."
         ],
-        "a": [
-          "52.58.78.16"
-        ]
+        "a": {
+          "52.58.78.16": [
+            "ec2-52-58-78-16.eu-central-1.compute.amazonaws.com."
+          ]
+        }
       }
     }
   },
@@ -400,9 +436,11 @@
           "ns1.resellways.com.",
           "ns2.resellways.com."
         ],
-        "a": [
-          "96.44.129.243"
-        ]
+        "a": {
+          "96.44.129.243": [
+            "96.44.129.243.static.quadranet.com."
+          ]
+        }
       }
     }
   },
@@ -413,18 +451,20 @@
           "ns1.hostlease.com.",
           "ns2.hostlease.com."
         ],
-        "a": [
-          "137.74.20.60"
-        ]
+        "a": {
+          "137.74.20.60": [
+            "ip60.ip-137-74-20.eu."
+          ]
+        }
       },
       "hostlease.com": {
         "ns": [
           "label.ns7.co.",
           "white.ns6.co."
         ],
-        "a": [
-          "37.187.95.163"
-        ]
+        "a": {
+          "37.187.95.163": false
+        }
       }
     }
   },
@@ -437,9 +477,11 @@
           "ns3.server-protocol.com.",
           "ns4.server-protocol.com."
         ],
-        "a": [
-          "192.169.93.18"
-        ]
+        "a": {
+          "192.169.93.18": [
+            "xavier.forwardweb.net."
+          ]
+        }
       }
     }
   },
@@ -450,11 +492,11 @@
           "aspen.ns.cloudflare.com.",
           "brodie.ns.cloudflare.com."
         ],
-        "a": [
-          "104.24.98.64",
-          "104.24.99.64",
-          "172.67.209.174"
-        ]
+        "a": {
+          "104.24.98.64": false,
+          "104.24.99.64": false,
+          "172.67.209.174": false
+        }
       }
     }
   },
@@ -465,11 +507,11 @@
           "beth.ns.cloudflare.com.",
           "max.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.78.57",
-          "104.31.79.57",
-          "172.67.210.126"
-        ]
+        "a": {
+          "104.31.78.57": false,
+          "104.31.79.57": false,
+          "172.67.210.126": false
+        }
       }
     }
   },
@@ -480,11 +522,11 @@
           "barbara.ns.cloudflare.com.",
           "dion.ns.cloudflare.com."
         ],
-        "a": [
-          "104.28.10.99",
-          "104.28.11.99",
-          "172.67.134.50"
-        ]
+        "a": {
+          "104.28.10.99": false,
+          "104.28.11.99": false,
+          "172.67.134.50": false
+        }
       }
     }
   },
@@ -495,9 +537,11 @@
           "ns1.websitelayer.com.",
           "ns2.websitelayer.com."
         ],
-        "a": [
-          "185.52.53.247"
-        ]
+        "a": {
+          "185.52.53.247": [
+            "eu-ams1.websitelayer.com."
+          ]
+        }
       }
     }
   },
@@ -508,9 +552,11 @@
           "dns200.anycast.me.",
           "ns200.anycast.me."
         ],
-        "a": [
-          "54.37.240.76"
-        ]
+        "a": {
+          "54.37.240.76": [
+            "ip76.ip-54-37-240.eu."
+          ]
+        }
       },
       "hostdochosting.co.uk": {
         "ns": [
@@ -519,9 +565,11 @@
           "ns1065.ui-dns.com.",
           "ns1126.ui-dns.biz."
         ],
-        "a": [
-          "51.89.178.76"
-        ]
+        "a": {
+          "51.89.178.76": [
+            "ip76.ip-51-89-178.eu."
+          ]
+        }
       }
     }
   },
@@ -529,7 +577,7 @@
     "urls": {
       "hostgliders.com": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -537,16 +585,18 @@
     "urls": {
       "hhlnk.pw": {
         "ns": false,
-        "a": false
+        "a": {}
       },
       "hosthoney.com": {
         "ns": [
           "ns1.hosthoney.com.",
           "ns2.hosthoney.com."
         ],
-        "a": [
-          "192.111.154.26"
-        ]
+        "a": {
+          "192.111.154.26": [
+            "ds.hosthoney.com."
+          ]
+        }
       }
     }
   },
@@ -557,9 +607,11 @@
           "ns1.hostmantis.com.",
           "ns2.hostmantis.com."
         ],
-        "a": [
-          "51.81.71.191"
-        ]
+        "a": {
+          "51.81.71.191": [
+            "hostmantis.com."
+          ]
+        }
       }
     }
   },
@@ -570,9 +622,9 @@
           "hank.ns.cloudflare.com.",
           "zara.ns.cloudflare.com."
         ],
-        "a": [
-          "51.143.153.239"
-        ]
+        "a": {
+          "51.143.153.239": false
+        }
       }
     }
   },
@@ -583,11 +635,11 @@
           "chuck.ns.cloudflare.com.",
           "vita.ns.cloudflare.com."
         ],
-        "a": [
-          "104.24.126.82",
-          "104.24.127.82",
-          "172.67.205.107"
-        ]
+        "a": {
+          "104.24.126.82": false,
+          "104.24.127.82": false,
+          "172.67.205.107": false
+        }
       },
       "t.me": {
         "ns": [
@@ -596,9 +648,9 @@
           "ns-cloud-b3.googledomains.com.",
           "ns-cloud-b4.googledomains.com."
         ],
-        "a": [
-          "149.154.167.99"
-        ]
+        "a": {
+          "149.154.167.99": false
+        }
       }
     }
   },
@@ -609,18 +661,11 @@
           "ns1.hostslayer.com.",
           "ns2.hostslayer.com."
         ],
-        "a": [
-          "103.214.4.2"
-        ]
-      },
-      "HostSlayer.com": {
-        "ns": [
-          "ns1.HostSlayer.com.",
-          "ns2.HostSlayer.com."
-        ],
-        "a": [
-          "103.214.4.2"
-        ]
+        "a": {
+          "103.214.4.2": [
+            "cpanel.hostslayer.com."
+          ]
+        }
       }
     }
   },
@@ -631,11 +676,11 @@
           "elsa.ns.cloudflare.com.",
           "max.ns.cloudflare.com."
         ],
-        "a": [
-          "104.28.16.142",
-          "104.28.17.142",
-          "172.67.190.55"
-        ]
+        "a": {
+          "104.28.16.142": false,
+          "104.28.17.142": false,
+          "172.67.190.55": false
+        }
       }
     }
   },
@@ -646,9 +691,9 @@
           "ns1.bodis.com.",
           "ns2.bodis.com."
         ],
-        "a": [
-          "199.59.242.153"
-        ]
+        "a": {
+          "199.59.242.153": false
+        }
       }
     }
   },
@@ -659,42 +704,44 @@
           "eva.ns.cloudflare.com.",
           "phil.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.2.86",
-          "104.26.3.86",
-          "172.67.68.44"
-        ]
+        "a": {
+          "104.26.2.86": false,
+          "104.26.3.86": false,
+          "172.67.68.44": false
+        }
       },
       "hostkoala.com": {
         "ns": [
           "houston.ns.cloudflare.com.",
           "sreeni.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.72.116",
-          "104.31.73.116",
-          "172.67.146.3"
-        ]
+        "a": {
+          "104.31.72.116": false,
+          "104.31.73.116": false,
+          "172.67.146.3": false
+        }
       },
       "lowendtalk.com": {
         "ns": [
           "valentin.ns.cloudflare.com.",
           "walk.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.8.4",
-          "104.26.9.4",
-          "172.67.68.9"
-        ]
+        "a": {
+          "104.26.8.4": false,
+          "104.26.9.4": false,
+          "172.67.68.9": false
+        }
       },
       "hostsearch.com": {
         "ns": [
           "ns2.hostsearch.com.",
           "ns3.hostsearch.com."
         ],
-        "a": [
-          "184.164.134.94"
-        ]
+        "a": {
+          "184.164.134.94": [
+            "mail.hostsearch.com."
+          ]
+        }
       }
     }
   },
@@ -705,18 +752,22 @@
           "ns21.ownmyserver.com.",
           "ns22.ownmyserver.com."
         ],
-        "a": [
-          "144.217.75.61"
-        ]
+        "a": {
+          "144.217.75.61": [
+            "grand.ownmyserver.com."
+          ]
+        }
       },
       "hostripples.com": {
         "ns": [
           "marty.ns.cloudflare.com.",
           "vera.ns.cloudflare.com."
         ],
-        "a": [
-          "198.27.88.109"
-        ]
+        "a": {
+          "198.27.88.109": [
+            "hostripples.com."
+          ]
+        }
       }
     }
   },
@@ -727,14 +778,20 @@
           "evan.ns.cloudflare.com.",
           "fay.ns.cloudflare.com."
         ],
-        "a": [
-          "64.225.34.246"
-        ]
+        "a": {
+          "137.220.36.137": [
+            "137.220.36.137.vultr.com."
+          ]
+        }
       }
     }
   },
   "IKIHOST": {
     "urls": {
+      "fipaper.com": {
+        "ns": false,
+        "a": {}
+      },
       "wpfastest.com": {
         "ns": [
           "nsg1.namebrightdns.com.",
@@ -742,56 +799,70 @@
         ],
         "a": false
       },
-      "fipaper.com": {
-        "ns": false,
-        "a": false
-      },
       "ikihost.com": {
         "ns": [
           "ns1.serverismaya.com.",
           "ns2.serverismaya.com."
         ],
-        "a": [
-          "107.189.161.190"
-        ]
+        "a": {
+          "107.189.161.190": [
+            "ikihost.com."
+          ]
+        }
       },
       "getsuperblog.com": {
         "ns": [
           "ns1.milesmx.com.",
           "ns2.milesmx.com."
         ],
-        "a": [
-          "162.210.196.172"
-        ]
+        "a": {
+          "162.210.196.173": false
+        }
       }
     }
   },
   "Ikoula": {
     "urls": {
+      "ikoula.wiki": {
+        "ns": [
+          "ns4.ikoula.com.",
+          "ns5.ikoula.com."
+        ],
+        "a": {
+          "109.238.9.3": [
+            "ikcacheng03.ikoula.com."
+          ],
+          "109.238.9.4": [
+            "ikcacheng04.ikoula.com."
+          ],
+          "178.170.118.47": [
+            "ikcacheng01.ikoula.com."
+          ],
+          "80.93.86.250": [
+            "ikcacheng02.ikoula.com."
+          ]
+        }
+      },
       "ikoula.com": {
         "ns": [
           "ns1.ikoula.fr.",
           "ns2.ikoula.fr.",
           "ns3.ikoula.fr."
         ],
-        "a": [
-          "109.238.9.3",
-          "109.238.9.4",
-          "178.170.118.47",
-          "80.93.86.250"
-        ]
-      },
-      "ikoula.wiki": {
-        "ns": [
-          "ns4.ikoula.com.",
-          "ns5.ikoula.com."
-        ],
-        "a": [
-          "109.238.9.3",
-          "109.238.9.4",
-          "178.170.118.47",
-          "80.93.86.250"
-        ]
+        "a": {
+          "109.238.9.3": [
+            "ikcacheng03.ikoula.com."
+          ],
+          "109.238.9.4": [
+            "ikcacheng04.ikoula.com."
+          ],
+          "178.170.118.47": [
+            "ikcacheng01.ikoula.com."
+          ],
+          "80.93.86.250": [
+            "ikcacheng02.ikoula.com."
+          ]
+        }
       }
     }
   },
@@ -804,20 +875,20 @@
           "ethweb.mercury.orderbox-dns.com.",
           "ethweb.venus.orderbox-dns.com."
         ],
-        "a": [
-          "146.247.49.24"
-        ]
+        "a": {
+          "146.247.49.24": false
+        }
       },
       "uptimerobot.com": {
         "ns": [
           "cruz.ns.cloudflare.com.",
           "darwin.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.14.202",
-          "104.26.15.202",
-          "172.67.71.214"
-        ]
+        "a": {
+          "104.26.14.202": false,
+          "104.26.15.202": false,
+          "172.67.71.214": false
+        }
       }
     }
   },
@@ -828,9 +899,9 @@
           "jm1.dns.com.",
           "jm2.dns.com."
         ],
-        "a": [
-          "156.239.91.131"
-        ]
+        "a": {
+          "156.239.91.131": false
+        }
       }
     }
   },
@@ -841,9 +912,11 @@
           "phil.ns.cloudflare.com.",
           "ruth.ns.cloudflare.com."
         ],
-        "a": [
-          "62.141.45.12"
-        ]
+        "a": {
+          "62.141.45.12": [
+            "vps2037463.bwys.net."
+          ]
+        }
       }
     }
   },
@@ -856,9 +929,11 @@
           "dns5.geo.baseserv.com.",
           "dns6.geo.baseserv.com."
         ],
-        "a": [
-          "52.16.27.129"
-        ]
+        "a": {
+          "52.16.27.129": [
+            "ec2-52-16-27-129.eu-west-1.compute.amazonaws.com."
+          ]
+        }
       },
       "b-cdn.uk": {
         "ns": [
@@ -867,9 +942,11 @@
           "dns5.cloudns.net.",
           "dns6.cloudns.net."
         ],
-        "a": [
-          "185.42.223.103"
-        ]
+        "a": {
+          "185.42.223.103": [
+            "mx.megatradeperu.net."
+          ]
+        }
       },
       "baseserv.com": {
         "ns": [
@@ -878,9 +955,11 @@
           "dns5.geo.baseserv.com.",
           "dns6.geo.baseserv.com."
         ],
-        "a": [
-          "213.184.85.10"
-        ]
+        "a": {
+          "213.184.85.10": [
+            "nlcp01.hosting4real.net."
+          ]
+        }
       },
       "giphy.com": {
         "ns": [
@@ -889,12 +968,12 @@
           "ns-688.awsdns-22.net.",
           "ns-8.awsdns-01.com."
         ],
-        "a": [
-          "151.101.1.185",
-          "151.101.129.185",
-          "151.101.193.185",
-          "151.101.65.185"
-        ]
+        "a": {
+          "151.101.1.185": false,
+          "151.101.129.185": false,
+          "151.101.193.185": false,
+          "151.101.65.185": false
+        }
       }
     }
   },
@@ -905,18 +984,18 @@
           "dns1.registrar-servers.com.",
           "dns2.registrar-servers.com."
         ],
-        "a": [
-          "199.167.31.206"
-        ]
+        "a": {
+          "199.167.31.206": false
+        }
       },
       "websitehydra.com": {
         "ns": [
           "dns1.registrar-servers.com.",
           "dns2.registrar-servers.com."
         ],
-        "a": [
-          "199.167.31.206"
-        ]
+        "a": {
+          "199.167.31.206": false
+        }
       }
     }
   },
@@ -929,9 +1008,11 @@
           "ns3.private-nameserver.net.",
           "ns4.private-nameserver.net."
         ],
-        "a": [
-          "144.91.97.167"
-        ]
+        "a": {
+          "144.91.97.167": [
+            "de1.limitlesshosting.xyz."
+          ]
+        }
       }
     }
   },
@@ -942,11 +1023,11 @@
           "beth.ns.cloudflare.com.",
           "seth.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.88.183",
-          "104.31.89.183",
-          "172.67.150.178"
-        ]
+        "a": {
+          "104.31.88.183": false,
+          "104.31.89.183": false,
+          "172.67.150.178": false
+        }
       }
     }
   },
@@ -959,9 +1040,11 @@
           "ns3.stackdns.com.",
           "ns4.stackdns.com."
         ],
-        "a": [
-          "185.151.30.146"
-        ]
+        "a": {
+          "185.151.30.146": [
+            "185-151-30-146.ptr4.stackcp.net."
+          ]
+        }
       }
     }
   },
@@ -972,9 +1055,11 @@
           "ns1.validnameserver.com.",
           "ns2.validnameserver.com."
         ],
-        "a": [
-          "198.178.126.32"
-        ]
+        "a": {
+          "198.178.126.32": [
+            "jaguar.tecria.com."
+          ]
+        }
       }
     }
   },
@@ -982,7 +1067,7 @@
     "urls": {
       "maxed-media.com": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -993,11 +1078,11 @@
           "nash.ns.cloudflare.com.",
           "pam.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.6.238",
-          "104.26.7.238",
-          "172.67.74.74"
-        ]
+        "a": {
+          "104.26.6.238": false,
+          "104.26.7.238": false,
+          "172.67.74.74": false
+        }
       }
     }
   },
@@ -1008,9 +1093,11 @@
           "ivy.ns.cloudflare.com.",
           "lee.ns.cloudflare.com."
         ],
-        "a": [
-          "159.69.83.21"
-        ]
+        "a": {
+          "159.69.83.21": [
+            "myw.pt."
+          ]
+        }
       }
     }
   },
@@ -1021,11 +1108,11 @@
           "jeremy.ns.cloudflare.com.",
           "val.ns.cloudflare.com."
         ],
-        "a": [
-          "104.28.30.10",
-          "104.28.31.10",
-          "172.67.128.142"
-        ]
+        "a": {
+          "104.28.30.10": false,
+          "104.28.31.10": false,
+          "172.67.128.142": false
+        }
       }
     }
   },
@@ -1036,11 +1123,11 @@
           "beth.ns.cloudflare.com.",
           "owen.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.92.220",
-          "104.31.93.220",
-          "172.67.154.28"
-        ]
+        "a": {
+          "104.31.92.220": false,
+          "104.31.93.220": false,
+          "172.67.154.28": false
+        }
       }
     }
   },
@@ -1051,9 +1138,11 @@
           "ns1.renewyourname.net.",
           "ns2.renewyourname.net."
         ],
-        "a": [
-          "64.98.145.30"
-        ]
+        "a": {
+          "64.98.145.30": [
+            "url.hover.com."
+          ]
+        }
       }
     }
   },
@@ -1064,9 +1153,11 @@
           "ns3.wehostwebserver.com.",
           "ns4.wehostwebserver.com."
         ],
-        "a": [
-          "88.99.61.249"
-        ]
+        "a": {
+          "88.99.61.249": [
+            "obhost.net."
+          ]
+        }
       }
     }
   },
@@ -1077,9 +1168,11 @@
           "ns1.wswcp.net.",
           "ns2.wswcp.net."
         ],
-        "a": [
-          "67.55.107.7"
-        ]
+        "a": {
+          "67.55.107.7": [
+            "web-01.onehost.com."
+          ]
+        }
       }
     }
   },
@@ -1090,11 +1183,11 @@
           "meera.ns.cloudflare.com.",
           "terry.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.72.74",
-          "104.31.73.74",
-          "172.67.142.156"
-        ]
+        "a": {
+          "104.31.72.74": false,
+          "104.31.73.74": false,
+          "172.67.142.156": false
+        }
       }
     }
   },
@@ -1102,18 +1195,18 @@
     "urls": {
       "piohost.co.uk": {
         "ns": false,
-        "a": false
+        "a": {}
       },
       "mailchannels.com": {
         "ns": [
           "fay.ns.cloudflare.com.",
           "ray.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.12.172",
-          "104.26.13.172",
-          "172.67.68.130"
-        ]
+        "a": {
+          "104.26.12.172": false,
+          "104.26.13.172": false,
+          "172.67.68.130": false
+        }
       }
     }
   },
@@ -1126,9 +1219,11 @@
           "ns-md.pulsedmedia.com.",
           "ns-str.pulsedmedia.com."
         ],
-        "a": [
-          "188.165.244.154"
-        ]
+        "a": {
+          "188.165.244.154": [
+            "web2.pulsedmedia.com."
+          ]
+        }
       }
     }
   },
@@ -1139,9 +1234,9 @@
           "hope.ns.cloudflare.com.",
           "matt.ns.cloudflare.com."
         ],
-        "a": [
-          "103.11.147.109"
-        ]
+        "a": {
+          "103.11.147.109": false
+        }
       }
     }
   },
@@ -1153,18 +1248,11 @@
           "ns2.namesystem.se.",
           "ns3.namesystem.se."
         ],
-        "a": [
-          "46.246.105.25"
-        ]
-      },
-      "vikinglayer.com": {
-        "ns": [
-          "dina.ns.cloudflare.com.",
-          "phil.ns.cloudflare.com."
-        ],
-        "a": [
-          "192.138.211.2"
-        ]
+        "a": {
+          "46.246.105.25": [
+            "web.portlane.com."
+          ]
+        }
       },
       "t.me": {
         "ns": [
@@ -1173,18 +1261,29 @@
           "ns-cloud-b3.googledomains.com.",
           "ns-cloud-b4.googledomains.com."
         ],
-        "a": [
-          "149.154.167.99"
-        ]
+        "a": {
+          "149.154.167.99": false
+        }
       },
       "drserver.net": {
         "ns": [
           "dina.ns.cloudflare.com.",
           "phil.ns.cloudflare.com."
         ],
-        "a": [
-          "144.217.163.196"
-        ]
+        "a": {
+          "144.217.163.196": [
+            "portal.drserver.net."
+          ]
+        }
+      },
+      "vikinglayer.com": {
+        "ns": [
+          "dina.ns.cloudflare.com.",
+          "phil.ns.cloudflare.com."
+        ],
+        "a": {
+          "192.138.211.2": false
+        }
       }
     }
   },
@@ -1192,18 +1291,18 @@
     "urls": {
       "rocketrix.com": {
         "ns": false,
-        "a": false
+        "a": {}
       },
       "lowendtalk.com": {
         "ns": [
           "valentin.ns.cloudflare.com.",
           "walk.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.8.4",
-          "104.26.9.4",
-          "172.67.68.9"
-        ]
+        "a": {
+          "104.26.8.4": false,
+          "104.26.9.4": false,
+          "172.67.68.9": false
+        }
       }
     }
   },
@@ -1214,9 +1313,11 @@
           "ns1.gnuhost.uk.",
           "ns2.gnuhost.uk."
         ],
-        "a": [
-          "139.162.243.167"
-        ]
+        "a": {
+          "139.162.243.167": [
+            "gnu-host.com."
+          ]
+        }
       }
     }
   },
@@ -1227,11 +1328,11 @@
           "elaine.ns.cloudflare.com.",
           "simon.ns.cloudflare.com."
         ],
-        "a": [
-          "104.18.42.161",
-          "104.18.43.161",
-          "172.67.184.84"
-        ]
+        "a": {
+          "104.18.42.161": false,
+          "104.18.43.161": false,
+          "172.67.184.84": false
+        }
       }
     }
   },
@@ -1242,9 +1343,11 @@
           "dns1.hostcram.com.",
           "dns2.hostcram.com."
         ],
-        "a": [
-          "107.173.40.120"
-        ]
+        "a": {
+          "107.173.40.120": [
+            "earth.cramhost.com."
+          ]
+        }
       },
       "m.me": {
         "ns": [
@@ -1253,18 +1356,22 @@
           "c.ns.facebook.com.",
           "d.ns.facebook.com."
         ],
-        "a": [
-          "31.13.70.1"
-        ]
+        "a": {
+          "69.171.250.15": [
+            "edge-star-shv-01-any2.facebook.com."
+          ]
+        }
       },
       "hostcram.com": {
         "ns": [
           "coco.ns.cloudflare.com.",
           "sam.ns.cloudflare.com."
         ],
-        "a": [
-          "107.173.40.122"
-        ]
+        "a": {
+          "107.173.40.122": [
+            "hostcram.com."
+          ]
+        }
       },
       "wy.gov": {
         "ns": [
@@ -1275,9 +1382,9 @@
           "ns14.dnsmadeeasy.com.",
           "ns15.dnsmadeeasy.com."
         ],
-        "a": [
-          "192.146.215.91"
-        ]
+        "a": {
+          "192.146.215.91": false
+        }
       }
     }
   },
@@ -1288,11 +1395,11 @@
           "micah.ns.cloudflare.com.",
           "robin.ns.cloudflare.com."
         ],
-        "a": [
-          "104.28.26.37",
-          "104.28.27.37",
-          "172.67.130.83"
-        ]
+        "a": {
+          "104.28.26.37": false,
+          "104.28.27.37": false,
+          "172.67.130.83": false
+        }
       }
     }
   },
@@ -1303,43 +1410,11 @@
           "alan.ns.cloudflare.com.",
           "ingrid.ns.cloudflare.com."
         ],
-        "a": [
-          "107.189.3.7"
-        ]
-      },
-      "smallweb.net": {
-        "ns": [
-          "sid.ns.cloudflare.com.",
-          "vita.ns.cloudflare.com."
-        ],
-        "a": [
-          "107.189.10.160"
-        ]
-      },
-      "lowendspirit.com": {
-        "ns": [
-          "leah.ns.cloudflare.com.",
-          "sid.ns.cloudflare.com."
-        ],
-        "a": [
-          "104.27.136.228",
-          "104.27.137.228",
-          "172.67.164.169"
-        ]
-      },
-      "cee.host": {
-        "ns": false,
-        "a": false
-      },
-      "makemykb.com": {
-        "ns": [
-          "ns1.dnsowl.com.",
-          "ns2.dnsowl.com.",
-          "ns3.dnsowl.com."
-        ],
-        "a": [
-          "195.201.136.183"
-        ]
+        "a": {
+          "107.189.3.7": [
+            "shared4.webpanelaccess.uk."
+          ]
+        }
       },
       "twimg.com": {
         "ns": [
@@ -1356,28 +1431,53 @@
         ],
         "a": false
       },
+      "smallweb.net": {
+        "ns": [
+          "sid.ns.cloudflare.com.",
+          "vita.ns.cloudflare.com."
+        ],
+        "a": {
+          "107.189.10.160": false
+        }
+      },
+      "lowendspirit.com": {
+        "ns": [
+          "leah.ns.cloudflare.com.",
+          "sid.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.27.136.228": false,
+          "104.27.137.228": false,
+          "172.67.164.169": false
+        }
+      },
+      "michl.xyz": {
+        "ns": false,
+        "a": {}
+      },
+      "cee.host": {
+        "ns": false,
+        "a": {}
+      },
       "cloud2z.com": {
         "ns": [
           "ns1.dnsowl.com.",
           "ns2.dnsowl.com.",
           "ns3.dnsowl.com."
         ],
-        "a": [
-          "45.10.20.120"
-        ]
+        "a": {
+          "45.10.20.120": false
+        }
       },
-      "michl.xyz": {
-        "ns": false,
-        "a": false
-      },
-      "SmallWeb.net": {
+      "makemykb.com": {
         "ns": [
-          "sid.ns.cloudflare.com.",
-          "vita.ns.cloudflare.com."
+          "ns1.dnsowl.com.",
+          "ns2.dnsowl.com.",
+          "ns3.dnsowl.com."
         ],
-        "a": [
-          "107.189.10.160"
-        ]
+        "a": {
+          "195.201.136.183": false
+        }
       }
     }
   },
@@ -1388,11 +1488,11 @@
           "april.ns.cloudflare.com.",
           "coby.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.72.107",
-          "104.31.73.107",
-          "172.67.199.211"
-        ]
+        "a": {
+          "104.31.72.107": false,
+          "104.31.73.107": false,
+          "172.67.199.211": false
+        }
       }
     }
   },
@@ -1400,7 +1500,7 @@
     "urls": {
       "zetawebs.com": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -1411,9 +1511,9 @@
           "dns1.registrar-servers.com.",
           "dns2.registrar-servers.com."
         ],
-        "a": [
-          "162.244.92.159"
-        ]
+        "a": {
+          "162.244.92.159": false
+        }
       }
     }
   },
@@ -1424,18 +1524,22 @@
           "ns1.hostslim.eu.",
           "ns2.hostslim.eu."
         ],
-        "a": [
-          "103.219.154.80"
-        ]
+        "a": {
+          "103.219.154.80": [
+            "server.hostslim.eu."
+          ]
+        }
       },
       "hostslim.nl": {
         "ns": [
           "ns1.hostslim.nl.",
           "ns2.hostslim.nl."
         ],
-        "a": [
-          "103.219.154.100"
-        ]
+        "a": {
+          "103.219.154.100": [
+            "server.hostslim.nl."
+          ]
+        }
       }
     }
   },
@@ -1446,21 +1550,21 @@
           "ian.ns.cloudflare.com.",
           "jean.ns.cloudflare.com."
         ],
-        "a": [
-          "104.20.6.68",
-          "104.20.7.68"
-        ]
+        "a": {
+          "104.20.6.68": false,
+          "104.20.7.68": false
+        }
       },
       "vpshared.com": {
         "ns": [
           "ian.ns.cloudflare.com.",
           "jean.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.72.230",
-          "104.31.73.230",
-          "172.67.163.159"
-        ]
+        "a": {
+          "104.31.72.230": false,
+          "104.31.73.230": false,
+          "172.67.163.159": false
+        }
       }
     }
   },
@@ -1471,9 +1575,11 @@
           "dns1.namecheaphosting.com.",
           "dns2.namecheaphosting.com."
         ],
-        "a": [
-          "104.219.248.25"
-        ]
+        "a": {
+          "104.219.248.25": [
+            "server134-2.web-hosting.com."
+          ]
+        }
       }
     }
   },
@@ -1484,23 +1590,36 @@
           "nsg1.namebrightdns.com.",
           "nsg2.namebrightdns.com."
         ],
-        "a": [
-          "3.223.115.185"
-        ]
+        "a": {
+          "3.223.115.185": [
+            "ec2-3-223-115-185.compute-1.amazonaws.com."
+          ]
+        }
       },
       "linovus.ca": {
         "ns": [
           "dns1.registrar-servers.com.",
           "dns2.registrar-servers.com."
         ],
-        "a": [
-          "162.255.119.217"
-        ]
+        "a": {
+          "162.255.119.217": false
+        }
       }
     }
   },
   "W3Space": {
     "urls": {
+      "w3space.net": {
+        "ns": [
+          "jeff.ns.cloudflare.com.",
+          "rose.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.28.28.101": false,
+          "104.28.29.101": false,
+          "172.67.134.91": false
+        }
+      },
       "fb.com": {
         "ns": [
           "a.ns.facebook.com.",
@@ -1508,42 +1627,35 @@
           "c.ns.facebook.com.",
           "d.ns.facebook.com."
         ],
-        "a": [
-          "31.13.70.36"
-        ]
-      },
-      "w3space.net": {
-        "ns": [
-          "jeff.ns.cloudflare.com.",
-          "rose.ns.cloudflare.com."
-        ],
-        "a": [
-          "104.28.28.101",
-          "104.28.29.101",
-          "172.67.134.91"
-        ]
+        "a": {
+          "69.171.250.35": [
+            "edge-star-mini-shv-01-any2.facebook.com."
+          ]
+        }
       }
     }
   },
   "WSCallum": {
     "urls": {
-      "websound.co.uk": {
-        "ns": [
-          "gina.ns.cloudflare.com.",
-          "jack.ns.cloudflare.com."
-        ],
-        "a": [
-          "51.210.96.89"
-        ]
-      },
       "clouveo.com": {
         "ns": [
           "gina.ns.cloudflare.com.",
           "jack.ns.cloudflare.com."
         ],
-        "a": [
-          "51.210.96.89"
-        ]
+        "a": {
+          "51.210.96.89": false
+        }
+      },
+      "websound.co.uk": {
+        "ns": [
+          "gina.ns.cloudflare.com.",
+          "jack.ns.cloudflare.com."
+        ],
+        "a": {
+          "51.210.96.89": [
+            "main.websound.co.uk."
+          ]
+        }
       }
     }
   },
@@ -1554,18 +1666,22 @@
           "nsr1.hostmayo.com.",
           "nsr2.hostmayo.com."
         ],
-        "a": [
-          "162.223.31.5"
-        ]
+        "a": {
+          "162.223.31.5": [
+            "hostmayo.com."
+          ]
+        }
       },
       "mayohost.com": {
         "ns": [
           "ns1.fastssdserver.com.",
           "ns2.fastssdserver.com."
         ],
-        "a": [
-          "162.223.31.5"
-        ]
+        "a": {
+          "162.223.31.5": [
+            "hostmayo.com."
+          ]
+        }
       }
     }
   },
@@ -1576,27 +1692,33 @@
           "ns1.web-project.co.uk.",
           "ns2.web-project.co.uk."
         ],
-        "a": [
-          "51.38.73.244"
-        ]
+        "a": {
+          "51.38.73.244": [
+            "london.web-project.co.uk."
+          ]
+        }
       },
       "web-project.uk": {
         "ns": [
           "ns1.web-project.co.uk.",
           "ns2.web-project.co.uk."
         ],
-        "a": [
-          "51.38.73.244"
-        ]
+        "a": {
+          "51.38.73.244": [
+            "london.web-project.co.uk."
+          ]
+        }
       },
       "webprovps.com": {
         "ns": [
           "ns1.web-project.co.uk.",
           "ns2.web-project.co.uk."
         ],
-        "a": [
-          "51.38.73.244"
-        ]
+        "a": {
+          "51.38.73.244": [
+            "london.web-project.co.uk."
+          ]
+        }
       }
     }
   },
@@ -1607,11 +1729,11 @@
           "amy.ns.cloudflare.com.",
           "jim.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.70.111",
-          "104.31.71.111",
-          "172.67.198.211"
-        ]
+        "a": {
+          "104.31.70.111": false,
+          "104.31.71.111": false,
+          "172.67.198.211": false
+        }
       },
       "whtop.com": {
         "ns": [
@@ -1619,53 +1741,55 @@
           "ns2.dnsowl.com.",
           "ns3.dnsowl.com."
         ],
-        "a": [
-          "92.204.132.8"
-        ]
+        "a": {
+          "92.204.132.8": [
+            "ns1003661.ip-92-204-132.us."
+          ]
+        }
       },
       "xinix.net": {
         "ns": [
           "mira.ns.cloudflare.com.",
           "vick.ns.cloudflare.com."
         ],
-        "a": [
-          "104.18.38.83",
-          "104.18.39.83",
-          "172.67.205.75"
-        ]
+        "a": {
+          "104.18.38.83": false,
+          "104.18.39.83": false,
+          "172.67.205.75": false
+        }
       },
       "xinix.in": {
         "ns": [
           "mira.ns.cloudflare.com.",
           "vick.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.136.189",
-          "104.27.137.189",
-          "172.67.151.44"
-        ]
+        "a": {
+          "104.27.136.189": false,
+          "104.27.137.189": false,
+          "172.67.151.44": false
+        }
       },
       "xinix.us": {
         "ns": [
           "mira.ns.cloudflare.com.",
           "vick.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.158.49",
-          "104.27.159.49",
-          "172.67.140.27"
-        ]
+        "a": {
+          "104.27.158.49": false,
+          "104.27.159.49": false,
+          "172.67.140.27": false
+        }
       },
       "xinix.eu": {
         "ns": [
           "mira.ns.cloudflare.com.",
           "vick.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.146.24",
-          "104.27.147.24",
-          "172.67.137.250"
-        ]
+        "a": {
+          "104.27.146.24": false,
+          "104.27.147.24": false,
+          "172.67.137.250": false
+        }
       }
     }
   },
@@ -1678,26 +1802,28 @@
           "ns3.xsltel.com.",
           "ns4.xsltel.com."
         ],
-        "a": [
-          "178.162.193.56"
-        ]
+        "a": {
+          "178.162.193.56": false
+        }
       }
     }
   },
   "Ympker": {
     "urls": {
+      "elbaf-hosting.com": {
+        "ns": false,
+        "a": {}
+      },
       "gyazo.com": {
         "ns": [
           "gail.ns.cloudflare.com.",
           "tom.ns.cloudflare.com."
         ],
-        "a": [
-          "35.186.213.112"
-        ]
-      },
-      "elbaf-hosting.com": {
-        "ns": false,
-        "a": false
+        "a": {
+          "35.186.213.112": [
+            "112.213.186.35.bc.googleusercontent.com."
+          ]
+        }
       }
     }
   },
@@ -1708,19 +1834,11 @@
           "curt.ns.cloudflare.com.",
           "lily.ns.cloudflare.com."
         ],
-        "a": [
-          "178.33.235.51"
-        ]
-      },
-      "webhostinggeeks.com": {
-        "ns": [
-          "ns1.digitalocean.com.",
-          "ns2.digitalocean.com.",
-          "ns3.digitalocean.com."
-        ],
-        "a": [
-          "138.197.253.21"
-        ]
+        "a": {
+          "178.33.235.51": [
+            "my.hostnamaste.com."
+          ]
+        }
       },
       "wy.gov": {
         "ns": [
@@ -1731,28 +1849,38 @@
           "ns14.dnsmadeeasy.com.",
           "ns15.dnsmadeeasy.com."
         ],
-        "a": [
-          "192.146.215.91"
-        ]
+        "a": {
+          "192.146.215.91": false
+        }
+      },
+      "webhostinggeeks.com": {
+        "ns": [
+          "ns1.digitalocean.com.",
+          "ns2.digitalocean.com.",
+          "ns3.digitalocean.com."
+        ],
+        "a": {
+          "138.197.253.21": false
+        }
       }
     }
   },
   "ZentoraHosting": {
     "urls": {
-      "sernethosting.com": {
-        "ns": false,
-        "a": false
-      },
       "zentorahosting.com": {
         "ns": [
           "joel.ns.cloudflare.com.",
           "leah.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.166.207",
-          "104.27.167.207",
-          "172.67.171.136"
-        ]
+        "a": {
+          "104.27.166.207": false,
+          "104.27.167.207": false,
+          "172.67.171.136": false
+        }
+      },
+      "sernethosting.com": {
+        "ns": false,
+        "a": {}
       }
     }
   },
@@ -1763,9 +1891,9 @@
           "ns1.sedoparking.com.",
           "ns2.sedoparking.com."
         ],
-        "a": [
-          "91.195.241.137"
-        ]
+        "a": {
+          "91.195.241.137": false
+        }
       }
     }
   },
@@ -1776,9 +1904,9 @@
           "ns1.justhost.ru.",
           "ns2.justhost.ru."
         ],
-        "a": [
-          "185.22.155.25"
-        ]
+        "a": {
+          "185.22.155.25": false
+        }
       }
     }
   },
@@ -1791,9 +1919,11 @@
           "ns3.eurodns.com.",
           "ns4.eurodns.com."
         ],
-        "a": [
-          "185.185.84.19"
-        ]
+        "a": {
+          "185.185.84.19": [
+            "site3.samservers.tk."
+          ]
+        }
       }
     }
   },
@@ -1801,11 +1931,11 @@
     "urls": {
       "austenite.io": {
         "ns": false,
-        "a": false
+        "a": {}
       },
       "stablecloud.uk": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -1815,9 +1945,11 @@
         "ns": [
           "dns1.hostorbits.com."
         ],
-        "a": [
-          "206.72.197.226"
-        ]
+        "a": {
+          "206.72.197.226": [
+            "server.hostorbits.com."
+          ]
+        }
       }
     }
   },
@@ -1829,9 +1961,9 @@
           "ns-uk.topdns.com.",
           "ns-usa.topdns.com."
         ],
-        "a": [
-          "168.205.160.5"
-        ]
+        "a": {
+          "168.205.160.5": false
+        }
       }
     }
   },
@@ -1843,9 +1975,11 @@
           "hydrogen.ns.hetzner.com.",
           "oxygen.ns.hetzner.com."
         ],
-        "a": [
-          "162.244.94.2"
-        ]
+        "a": {
+          "162.244.94.2": [
+            "lv-shared02.cpanelplatform.com."
+          ]
+        }
       }
     }
   },
@@ -1856,11 +1990,11 @@
           "igor.ns.cloudflare.com.",
           "nina.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.92.38",
-          "104.31.93.38",
-          "172.67.215.61"
-        ]
+        "a": {
+          "104.31.92.38": false,
+          "104.31.93.38": false,
+          "172.67.215.61": false
+        }
       }
     }
   },
@@ -1871,11 +2005,11 @@
           "owen.ns.cloudflare.com.",
           "tani.ns.cloudflare.com."
         ],
-        "a": [
-          "104.28.4.36",
-          "104.28.5.36",
-          "172.67.130.56"
-        ]
+        "a": {
+          "104.28.4.36": false,
+          "104.28.5.36": false,
+          "172.67.130.56": false
+        }
       }
     }
   },
@@ -1887,9 +2021,11 @@
           "ns2.combahton.net.",
           "ns3.combahton.net."
         ],
-        "a": [
-          "160.20.144.5"
-        ]
+        "a": {
+          "160.20.144.5": [
+            "www-vip.fastpipe.io."
+          ]
+        }
       }
     }
   },
@@ -1900,63 +2036,78 @@
           "jm1.dns.com.",
           "jm2.dns.com."
         ],
-        "a": [
-          "180.215.81.153"
-        ]
+        "a": {
+          "180.215.81.153": false
+        }
       }
     }
   },
   "dedicatserver_ro": {
     "urls": {
-      "dedicatserver.ro": {
-        "ns": [
-          "ns1.astimp.ro.",
-          "ns2.astimp.ro."
-        ],
-        "a": [
-          "86.105.195.61"
-        ]
-      },
       "ddos-hosting.ro": {
         "ns": [
           "ns1.astimp.ro.",
           "ns2.astimp.ro."
         ],
-        "a": [
-          "86.105.195.61"
-        ]
+        "a": {
+          "86.105.195.61": [
+            "mail.dedicatserver.com."
+          ]
+        }
+      },
+      "dedicatserver.ro": {
+        "ns": [
+          "ns1.astimp.ro.",
+          "ns2.astimp.ro."
+        ],
+        "a": {
+          "86.105.195.61": [
+            "mail.dedicatserver.com."
+          ]
+        }
       }
     }
   },
   "definitelyliam": {
     "urls": {
-      "hostcule.com": {
-        "ns": false,
-        "a": false
-      },
       "teradelta.com": {
         "ns": [
           "ines.ns.cloudflare.com.",
           "lloyd.ns.cloudflare.com."
         ],
-        "a": [
-          "104.18.46.84",
-          "104.18.47.84",
-          "172.67.143.102"
-        ]
+        "a": {
+          "104.18.46.84": false,
+          "104.18.47.84": false,
+          "172.67.143.102": false
+        }
       },
       "nodecomet.com": {
         "ns": false,
-        "a": false
+        "a": {}
       },
       "rack63.com": {
         "ns": false,
-        "a": false
+        "a": {}
+      },
+      "hostcule.com": {
+        "ns": false,
+        "a": {}
       }
     }
   },
   "deployvm": {
     "urls": {
+      "xhostfire.com": {
+        "ns": [
+          "albert.ns.cloudflare.com.",
+          "chloe.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.28.4.44": false,
+          "104.28.5.44": false,
+          "172.67.130.184": false
+        }
+      },
       "msecnd.net": {
         "ns": [
           "ns1-205.azure-dns.com.",
@@ -1965,17 +2116,6 @@
           "ns4-205.azure-dns.info."
         ],
         "a": false
-      },
-      "xhostfire.com": {
-        "ns": [
-          "albert.ns.cloudflare.com.",
-          "chloe.ns.cloudflare.com."
-        ],
-        "a": [
-          "104.28.4.44",
-          "104.28.5.44",
-          "172.67.130.184"
-        ]
       }
     }
   },
@@ -1986,11 +2126,11 @@
           "peyton.ns.cloudflare.com.",
           "zita.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.8.13",
-          "104.26.9.13",
-          "172.67.74.5"
-        ]
+        "a": {
+          "104.26.8.13": false,
+          "104.26.9.13": false,
+          "172.67.74.5": false
+        }
       }
     }
   },
@@ -1998,7 +2138,7 @@
     "urls": {
       "justfinehost.com": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -2006,16 +2146,18 @@
     "urls": {
       "gdbi.pw": {
         "ns": false,
-        "a": false
+        "a": {}
       },
       "gestiondbi.com": {
         "ns": [
           "fay.ns.cloudflare.com.",
           "hugh.ns.cloudflare.com."
         ],
-        "a": [
-          "51.79.8.20"
-        ]
+        "a": {
+          "51.79.8.20": [
+            "ip20.ip-51-79-8.net."
+          ]
+        }
       }
     }
   },
@@ -2026,9 +2168,11 @@
           "june.ns.cloudflare.com.",
           "lynn.ns.cloudflare.com."
         ],
-        "a": [
-          "88.99.116.146"
-        ]
+        "a": {
+          "88.99.116.146": [
+            "sun.happybeehost.com."
+          ]
+        }
       }
     }
   },
@@ -2039,26 +2183,16 @@
           "andy.ns.cloudflare.com.",
           "ruth.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.12.240",
-          "104.26.13.240",
-          "172.67.69.133"
-        ]
+        "a": {
+          "104.26.12.240": false,
+          "104.26.13.240": false,
+          "172.67.69.133": false
+        }
       }
     }
   },
   "hostens": {
     "urls": {
-      "hostens.com": {
-        "ns": [
-          "cf1.hostens.com.",
-          "cf2.hostens.com."
-        ],
-        "a": [
-          "104.20.2.91",
-          "104.20.3.91"
-        ]
-      },
       "hostens.eu": {
         "ns": [
           "ns1.serveriai.lt.",
@@ -2066,9 +2200,21 @@
           "ns3.serveriai.lt.",
           "ns4.serveriai.lt."
         ],
-        "a": [
-          "79.98.25.1"
-        ]
+        "a": {
+          "79.98.25.1": [
+            "parked.serveriai.lt."
+          ]
+        }
+      },
+      "hostens.com": {
+        "ns": [
+          "cf1.hostens.com.",
+          "cf2.hostens.com."
+        ],
+        "a": {
+          "104.20.2.91": false,
+          "104.20.3.91": false
+        }
       }
     }
   },
@@ -2079,9 +2225,11 @@
           "ns1.hostinfuse.com.",
           "ns2.hostinfuse.com."
         ],
-        "a": [
-          "192.30.139.91"
-        ]
+        "a": {
+          "192.30.139.91": [
+            "mint3.noc401.com."
+          ]
+        }
       }
     }
   },
@@ -2092,11 +2240,11 @@
           "curt.ns.cloudflare.com.",
           "lily.ns.cloudflare.com."
         ],
-        "a": [
-          "104.18.32.130",
-          "104.18.33.130",
-          "172.67.194.2"
-        ]
+        "a": {
+          "104.18.32.130": false,
+          "104.18.33.130": false,
+          "172.67.194.2": false
+        }
       }
     }
   },
@@ -2107,11 +2255,11 @@
           "daisy.ns.cloudflare.com.",
           "duke.ns.cloudflare.com."
         ],
-        "a": [
-          "104.24.102.16",
-          "104.24.103.16",
-          "172.67.221.31"
-        ]
+        "a": {
+          "104.24.102.16": false,
+          "104.24.103.16": false,
+          "172.67.221.31": false
+        }
       }
     }
   },
@@ -2122,11 +2270,11 @@
           "arch.ns.cloudflare.com.",
           "gene.ns.cloudflare.com."
         ],
-        "a": [
-          "104.24.104.201",
-          "104.24.105.201",
-          "172.67.172.106"
-        ]
+        "a": {
+          "104.24.104.201": false,
+          "104.24.105.201": false,
+          "172.67.172.106": false
+        }
       }
     }
   },
@@ -2137,9 +2285,11 @@
           "jake.ns.cloudflare.com.",
           "janet.ns.cloudflare.com."
         ],
-        "a": [
-          "5.134.116.16"
-        ]
+        "a": {
+          "5.134.116.16": [
+            "ginernet.com."
+          ]
+        }
       }
     }
   },
@@ -2152,18 +2302,18 @@
           "ns3.bitronictech.net.",
           "ns4.bitronictech.net."
         ],
-        "a": [
-          "158.69.19.204"
-        ]
+        "a": {
+          "158.69.19.204": false
+        }
       },
       "edgeserv.com": {
         "ns": [
           "ns1.edgeserv.com.",
           "ns2.edgeserv.com."
         ],
-        "a": [
-          "66.55.70.25"
-        ]
+        "a": {
+          "66.55.70.25": false
+        }
       }
     }
   },
@@ -2186,9 +2336,11 @@
           "ns1.layerhost.com.",
           "ns2.layerhost.com."
         ],
-        "a": [
-          "192.48.32.200"
-        ]
+        "a": {
+          "192.48.32.200": [
+            "www.layerhost.com."
+          ]
+        }
       }
     }
   },
@@ -2196,7 +2348,7 @@
     "urls": {
       "podracks.co.uk": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -2207,9 +2359,11 @@
           "dns1.liveinhost.com.",
           "dns2.liveinhost.com."
         ],
-        "a": [
-          "217.182.78.26"
-        ]
+        "a": {
+          "217.182.78.26": [
+            "server.liveinhost.com."
+          ]
+        }
       }
     }
   },
@@ -2223,9 +2377,11 @@
           "amber.ns.cloudflare.com.",
           "seth.ns.cloudflare.com."
         ],
-        "a": [
-          "91.132.86.2"
-        ]
+        "a": {
+          "91.132.86.2": [
+            "loveservers.com."
+          ]
+        }
       }
     }
   },
@@ -2236,11 +2392,11 @@
           "damon.ns.cloudflare.com.",
           "nina.ns.cloudflare.com."
         ],
-        "a": [
-          "104.18.46.219",
-          "104.18.47.219",
-          "172.67.166.216"
-        ]
+        "a": {
+          "104.18.46.219": false,
+          "104.18.47.219": false,
+          "172.67.166.216": false
+        }
       }
     }
   },
@@ -2251,18 +2407,20 @@
           "jm1.dns.com.",
           "jm2.dns.com."
         ],
-        "a": [
-          "129.226.186.82"
-        ]
+        "a": {
+          "129.226.186.82": false
+        }
       },
       "mrvm.net": {
         "ns": [
           "dns1.registrar-servers.com.",
           "dns2.registrar-servers.com."
         ],
-        "a": [
-          "159.69.109.93"
-        ]
+        "a": {
+          "159.69.109.93": [
+            "static.93.109.69.159.clients.your-server.de."
+          ]
+        }
       }
     }
   },
@@ -2270,11 +2428,11 @@
     "urls": {
       "moshulabs.com": {
         "ns": false,
-        "a": false
+        "a": {}
       },
       "postimg.org": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -2285,9 +2443,9 @@
           "ns1.webhosting1st.com.",
           "ns2.webhosting1st.com."
         ],
-        "a": [
-          "185.38.249.15"
-        ]
+        "a": {
+          "185.38.249.15": false
+        }
       }
     }
   },
@@ -2295,7 +2453,7 @@
     "urls": {
       "5gbhosting.net": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -2306,9 +2464,11 @@
           "ns1.quadhost.net.",
           "ns2.quadhost.net."
         ],
-        "a": [
-          "185.164.138.218"
-        ]
+        "a": {
+          "185.164.138.218": [
+            "quadhost.net."
+          ]
+        }
       }
     }
   },
@@ -2319,11 +2479,11 @@
           "arya.ns.cloudflare.com.",
           "clay.ns.cloudflare.com."
         ],
-        "a": [
-          "104.28.28.60",
-          "104.28.29.60",
-          "172.67.131.197"
-        ]
+        "a": {
+          "104.28.28.60": false,
+          "104.28.29.60": false,
+          "172.67.131.197": false
+        }
       }
     }
   },
@@ -2334,35 +2494,37 @@
           "ns1.rhnx.net.",
           "ns2.rhnx.net."
         ],
-        "a": [
-          "199.180.253.22"
-        ]
+        "a": {
+          "199.180.253.22": [
+            "www.dal.rhnx.net."
+          ]
+        }
       }
     }
   },
   "ratherbak3d": {
     "urls": {
+      "virtual6.net": {
+        "ns": [
+          "adel.ns.cloudflare.com.",
+          "jake.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.18.34.104": false,
+          "104.18.35.104": false,
+          "172.67.145.48": false
+        }
+      },
       "wp.com": {
         "ns": [
           "ns1.automattic.com.",
           "ns2.automattic.com.",
           "ns3.automattic.com."
         ],
-        "a": [
-          "192.0.78.24",
-          "192.0.78.25"
-        ]
-      },
-      "virtual6.net": {
-        "ns": [
-          "adel.ns.cloudflare.com.",
-          "jake.ns.cloudflare.com."
-        ],
-        "a": [
-          "104.18.34.104",
-          "104.18.35.104",
-          "172.67.145.48"
-        ]
+        "a": {
+          "192.0.78.24": false,
+          "192.0.78.25": false
+        }
       }
     }
   },
@@ -2386,9 +2548,11 @@
           "andy.ns.cloudflare.com.",
           "coco.ns.cloudflare.com."
         ],
-        "a": [
-          "198.143.128.12"
-        ]
+        "a": {
+          "198.143.128.12": [
+            "vz01-phx.stablehost.com."
+          ]
+        }
       }
     }
   },
@@ -2399,11 +2563,11 @@
           "brad.ns.cloudflare.com.",
           "olga.ns.cloudflare.com."
         ],
-        "a": [
-          "104.28.8.126",
-          "104.28.9.126",
-          "172.67.135.227"
-        ]
+        "a": {
+          "104.28.8.126": false,
+          "104.28.9.126": false,
+          "172.67.135.227": false
+        }
       }
     }
   },
@@ -2415,9 +2579,11 @@
           "ns2.inwx.de.",
           "ns3.inwx.eu."
         ],
-        "a": [
-          "62.113.234.28"
-        ]
+        "a": {
+          "62.113.234.28": [
+            "hostwelt.de."
+          ]
+        }
       }
     }
   },
@@ -2425,34 +2591,22 @@
     "urls": {
       "lilchosting.com": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
   "seriesn": {
     "urls": {
-      "servedez.com": {
-        "ns": [
-          "ns1.he.net.",
-          "ns2.he.net.",
-          "ns3.he.net.",
-          "ns4.he.net.",
-          "ns5.he.net."
-        ],
-        "a": [
-          "95.217.16.244"
-        ]
-      },
       "nexusbytes.com": {
         "ns": [
           "love.ns.cloudflare.com.",
           "seamus.ns.cloudflare.com."
         ],
-        "a": [
-          "104.26.8.19",
-          "104.26.9.19",
-          "172.67.69.218"
-        ]
+        "a": {
+          "104.26.8.19": false,
+          "104.26.9.19": false,
+          "172.67.69.218": false
+        }
       },
       "gfycat.com": {
         "ns": [
@@ -2461,20 +2615,23 @@
           "ns-37.awsdns-04.com.",
           "ns-674.awsdns-20.net."
         ],
-        "a": [
-          "13.226.233.200"
-        ]
+        "a": {
+          "13.249.22.231": [
+            "server-13-249-22-231.iah50.r.cloudfront.net."
+          ]
+        }
       },
-      "quotesgram.com": {
+      "servedez.com": {
         "ns": [
-          "bob.ns.cloudflare.com.",
-          "emma.ns.cloudflare.com."
+          "ns1.he.net.",
+          "ns2.he.net.",
+          "ns3.he.net.",
+          "ns4.he.net.",
+          "ns5.he.net."
         ],
-        "a": [
-          "104.27.182.55",
-          "104.27.183.55",
-          "172.67.212.18"
-        ]
+        "a": {
+          "95.217.16.244": false
+        }
       },
       "giphy.com": {
         "ns": [
@@ -2483,12 +2640,23 @@
           "ns-688.awsdns-22.net.",
           "ns-8.awsdns-01.com."
         ],
-        "a": [
-          "151.101.1.185",
-          "151.101.129.185",
-          "151.101.193.185",
-          "151.101.65.185"
-        ]
+        "a": {
+          "151.101.1.185": false,
+          "151.101.129.185": false,
+          "151.101.193.185": false,
+          "151.101.65.185": false
+        }
+      },
+      "quotesgram.com": {
+        "ns": [
+          "bob.ns.cloudflare.com.",
+          "emma.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.27.182.55": false,
+          "104.27.183.55": false,
+          "172.67.212.18": false
+        }
       }
     }
   },
@@ -2496,29 +2664,29 @@
     "urls": {
       "hostforless.net": {
         "ns": false,
-        "a": false
+        "a": {}
       },
       "unmanagedhosting.net": {
         "ns": [
           "ben.ns.cloudflare.com.",
           "jean.ns.cloudflare.com."
         ],
-        "a": [
-          "104.31.74.95",
-          "104.31.75.95",
-          "172.67.144.64"
-        ]
+        "a": {
+          "104.31.74.95": false,
+          "104.31.75.95": false,
+          "172.67.144.64": false
+        }
       },
       "frixelsolutions.com": {
         "ns": [
           "chloe.ns.cloudflare.com.",
           "kai.ns.cloudflare.com."
         ],
-        "a": [
-          "104.28.6.100",
-          "104.28.7.100",
-          "172.67.134.64"
-        ]
+        "a": {
+          "104.28.6.100": false,
+          "104.28.7.100": false,
+          "172.67.134.64": false
+        }
       }
     }
   },
@@ -2529,22 +2697,22 @@
           "boyd.ns.cloudflare.com.",
           "laura.ns.cloudflare.com."
         ],
-        "a": [
-          "104.18.42.144",
-          "104.18.43.144",
-          "172.67.148.63"
-        ]
+        "a": {
+          "104.18.42.144": false,
+          "104.18.43.144": false,
+          "172.67.148.63": false
+        }
       },
       "nexaracks.com": {
         "ns": [
           "boyd.ns.cloudflare.com.",
           "laura.ns.cloudflare.com."
         ],
-        "a": [
-          "104.18.44.178",
-          "104.18.45.178",
-          "172.67.179.22"
-        ]
+        "a": {
+          "104.18.44.178": false,
+          "104.18.45.178": false,
+          "172.67.179.22": false
+        }
       }
     }
   },
@@ -2557,31 +2725,22 @@
           "ns3.eubox.co.uk.",
           "ns4.eubox.co.uk."
         ],
-        "a": [
-          "51.77.113.139"
-        ]
+        "a": {
+          "51.77.113.139": [
+            "ip139.ip-51-77-113.eu."
+          ]
+        }
       },
       "ownbox.co.uk": {
         "ns": [
           "derek.ns.cloudflare.com.",
           "violet.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.146.66",
-          "104.27.147.66",
-          "172.67.208.235"
-        ]
-      },
-      "ownweb.co.uk": {
-        "ns": [
-          "ns15.eubox.co.uk.",
-          "ns16.eubox.co.uk.",
-          "ns3.eubox.co.uk.",
-          "ns4.eubox.co.uk."
-        ],
-        "a": [
-          "51.89.168.169"
-        ]
+        "a": {
+          "104.27.146.66": false,
+          "104.27.147.66": false,
+          "172.67.208.235": false
+        }
       },
       "powerfulbox.co.uk": {
         "ns": [
@@ -2590,9 +2749,22 @@
           "ns3.eubox.co.uk.",
           "ns4.eubox.co.uk."
         ],
-        "a": [
-          "51.77.113.136"
-        ]
+        "a": {
+          "51.77.113.136": [
+            "ip136.ip-51-77-113.eu."
+          ]
+        }
+      },
+      "ownweb.co.uk": {
+        "ns": [
+          "ns15.eubox.co.uk.",
+          "ns16.eubox.co.uk.",
+          "ns3.eubox.co.uk.",
+          "ns4.eubox.co.uk."
+        ],
+        "a": {
+          "51.89.168.169": false
+        }
       }
     }
   },
@@ -2604,11 +2776,17 @@
           "ns2.dnsowl.com.",
           "ns3.dnsowl.com."
         ],
-        "a": [
-          "107.161.23.204",
-          "192.161.187.200",
-          "209.141.38.71"
-        ]
+        "a": {
+          "107.161.23.204": [
+            "parking.namesilo.com."
+          ],
+          "192.161.187.200": [
+            "192.161.187.200.static.quadranet.com."
+          ],
+          "209.141.38.71": [
+            "parking.namesilo.com."
+          ]
+        }
       }
     }
   },
@@ -2621,9 +2799,11 @@
           "ns3.serveriai.lt.",
           "ns4.serveriai.lt."
         ],
-        "a": [
-          "79.98.25.1"
-        ]
+        "a": {
+          "79.98.25.1": [
+            "parked.serveriai.lt."
+          ]
+        }
       }
     }
   },
@@ -2634,9 +2814,11 @@
           "ns1.net4india.com.",
           "ns2.net4india.com."
         ],
-        "a": [
-          "34.236.44.130"
-        ]
+        "a": {
+          "34.236.44.130": [
+            "ec2-34-236-44-130.compute-1.amazonaws.com."
+          ]
+        }
       }
     }
   },
@@ -2649,25 +2831,16 @@
           "ns3.turnkeydns.com.",
           "ns4.turnkeydns.com."
         ],
-        "a": [
-          "173.233.95.27"
-        ]
+        "a": {
+          "173.233.95.27": [
+            "173-233-95-27.static.as40244.net."
+          ]
+        }
       }
     }
   },
   "virtono": {
     "urls": {
-      "Virtono.com": {
-        "ns": [
-          "ns1.Virtono.com.",
-          "ns2.Virtono.com.",
-          "ns3.Virtono.com.",
-          "ns4.Virtono.com."
-        ],
-        "a": [
-          "45.15.23.254"
-        ]
-      },
       "virtono.com": {
         "ns": [
           "ns1.virtono.com.",
@@ -2675,9 +2848,11 @@
           "ns3.virtono.com.",
           "ns4.virtono.com."
         ],
-        "a": [
-          "45.15.23.254"
-        ]
+        "a": {
+          "45.15.23.254": [
+            "srv.virtono.com."
+          ]
+        }
       }
     }
   },
@@ -2688,20 +2863,22 @@
           "derek.ns.cloudflare.com.",
           "kiki.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.134.57",
-          "104.27.135.57",
-          "172.67.210.248"
-        ]
+        "a": {
+          "104.27.134.57": false,
+          "104.27.135.57": false,
+          "172.67.210.248": false
+        }
       },
       "tzulo.com": {
         "ns": [
           "ns1.tzulo.com.",
           "ns2.tzulo.com."
         ],
-        "a": [
-          "208.77.16.10"
-        ]
+        "a": {
+          "208.77.16.10": [
+            "mail.tzulo.com."
+          ]
+        }
       }
     }
   },
@@ -2712,11 +2889,11 @@
           "cody.ns.cloudflare.com.",
           "ines.ns.cloudflare.com."
         ],
-        "a": [
-          "104.27.134.195",
-          "104.27.135.195",
-          "172.67.174.25"
-        ]
+        "a": {
+          "104.27.134.195": false,
+          "104.27.135.195": false,
+          "172.67.174.25": false
+        }
       }
     }
   },
@@ -2724,7 +2901,7 @@
     "urls": {
       "mirthost.com": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   },
@@ -2732,7 +2909,7 @@
     "urls": {
       "golden-hosts.com": {
         "ns": false,
-        "a": false
+        "a": {}
       }
     }
   }
