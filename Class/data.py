@@ -50,7 +50,7 @@ class Data:
                 nameservers.sort()
                 return nameservers
             except:
-                if domain in deadDomains:
+                if domain in deadDomains or type == "PTR":
                     print("Skipping dead",domain)
                     return False
                 wait = round(random.uniform(0.5,6), 2) * count
@@ -113,7 +113,7 @@ class Data:
                         print("Filtered",domain)
                         continue
                     except:
-                        nameservers,aRecords = [],[]
+                        nameservers,aRecords,targets = [],[],{}
                         nameservers = self.resolve(domain,'NS',deadDomains)
                         if nameservers == False:
                             print("NS not found for",domain)
@@ -121,14 +121,24 @@ class Data:
                             dead.append(domain)
                         else:
                             aRecords = self.resolve(domain,'A')
+                            if aRecords is not False:
+                                for entry in aRecords:
+                                    try:
+                                        ipRDNS = dns.reversename.from_address(entry)
+                                        rdns = self.resolve(ipRDNS,'PTR')
+                                        targets[entry] = rdns
+                                    except:
+                                        print("Failed to get RDNS from",entry)
+                                        targets[entry] = False
                             dnsCache[domain] = {}
                             dnsCache[domain]['ns'] = nameservers
-                            dnsCache[domain]['a'] = aRecords
+                            if not targets: targets = False
+                            dnsCache[domain]['a'] = targets
                             alive.append(domain)
                         sleep(0.10)
                         filtered[domain] = {}
                         filtered[domain]['ns'] = nameservers
-                        filtered[domain]['a'] = aRecords
+                        filtered[domain]['a'] = targets
             if site == "lowendbox":
                 dataRaw = re.findall("Date\/Time:.*?> (.*?), by (.*?)<\/div>",post['post'], re.MULTILINE | re.DOTALL)
                 post['user'] = dataRaw[0][1]
