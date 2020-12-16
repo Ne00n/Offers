@@ -53,7 +53,7 @@ class Data:
                 if domain in deadDomains or type == "PTR":
                     print("Skipping dead",domain)
                     return False
-                wait = round(random.uniform(0.5,6), 2) * count
+                wait = round(random.uniform(0.5,4), 2) * count
                 print("Waiting",wait,"seconds")
                 sleep(wait)
             count += 1
