@@ -96,12 +96,10 @@ class Data:
                 if resolve:
                     domain = tldextract.extract(url).domain + "." + tldextract.extract(url).suffix
                     domain = domain.lower()
-                    if self.filterUrls(domain):
-                        continue
-                    if domain in filtered:
-                        continue
-                    if domain in dead:
-                        continue
+                    if self.filterUrls(domain): continue
+                    if domain in filtered: continue
+                    if domain in dead: continue
+                    if "...." in url: continue
                     if domain in dnsCache:
                         print("Getting NS from Cache for",domain)
                         filtered[domain] = {}
