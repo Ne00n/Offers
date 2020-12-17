@@ -30,6 +30,7 @@ def generate(slow=False):
     Update.getUrls("posts","lowendbox")
     Update.getUrls("offers","hostedtalk.net")
     Update.getUrls("vps-cloud-offers.10","vpsboard.com")
+    Update.getUrls("vps-hosting-offers.204","hostingdiscussion.com")
 
 param = sys.argv
 if len(param) == 1:
@@ -46,6 +47,7 @@ elif sys.argv[1] == "dns":
     Data.getUrls("posts","lowendbox",True)
     Data.getUrls("offers","hostedtalk.net",True)
     Data.getUrls("vps-cloud-offers.10","vpsboard.com",True)
+    Data.getUrls("vps-hosting-offers.204","hostingdiscussion.com",True)
 elif sys.argv[1] == "update":
     update()
 elif sys.argv[1] == "headless":
