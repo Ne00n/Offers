@@ -94,9 +94,9 @@ class Data:
                 url = re.sub('<[^<]+?>', '', html.unescape(url))
                 url = url.replace("_","")
                 if resolve:
+                    if self.filterUrls(url): continue
                     domain = tldextract.extract(url).domain + "." + tldextract.extract(url).suffix
                     domain = domain.lower()
-                    if self.filterUrls(domain): continue
                     if domain in filtered: continue
                     if domain in dead: continue
                     if domain in dnsCache:
