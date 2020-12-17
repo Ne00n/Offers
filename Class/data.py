@@ -162,7 +162,7 @@ class Data:
                     ip[post['user']].append(entry)
                     ip[post['user']] = list(set(ip[post['user']]))
                     ip[post['user']].sort()
-            data.append({'id':post['id'],'user':post['user'],'post':{'date':post['date'],'urls':urls}})
+            data.append({'id':post['id'],'user':post['user'],'date':post['date'],'post':{'urls':urls}})
         data = sorted(data, key=lambda k: k['id'],  reverse=True)
         with open(os.getcwd()+"/data/"+site+"-urls-"+cat+".json", 'w') as f:
             json.dump(data, f, indent=2)
