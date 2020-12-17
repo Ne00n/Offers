@@ -172,6 +172,8 @@ class Data:
                 json.dump(ip, f, indent=2)
         if resolve:
             domains = {k: domains[k] for k in sorted(domains)}
+            for user,data in domains.items():
+                data['urls'] = {k: data['urls'][k] for k in sorted(data['urls'])}
             alive.sort()
             dead.sort()
             with open(os.getcwd()+"/data/"+site+"-domains-"+cat+".json", 'w') as f:
