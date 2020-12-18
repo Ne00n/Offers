@@ -31,7 +31,7 @@ class Data:
     def filterUrls(self,url):
         drop = ['twitter.com','facebook.com','imgur.com','github.com','speedtest.net','he.net','google.com','trustpilot.com','arin.net','webhostingtalk.com','discord.gg',
         'youtube.com','tenor.com','instagram.com','githubusercontent.com','secure.gravatar.com','linkedin.com','lowendbox.com/wp-content/','lowendbox.com/tag/','goo.gl',
-        'cachefly.net','....','...']
+        'cachefly.net','....','...','fbcdn.net','m.me','wikipedia.org']
         if any(domain in url for domain in drop):
             return True
         return False
