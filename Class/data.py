@@ -83,9 +83,7 @@ class Data:
                 post = json.load(f)
             urlsRaw = re.findall("(https?:\/\/[A-Za-z0-9.\/?=&;_-]{1,}\.[A-Za-z0-9.\/?=&;_-]{1,})",post['post'], re.MULTILINE | re.DOTALL)
             ipsRaw = re.findall("[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}",post['post'], re.MULTILINE | re.DOTALL)
-            #urls = self.filterUrls(urlsRaw)
-            urls = list(set(urlsRaw))
-            ips = list(set(ipsRaw))
+            urls,ips = list(set(urlsRaw)),list(set(ipsRaw))
             urls.sort()
             ips.sort()
             filtered = {}
@@ -146,9 +144,7 @@ class Data:
                         filtered[domain]['a'] = targets
             if site == "lowendbox":
                 dataRaw = re.findall("Date\/Time:.*?> (.*?), by (.*?)<\/div>",post['post'], re.MULTILINE | re.DOTALL)
-                post['user'] = dataRaw[0][1]
-                post['date'] = dataRaw[0][0]
-                post['id'] = int(post['id'])
+                post['user'],post['date'],post['id'] = dataRaw[0][1],dataRaw[0][0],int(post['id'])
                 for url in list(urls):
                     if self.filterUrls(url):
                         urls.remove(url)
