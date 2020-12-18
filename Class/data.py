@@ -74,7 +74,7 @@ class Data:
                 deadDomains = json.load(f)
         else:
             deadDomains = list()
-        data,domains,dead,alive,ip = [],{},[],[],{}
+        data,domains,dead,alive,ip,order = [],{},[],[],{},{}
         for file in files:
             if slow:
                 sleep(0.02)
@@ -97,8 +97,13 @@ class Data:
                     if self.filterUrls(url): continue
                     domain = tldextract.extract(url).domain + "." + tldextract.extract(url).suffix
                     domain = domain.lower()
-                    if domain in filtered: continue
                     if domain in dead: continue
+                    if not domain in order:
+                        order[domain],order[domain]['order'],order[domain]['ns'] = {},[],[]
+                    if "cart" in url or "order" in url:
+                        order[domain]['order'].append(url)
+                        order[domain]['order'] = list(set(order[domain]['order']))
+                    if domain in filtered: continue
                     if domain in dnsCache:
                         print("Getting NS from Cache for",domain)
                         filtered[domain] = {}
@@ -129,6 +134,8 @@ class Data:
                                         targets[entry] = False
                             dnsCache[domain] = {}
                             dnsCache[domain]['ns'] = nameservers
+                            order[domain]['ns'] = nameservers
+                            order[domain]['a'] = aRecords
                             if not targets: targets = False
                             dnsCache[domain]['a'] = targets
                             alive.append(domain)
@@ -172,8 +179,12 @@ class Data:
                 json.dump(ip, f, indent=2)
         if resolve:
             domains = {k: domains[k] for k in sorted(domains)}
+            order = {k: order[k] for k in sorted(order)}
             for user,data in domains.items():
                 data['urls'] = {k: data['urls'][k] for k in sorted(data['urls'])}
+            for domain,data in list(order.items()):
+                if not data['order']:
+                    del order[domain]
             alive.sort()
             dead.sort()
             with open(os.getcwd()+"/data/"+site+"-domains-"+cat+".json", 'w') as f:
@@ -182,6 +193,8 @@ class Data:
                 json.dump(dead, f, indent=2)
             with open(os.getcwd()+"/data/"+site+"-domains-alive-"+cat+".json", 'w') as f:
                 json.dump(alive, f, indent=2)
+            with open(os.getcwd()+"/data/"+site+"-order-"+cat+".json", 'w') as f:
+                json.dump(order, f, indent=2)
 
     def webserver(self):
         dataDir = os.getcwd()+"/data/"
