@@ -103,6 +103,7 @@ class Data:
                     if "cart" in url or "order" in url:
                         order[domain]['order'].append(url)
                         order[domain]['order'] = list(set(order[domain]['order']))
+                        order[domain]['order'].sort()
                     if domain in filtered: continue
                     if domain in dnsCache:
                         print("Getting NS from Cache for",domain)
