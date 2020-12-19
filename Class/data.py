@@ -97,7 +97,7 @@ class Data:
                     domain = domain.lower()
                     if domain in dead: continue
                     if not domain in order:
-                        order[domain],order[domain]['order'],order[domain]['ns'] = {},[],[]
+                        order[domain],order[domain]['order'] = {},[]
                     if "cart" in url or "order" in url:
                         order[domain]['order'].append(url)
                         order[domain]['order'] = list(set(order[domain]['order']))
@@ -133,8 +133,6 @@ class Data:
                                         targets[entry] = False
                             dnsCache[domain] = {}
                             dnsCache[domain]['ns'] = nameservers
-                            order[domain]['ns'] = nameservers
-                            order[domain]['a'] = aRecords
                             if not targets: targets = False
                             dnsCache[domain]['a'] = targets
                             alive.append(domain)
