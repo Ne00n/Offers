@@ -655,7 +655,7 @@
           "ns2.wombatdns.com."
         ],
         "a": {
-          "185.107.56.194": false
+          "199.115.116.216": false
         }
       }
     }
@@ -762,12 +762,7 @@
     }
   },
   "baratoserver": {
-    "urls": {
-      "baratoserver.com": {
-        "ns": false,
-        "a": {}
-      }
-    }
+    "urls": {}
   },
   "bbgn-brian": {
     "urls": {
@@ -2488,11 +2483,13 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.wombatdns.com.",
-          "ns2.wombatdns.com."
+          "ns1.koaladns.com.",
+          "ns2.koaladns.com."
         ],
         "a": {
-          "162.210.196.167": false
+          "96.47.230.68": [
+            "96.47.230.68.static.rivalserver.com."
+          ]
         }
       },
       "jsdelivr.net": {
@@ -3541,17 +3538,17 @@
           "ns-911.awsdns-49.net."
         ],
         "a": {
-          "143.204.166.121": [
-            "server-143-204-166-121.dfw3.r.cloudfront.net."
+          "13.227.75.108": [
+            "server-13-227-75-108.sfo20.r.cloudfront.net."
           ],
-          "143.204.166.18": [
-            "server-143-204-166-18.dfw3.r.cloudfront.net."
+          "13.227.75.125": [
+            "server-13-227-75-125.sfo20.r.cloudfront.net."
           ],
-          "143.204.166.25": [
-            "server-143-204-166-25.dfw3.r.cloudfront.net."
+          "13.227.75.24": [
+            "server-13-227-75-24.sfo20.r.cloudfront.net."
           ],
-          "143.204.166.38": [
-            "server-143-204-166-38.dfw3.r.cloudfront.net."
+          "13.227.75.4": [
+            "server-13-227-75-4.sfo20.r.cloudfront.net."
           ]
         }
       },
@@ -4315,10 +4312,6 @@
   "ivan": {
     "urls": {
       "southbendservers.com": {
-        "ns": false,
-        "a": {}
-      },
-      "southbendvps.com": {
         "ns": false,
         "a": {}
       },
@@ -5283,9 +5276,7 @@
           "ns2.hugeserver.com."
         ],
         "a": {
-          "107.161.48.7": [
-            "hugeserver.com."
-          ]
+          "185.133.32.2": false
         }
       }
     }
@@ -6005,23 +5996,17 @@
           "ns-720.awsdns-26.net."
         ],
         "a": {
-          "18.208.190.224": [
-            "ec2-18-208-190-224.compute-1.amazonaws.com."
+          "34.211.245.10": [
+            "ec2-34-211-245-10.us-west-2.compute.amazonaws.com."
           ],
-          "3.80.109.92": [
-            "ec2-3-80-109-92.compute-1.amazonaws.com."
+          "35.160.128.112": [
+            "ec2-35-160-128-112.us-west-2.compute.amazonaws.com."
           ],
-          "3.91.68.97": [
-            "ec2-3-91-68-97.compute-1.amazonaws.com."
+          "54.245.105.146": [
+            "ec2-54-245-105-146.us-west-2.compute.amazonaws.com."
           ],
-          "54.209.22.5": [
-            "ec2-54-209-22-5.compute-1.amazonaws.com."
-          ],
-          "54.226.47.131": [
-            "ec2-54-226-47-131.compute-1.amazonaws.com."
-          ],
-          "54.236.7.116": [
-            "ec2-54-236-7-116.compute-1.amazonaws.com."
+          "54.245.105.162": [
+            "ec2-54-245-105-162.us-west-2.compute.amazonaws.com."
           ]
         }
       },
@@ -6764,18 +6749,10 @@
           "ns-514.awsdns-00.net."
         ],
         "a": {
-          "13.249.76.106": [
-            "server-13-249-76-106.dfw53.r.cloudfront.net."
-          ],
-          "13.249.76.48": [
-            "server-13-249-76-48.dfw53.r.cloudfront.net."
-          ],
-          "13.249.76.82": [
-            "server-13-249-76-82.dfw53.r.cloudfront.net."
-          ],
-          "13.249.76.85": [
-            "server-13-249-76-85.dfw53.r.cloudfront.net."
-          ]
+          "65.8.168.122": false,
+          "65.8.168.35": false,
+          "65.8.168.6": false,
+          "65.8.168.72": false
         }
       },
       "instantcpanelhosting.com": {
@@ -6896,17 +6873,17 @@
           "ns-624.awsdns-14.net."
         ],
         "a": {
-          "13.249.76.108": [
-            "server-13-249-76-108.dfw53.r.cloudfront.net."
+          "13.35.125.103": [
+            "server-13-35-125-103.sfo5.r.cloudfront.net."
           ],
-          "13.249.76.18": [
-            "server-13-249-76-18.dfw53.r.cloudfront.net."
+          "13.35.125.108": [
+            "server-13-35-125-108.sfo5.r.cloudfront.net."
           ],
-          "13.249.76.67": [
-            "server-13-249-76-67.dfw53.r.cloudfront.net."
+          "13.35.125.125": [
+            "server-13-35-125-125.sfo5.r.cloudfront.net."
           ],
-          "13.249.76.90": [
-            "server-13-249-76-90.dfw53.r.cloudfront.net."
+          "13.35.125.89": [
+            "server-13-35-125-89.sfo5.r.cloudfront.net."
           ]
         }
       },
@@ -7099,29 +7076,29 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "34.195.187.253": [
-            "ec2-34-195-187-253.compute-1.amazonaws.com."
+          "3.90.94.177": [
+            "ec2-3-90-94-177.compute-1.amazonaws.com."
           ],
-          "34.196.3.7": [
-            "ec2-34-196-3-7.compute-1.amazonaws.com."
+          "34.198.20.103": [
+            "ec2-34-198-20-103.compute-1.amazonaws.com."
           ],
-          "34.232.108.170": [
-            "ec2-34-232-108-170.compute-1.amazonaws.com."
+          "34.227.164.168": [
+            "ec2-34-227-164-168.compute-1.amazonaws.com."
           ],
-          "35.169.225.215": [
-            "ec2-35-169-225-215.compute-1.amazonaws.com."
+          "35.174.46.144": [
+            "ec2-35-174-46-144.compute-1.amazonaws.com."
+          ],
+          "52.20.200.43": [
+            "ec2-52-20-200-43.compute-1.amazonaws.com."
+          ],
+          "52.205.86.27": [
+            "ec2-52-205-86-27.compute-1.amazonaws.com."
           ],
           "52.21.141.169": [
             "ec2-52-21-141-169.compute-1.amazonaws.com."
           ],
-          "52.6.97.115": [
-            "ec2-52-6-97-115.compute-1.amazonaws.com."
-          ],
-          "54.225.42.45": [
-            "ec2-54-225-42-45.compute-1.amazonaws.com."
-          ],
-          "54.236.206.131": [
-            "ec2-54-236-206-131.compute-1.amazonaws.com."
+          "54.159.34.239": [
+            "ec2-54-159-34-239.compute-1.amazonaws.com."
           ]
         }
       },
@@ -7583,18 +7560,10 @@
           "ns-514.awsdns-00.net."
         ],
         "a": {
-          "13.249.76.106": [
-            "server-13-249-76-106.dfw53.r.cloudfront.net."
-          ],
-          "13.249.76.48": [
-            "server-13-249-76-48.dfw53.r.cloudfront.net."
-          ],
-          "13.249.76.82": [
-            "server-13-249-76-82.dfw53.r.cloudfront.net."
-          ],
-          "13.249.76.85": [
-            "server-13-249-76-85.dfw53.r.cloudfront.net."
-          ]
+          "65.8.168.122": false,
+          "65.8.168.35": false,
+          "65.8.168.6": false,
+          "65.8.168.72": false
         }
       },
       "kernelvps.com": {
@@ -8038,7 +8007,12 @@
     }
   },
   "saied": {
-    "urls": {}
+    "urls": {
+      "baratoserver.com": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "sales-letsidc-com": {
     "urls": {
@@ -9456,11 +9430,13 @@
     "urls": {
       "solidshellsecurity.com": {
         "ns": [
-          "ns1.dnsnuts.com.",
-          "ns2.dnsnuts.com."
+          "ns1.chookdns.com.",
+          "ns2.chookdns.com."
         ],
         "a": {
-          "37.48.65.149": false
+          "64.32.8.68": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "sunbiz.org": {
@@ -9566,7 +9542,10 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.8.191": false
+          "172.217.6.41": [
+            "sfo03s08-in-f41.1e100.net.",
+            "sfo03s08-in-f9.1e100.net."
+          ]
         }
       },
       "budgethost.info": {
@@ -10295,8 +10274,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "64.233.178.94": [
-            "ol-in-f94.1e100.net."
+          "142.250.72.195": [
+            "sfo03s21-in-f3.1e100.net."
           ]
         }
       },
@@ -10445,6 +10424,10 @@
   },
   "zach": {
     "urls": {
+      "southbendvps.com": {
+        "ns": false,
+        "a": {}
+      },
       "sustainabledatacenters.com": {
         "ns": [
           "nsg1.namebrightdns.com.",
