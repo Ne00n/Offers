@@ -226,29 +226,29 @@
           "lucy.ns.cloudflare.com."
         ],
         "a": {
-          "3.225.76.86": [
-            "ec2-3-225-76-86.compute-1.amazonaws.com."
+          "34.237.194.62": [
+            "ec2-34-237-194-62.compute-1.amazonaws.com."
           ],
-          "3.230.67.206": [
-            "ec2-3-230-67-206.compute-1.amazonaws.com."
+          "35.170.226.86": [
+            "ec2-35-170-226-86.compute-1.amazonaws.com."
+          ],
+          "52.3.163.206": [
+            "ec2-52-3-163-206.compute-1.amazonaws.com."
           ],
           "52.54.11.249": [
             "ec2-52-54-11-249.compute-1.amazonaws.com."
           ],
-          "52.7.203.118": [
-            "ec2-52-7-203-118.compute-1.amazonaws.com."
+          "52.6.203.110": [
+            "ec2-52-6-203-110.compute-1.amazonaws.com."
           ],
-          "52.70.167.158": [
-            "ec2-52-70-167-158.compute-1.amazonaws.com."
+          "52.71.186.37": [
+            "ec2-52-71-186-37.compute-1.amazonaws.com."
           ],
-          "54.175.254.230": [
-            "ec2-54-175-254-230.compute-1.amazonaws.com."
+          "54.144.192.68": [
+            "ec2-54-144-192-68.compute-1.amazonaws.com."
           ],
-          "54.175.49.114": [
-            "ec2-54-175-49-114.compute-1.amazonaws.com."
-          ],
-          "54.237.169.70": [
-            "ec2-54-237-169-70.compute-1.amazonaws.com."
+          "54.208.238.100": [
+            "ec2-54-208-238-100.compute-1.amazonaws.com."
           ]
         }
       },
@@ -661,7 +661,8 @@
       "bighost.lv": {
         "ns": [
           "ns.bighost.lv.",
-          "ns1.bighost.lv."
+          "ns1.bighost.lv.",
+          "ns2.bighost.lv."
         ],
         "a": {
           "159.148.186.129": [
@@ -1089,7 +1090,12 @@
     }
   },
   "cocoahost-mike": {
-    "urls": {}
+    "urls": {
+      "cocoahost.com": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "collabora": {
     "urls": {
@@ -2141,8 +2147,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "31.13.70.36": [
-            "edge-star-mini-shv-01-lax3.facebook.com."
+          "31.13.93.35": [
+            "edge-star-mini-shv-02-dfw5.facebook.com."
           ]
         }
       },
@@ -2811,11 +2817,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.wombatdns.com.",
-          "ns2.wombatdns.com."
+          "ns1.brainydns.com.",
+          "ns2.brainydns.com."
         ],
         "a": {
-          "162.210.195.123": false
+          "37.48.65.143": false
         }
       }
     }
@@ -5705,17 +5711,17 @@
           "ns-80.awsdns-10.com."
         ],
         "a": {
-          "13.226.220.112": [
-            "server-13-226-220-112.lax50.r.cloudfront.net."
+          "13.249.25.122": [
+            "server-13-249-25-122.iah50.r.cloudfront.net."
           ],
-          "13.226.220.33": [
-            "server-13-226-220-33.lax50.r.cloudfront.net."
+          "13.249.25.25": [
+            "server-13-249-25-25.iah50.r.cloudfront.net."
           ],
-          "13.226.220.38": [
-            "server-13-226-220-38.lax50.r.cloudfront.net."
+          "13.249.25.88": [
+            "server-13-249-25-88.iah50.r.cloudfront.net."
           ],
-          "13.226.220.72": [
-            "server-13-226-220-72.lax50.r.cloudfront.net."
+          "13.249.25.94": [
+            "server-13-249-25-94.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -5733,10 +5739,6 @@
   },
   "liam-d": {
     "urls": {
-      "myresellerhost.info": {
-        "ns": false,
-        "a": {}
-      },
       "revoltvps.com": {
         "ns": false,
         "a": {}
@@ -5928,10 +5930,10 @@
       },
       "magnite.net": {
         "ns": [
-          "ns-1008.awsdns-62.net.",
-          "ns-1287.awsdns-32.org.",
-          "ns-2022.awsdns-60.co.uk.",
-          "ns-280.awsdns-35.com."
+          "ns-cloud-c1.googledomains.com.",
+          "ns-cloud-c2.googledomains.com.",
+          "ns-cloud-c3.googledomains.com.",
+          "ns-cloud-c4.googledomains.com."
         ],
         "a": false
       }
@@ -6347,12 +6349,7 @@
     }
   },
   "moduleserver": {
-    "urls": {
-      "cocoahost.com": {
-        "ns": false,
-        "a": {}
-      }
-    }
+    "urls": {}
   },
   "monovm": {
     "urls": {
@@ -6477,7 +6474,12 @@
     }
   },
   "myreseller": {
-    "urls": {}
+    "urls": {
+      "myresellerhost.info": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "natcoweb": {
     "urls": {
@@ -7791,18 +7793,10 @@
           "ns2.cloudns.ca."
         ],
         "a": {
-          "54.239.192.119": [
-            "server-54-239-192-119.waw50.r.cloudfront.net."
-          ],
-          "54.239.192.128": [
-            "server-54-239-192-128.waw50.r.cloudfront.net."
-          ],
-          "54.239.192.71": [
-            "server-54-239-192-71.waw50.r.cloudfront.net."
-          ],
-          "54.239.192.98": [
-            "server-54-239-192-98.waw50.r.cloudfront.net."
-          ]
+          "65.9.73.107": false,
+          "65.9.73.113": false,
+          "65.9.73.41": false,
+          "65.9.73.47": false
         }
       }
     }
@@ -8291,7 +8285,7 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.58": false
+          "207.244.67.214": false
         }
       },
       "webhostinggeeks.com": {
@@ -9023,7 +9017,11 @@
           "ns3.valueserver.de.",
           "ns4.valueserver.de."
         ],
-        "a": false
+        "a": {
+          "93.186.167.196": [
+            "dc.inline.de."
+          ]
+        }
       }
     }
   },
@@ -9893,9 +9891,7 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.68.73": [
-            "lax31s11-in-f9.1e100.net."
-          ]
+          "142.250.8.191": false
         }
       },
       "host-tracker.com": {
