@@ -525,8 +525,10 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "157.230.103.136": false,
-          "157.230.120.63": false
+          "157.230.120.63": false,
+          "18.195.76.55": [
+            "ec2-18-195-76-55.eu-central-1.compute.amazonaws.com."
+          ]
         }
       },
       "hostedtalk.net": {
@@ -812,8 +814,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.1.242": [
-            "unn-185-93-1-242.datapacket.com."
+          "185.93.3.242": [
+            "unn-185-93-3-242.datapacket.com."
           ]
         }
       }
@@ -1592,8 +1594,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.1.242": [
-            "unn-185-93-1-242.datapacket.com."
+          "185.93.3.242": [
+            "unn-185-93-3-242.datapacket.com."
           ]
         }
       },
@@ -1839,15 +1841,8 @@
         }
       },
       "wattaserver.com": {
-        "ns": [
-          "ns1.wattaserver.com.",
-          "ns2.wattaserver.com."
-        ],
-        "a": {
-          "52.34.140.205": [
-            "ec2-52-34-140-205.us-west-2.compute.amazonaws.com."
-          ]
-        }
+        "ns": false,
+        "a": {}
       }
     }
   },
@@ -2159,7 +2154,9 @@
           "ns11.constellix.com.",
           "ns21.constellix.com.",
           "ns31.constellix.com.",
-          "ns41.constellix.net."
+          "ns41.constellix.net.",
+          "ns51.constellix.net.",
+          "ns61.constellix.net."
         ],
         "a": {
           "209.68.24.127": [
@@ -2743,7 +2740,9 @@
           "ns11.constellix.com.",
           "ns21.constellix.com.",
           "ns31.constellix.com.",
-          "ns41.constellix.net."
+          "ns41.constellix.net.",
+          "ns51.constellix.net.",
+          "ns61.constellix.net."
         ],
         "a": {
           "209.68.24.127": [
@@ -3772,6 +3771,17 @@
             "ip136.ip-51-77-113.eu."
           ]
         }
+      },
+      "vpsboard.com": {
+        "ns": [
+          "duke.ns.cloudflare.com.",
+          "uma.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.26.6.6": false,
+          "104.26.7.6": false,
+          "172.67.74.6": false
+        }
       }
     }
   },
@@ -3923,7 +3933,9 @@
           "ns11.constellix.com.",
           "ns21.constellix.com.",
           "ns31.constellix.com.",
-          "ns41.constellix.net."
+          "ns41.constellix.net.",
+          "ns51.constellix.net.",
+          "ns61.constellix.net."
         ],
         "a": {
           "209.68.24.127": [
@@ -4186,7 +4198,9 @@
           "ns11.constellix.com.",
           "ns21.constellix.com.",
           "ns31.constellix.com.",
-          "ns41.constellix.net."
+          "ns41.constellix.net.",
+          "ns51.constellix.net.",
+          "ns61.constellix.net."
         ],
         "a": {
           "209.68.24.127": [
