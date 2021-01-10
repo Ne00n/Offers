@@ -281,6 +281,6 @@ class Base:
                         return False
                     if "The page you were looking for could not be found." in response:
                         print("End of line")
-                        return True
+                        break
                     self.getPostsLowendtalk(response,"lowendtalk")
                     page = page +1
