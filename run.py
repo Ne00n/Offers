@@ -32,6 +32,11 @@ def generate(slow=False):
     Update.getUrls("vps-cloud-offers.10","vpsboard.com")
     Update.getUrls("vps-hosting-offers.204","hostingdiscussion.com")
 
+def threads(headless=False):
+    Update = Base(headless)
+    Update.threads()
+    Update.close(headless)
+
 param = sys.argv
 if len(param) == 1:
     print("update generate dns stats")
@@ -57,3 +62,7 @@ elif sys.argv[1] == "stats":
 elif sys.argv[1] == "webserver":
     Data = Data(False)
     Data.webserver()
+elif sys.argv[1] == "threads" and len(sys.argv) > 2 and sys.argv[2] == "headless":
+    threads(True)
+elif sys.argv[1] == "threads":
+    threads()

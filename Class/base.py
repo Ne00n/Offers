@@ -249,3 +249,38 @@ class Base:
                         return True
 
             count = count +1
+
+    def getPostsLowendtalk(self,html,site):
+        dataDir = os.getcwd()+"/src/"+site+"/posts/"
+        if not os.path.exists(dataDir):
+            os.makedirs(dataDir)
+        print("Parsing posts")
+        posts = re.findall('<li class="Item ItemComment (.*?)" id="Comment_([0-9]+)">.*?profile\/(.*?)".*?datetime="(.*?)".*?Item-Body">(.*?)<div class="(Signature|ThankedByBox|Reactions)',html, re.MULTILINE | re.DOTALL)
+        for post in posts:
+            urls = re.findall('href="(?!https:\/\/www.lowendtalk|\/discussion|class="QuoteFolding).*?"',post[4], re.MULTILINE | re.DOTALL)
+            tags = ["Provider","Administrator"]
+            if any(tag in post[0] for tag in tags) and urls:
+                file = dataDir+post[1]+"-"+post[2]+".json"
+                if not Path(file).is_file():
+                    data = {'id':post[1],'date':post[3],'user':post[2],'post':post[4]}
+                    with open(file, 'w') as f:
+                        json.dump(data, f)
+
+    def threads(self):
+        threadsPath,page = os.getcwd()+"/src/threads.json",1
+        print("Loading "+threadsPath)
+        with open(threadsPath, 'r') as f:
+            threads = json.load(f)
+        for url in threads:
+            if "lowendtalk.com" in url:
+                while True:
+                    response = self.fetch(url+str(page))
+                    if response == False: return False
+                    if self.checkCF(response):
+                        print("Failed to bypass CF")
+                        return False
+                    if "The page you were looking for could not be found." in response:
+                        print("End of line")
+                        return True
+                    self.getPostsLowendtalk(response,"lowendtalk")
+                    page = page +1
