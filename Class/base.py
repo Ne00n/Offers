@@ -8,12 +8,16 @@ import time, json, re, os
 import urllib.parse
 
 class Base:
-    def __init__(self,headless):
-        self.selenium(headless)
 
-    def selenium(self,headless):
+    headless,before = False,""
+
+    def __init__(self,headless):
+        self.isHeadless = headless
+        self.selenium()
+
+    def selenium(self):
         global browser,display
-        if headless:
+        if self.headless:
             print("Starting virtual display")
             display = Display(visible=0, size=(1920, 1080))
             display.start()
@@ -40,6 +44,12 @@ class Base:
                 browser.get(url)
                 print("Waiting",wait,"seconds")
                 time.sleep(wait)
+                try:
+                    crashPrevention = browser.current_url
+                except:
+                    print("Browser seems to have crashed")
+                    self.restart()
+                    return True
                 return browser.page_source
             except Exception as e:
                 print("Error",e)
@@ -49,11 +59,34 @@ class Base:
             count = count +1
         return False
 
+    def fatch(self,url):
+        html = self.fetch(url)
+        if self.detectCrash():
+            html = self.fetch(url,wait)
+        if html == self.before:
+            print("Browser does not seem to respond, restarting instance")
+            self.restart()
+            html = self.fetch(url)
+        self.before = html
+        return html
 
-    def close(self,headless):
+    def detectCrash(self):
+        try:
+            crashPrevention = browser.current_url
+        except:
+            print("Browser seems to have crashed")
+            self.restart()
+            return True
+
+    def restart(self):
+        self.close()
+        self.selenium()
+        print("Browser restarted")
+
+    def close(self):
         browser.close()
         browser.quit()
-        if headless:
+        if self.headless:
             display.stop()
 
     def checkCF(self,html):
@@ -275,15 +308,14 @@ class Base:
             page = 1
             if "lowendtalk.com" in url:
                 while True:
-                    response = self.fetch(url+str(page))
-                    if response == False: return False
-                    if self.checkCF(response):
+                    html = self.fatch(url+str(page))
+                    if self.checkCF(html):
                         print("Failed to bypass CF")
                         return False
-                    if "The page you were looking for could not be found." in response:
+                    if "The page you were looking for could not be found." in html:
                         print("End of line")
                         break
-                    self.getPostsLowendtalk(response,"lowendtalk")
+                    self.getPostsLowendtalk(html,"lowendtalk")
                     page = page +1
             else:
                 print("Not defined")
