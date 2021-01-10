@@ -272,8 +272,8 @@ class Base:
         with open(threadsPath, 'r') as f:
             threads = json.load(f)
         for url in threads:
+            page = 1
             if "lowendtalk.com" in url:
-                page = 1
                 while True:
                     response = self.fetch(url+str(page))
                     if response == False: return False
@@ -285,3 +285,5 @@ class Base:
                         break
                     self.getPostsLowendtalk(response,"lowendtalk")
                     page = page +1
+            else:
+                print("Not defined")
