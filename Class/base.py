@@ -12,7 +12,7 @@ class Base:
     headless,before = False,""
 
     def __init__(self,headless):
-        self.isHeadless = headless
+        self.headless = headless
         self.selenium()
 
     def selenium(self):
