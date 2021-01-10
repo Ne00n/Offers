@@ -44,12 +44,6 @@ class Base:
                 browser.get(url)
                 print("Waiting",wait,"seconds")
                 time.sleep(wait)
-                try:
-                    crashPrevention = browser.current_url
-                except:
-                    print("Browser seems to have crashed")
-                    self.restart()
-                    return True
                 return browser.page_source
             except Exception as e:
                 print("Error",e)
@@ -62,7 +56,7 @@ class Base:
     def fatch(self,url):
         html = self.fetch(url)
         if self.detectCrash():
-            html = self.fetch(url,wait)
+            html = self.fetch(url)
         if html == self.before:
             print("Browser does not seem to respond, restarting instance")
             self.restart()
