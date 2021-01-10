@@ -273,6 +273,7 @@ class Base:
             threads = json.load(f)
         for url in threads:
             if "lowendtalk.com" in url:
+                page = 1
                 while True:
                     response = self.fetch(url+str(page))
                     if response == False: return False
