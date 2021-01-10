@@ -32,9 +32,9 @@ class Base:
             print("Error",e)
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("start-maximized")
-        options.add_argument("disable-infobars")
         options.add_argument("--disable-extensions")
         browser = webdriver.Chrome(options=options)
+        browser.set_page_load_timeout(60)
 
     def fetch(self,url):
         wait,count = randint(7,80),0
@@ -67,13 +67,18 @@ class Base:
     def detectCrash(self):
         try:
             crashPrevention = browser.current_url
-        except:
+        except Exception as e:
+            print("Error",e)
             print("Browser seems to have crashed")
             self.restart()
             return True
 
     def restart(self):
-        self.close()
+        try:
+            self.close()
+        except Exception as e:
+            print("Error",e)
+            print("Failed to close browser")
         self.selenium()
         print("Browser restarted")
 
