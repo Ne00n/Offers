@@ -35,7 +35,7 @@ def generate(slow=False):
 def threads(headless=False):
     Update = Base(headless)
     Update.threads()
-    Update.close(headless)
+    Update.close()
 
 param = sys.argv
 if len(param) == 1:
