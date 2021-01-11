@@ -49,6 +49,7 @@ elif sys.argv[1] == "dns":
     Data = Data(False)
     Data.getUrls("offers","talk.lowendspirit",True)
     Data.getUrls("offers","lowendtalk",True)
+    Data.getUrls("posts","lowendtalk",True)
     Data.getUrls("shared-hosting-offers","lowendtalk",True)
     Data.getUrls("posts","lowendbox",True)
     Data.getUrls("offers","hostedtalk.net",True)
