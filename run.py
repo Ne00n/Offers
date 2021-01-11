@@ -26,6 +26,7 @@ def generate(slow=False):
     Update.saveProviders("talk.lowendspirit",providers)
     Update.getUrls("offers","talk.lowendspirit")
     Update.getUrls("offers","lowendtalk")
+    Update.getUrls("posts","lowendtalk")
     Update.getUrls("shared-hosting-offers","lowendtalk")
     Update.getUrls("posts","lowendbox")
     Update.getUrls("offers","hostedtalk.net")
