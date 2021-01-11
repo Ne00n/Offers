@@ -47,7 +47,7 @@ class Base:
                 return browser.page_source
             except Exception as e:
                 print("Error",e)
-                wait = randint(120,300)
+                wait = randint(30,80)
                 print("Waiting",wait,"seconds")
                 time.sleep(wait)
             count = count +1
