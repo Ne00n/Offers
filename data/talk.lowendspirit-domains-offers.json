@@ -593,8 +593,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.241": [
-            "unn-185-93-3-241.datapacket.com."
+          "185.93.1.242": [
+            "unn-185-93-1-242.datapacket.com."
           ]
         }
       },
@@ -761,8 +761,10 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "165.22.65.139": false,
-          "167.99.129.42": false
+          "157.230.120.63": false,
+          "18.198.68.141": [
+            "ec2-18-198-68-141.eu-central-1.compute.amazonaws.com."
+          ]
         }
       }
     }
@@ -876,17 +878,17 @@
           "ns-248.awsdns-31.com."
         ],
         "a": {
-          "13.35.101.17": [
-            "server-13-35-101-17.lax3.r.cloudfront.net."
+          "99.86.100.35": [
+            "server-99-86-100-35.iah50.r.cloudfront.net."
           ],
-          "13.35.101.43": [
-            "server-13-35-101-43.lax3.r.cloudfront.net."
+          "99.86.100.36": [
+            "server-99-86-100-36.iah50.r.cloudfront.net."
           ],
-          "13.35.101.72": [
-            "server-13-35-101-72.lax3.r.cloudfront.net."
+          "99.86.100.39": [
+            "server-99-86-100-39.iah50.r.cloudfront.net."
           ],
-          "13.35.101.74": [
-            "server-13-35-101-74.lax3.r.cloudfront.net."
+          "99.86.100.86": [
+            "server-99-86-100-86.iah50.r.cloudfront.net."
           ]
         }
       }
@@ -904,8 +906,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.241": [
-            "unn-185-93-3-241.datapacket.com."
+          "185.93.1.242": [
+            "unn-185-93-1-242.datapacket.com."
           ]
         }
       }
@@ -1077,6 +1079,21 @@
           "104.28.16.142": false,
           "104.28.17.142": false,
           "172.67.190.55": false
+        }
+      }
+    }
+  },
+  "Ian_Dot_Tech": {
+    "urls": {
+      "leveloneservers.com": {
+        "ns": [
+          "kay.ns.cloudflare.com.",
+          "will.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.24.98.205": false,
+          "104.24.99.205": false,
+          "172.67.171.31": false
         }
       }
     }
@@ -2395,8 +2412,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.68.41": [
-            "lax17s46-in-f9.1e100.net."
+          "173.194.201.191": [
+            "os-in-f191.1e100.net."
           ]
         }
       },
@@ -2419,17 +2436,17 @@
           "ns-745.awsdns-29.net."
         ],
         "a": {
-          "13.226.254.34": [
-            "server-13-226-254-34.lax50.r.cloudfront.net."
+          "13.249.62.10": [
+            "server-13-249-62-10.iah50.r.cloudfront.net."
           ],
-          "13.226.254.56": [
-            "server-13-226-254-56.lax50.r.cloudfront.net."
+          "13.249.62.55": [
+            "server-13-249-62-55.iah50.r.cloudfront.net."
           ],
-          "13.226.254.7": [
-            "server-13-226-254-7.lax50.r.cloudfront.net."
+          "13.249.62.60": [
+            "server-13-249-62-60.iah50.r.cloudfront.net."
           ],
-          "13.226.254.79": [
-            "server-13-226-254-79.lax50.r.cloudfront.net."
+          "13.249.62.72": [
+            "server-13-249-62-72.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -2464,8 +2481,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.226.233.200": [
-            "server-13-226-233-200.lax50.r.cloudfront.net."
+          "13.249.22.231": [
+            "server-13-249-22-231.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -2539,10 +2556,8 @@
       },
       "milled.com": {
         "ns": [
-          "ns-1044.awsdns-02.org.",
-          "ns-1912.awsdns-47.co.uk.",
-          "ns-387.awsdns-48.com.",
-          "ns-724.awsdns-26.net."
+          "eric.ns.cloudflare.com.",
+          "may.ns.cloudflare.com."
         ],
         "a": {
           "104.26.6.23": false,
@@ -2638,9 +2653,17 @@
           "ns4.google.com."
         ],
         "a": {
-          "172.217.4.174": [
-            "lax28s01-in-f14.1e100.net.",
-            "lax28s01-in-f174.1e100.net."
+          "74.125.127.136": [
+            "ov-in-f136.1e100.net."
+          ],
+          "74.125.127.190": [
+            "ov-in-f190.1e100.net."
+          ],
+          "74.125.127.91": [
+            "ov-in-f91.1e100.net."
+          ],
+          "74.125.127.93": [
+            "ov-in-f93.1e100.net."
           ]
         }
       },
@@ -2721,7 +2744,9 @@
     "urls": {
       "x4b.net": {
         "ns": [
+          "ns1.vultr.com.",
           "ns1.x4b.net.",
+          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
