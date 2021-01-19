@@ -250,15 +250,8 @@
   "BigBox": {
     "urls": {
       "bigboxhost.com": {
-        "ns": [
-          "ns7.bigboxhost.com.",
-          "ns8.bigboxhost.com."
-        ],
-        "a": {
-          "192.198.88.251": [
-            "bigboxhost.com."
-          ]
-        }
+        "ns": false,
+        "a": {}
       }
     }
   },
@@ -512,8 +505,10 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "165.22.65.139": false,
-          "68.183.215.91": false
+          "167.99.137.12": false,
+          "18.198.68.141": [
+            "ec2-18-198-68-141.eu-central-1.compute.amazonaws.com."
+          ]
         }
       },
       "hostedtalk.net": {
@@ -791,8 +786,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.1.242": [
-            "unn-185-93-1-242.datapacket.com."
+          "185.93.3.241": [
+            "unn-185-93-3-241.datapacket.com."
           ]
         }
       }
@@ -1563,8 +1558,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.1.242": [
-            "unn-185-93-1-242.datapacket.com."
+          "185.93.3.241": [
+            "unn-185-93-3-241.datapacket.com."
           ]
         }
       },
@@ -2420,9 +2415,7 @@
       },
       "x4b.net": {
         "ns": [
-          "ns1.vultr.com.",
           "ns1.x4b.net.",
-          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
