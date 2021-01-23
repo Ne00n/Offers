@@ -390,8 +390,16 @@
         }
       },
       "ipv6vps.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns-123-a.gandi.net.",
+          "ns-194-c.gandi.net.",
+          "ns-85-b.gandi.net."
+        ],
+        "a": {
+          "217.70.184.38": [
+            "webredir.vip.gandi.net."
+          ]
+        }
       },
       "irelandvps.com": {
         "ns": false,
@@ -513,7 +521,7 @@
         ],
         "a": {
           "157.230.103.136": false,
-          "167.99.129.42": false
+          "165.22.65.139": false
         }
       },
       "hostedtalk.net": {
@@ -791,8 +799,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.242": [
-            "unn-185-93-3-242.datapacket.com."
+          "107.155.84.10": [
+            "edge-301.b-cdn.net."
           ]
         }
       }
@@ -1563,8 +1571,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.242": [
-            "unn-185-93-3-242.datapacket.com."
+          "107.155.84.10": [
+            "edge-301.b-cdn.net."
           ]
         }
       },
@@ -2436,13 +2444,8 @@
   "StarburstHost": {
     "urls": {
       "starbursthosting.com": {
-        "ns": [
-          "dns1.registrar-servers.com.",
-          "dns2.registrar-servers.com."
-        ],
-        "a": {
-          "162.255.119.254": false
-        }
+        "ns": false,
+        "a": {}
       }
     }
   },
