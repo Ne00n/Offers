@@ -512,8 +512,8 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "142.93.108.123": false,
-          "165.22.65.139": false
+          "157.230.103.136": false,
+          "167.99.129.42": false
         }
       },
       "hostedtalk.net": {
@@ -791,8 +791,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.1.242": [
-            "unn-185-93-1-242.datapacket.com."
+          "185.93.3.242": [
+            "unn-185-93-3-242.datapacket.com."
           ]
         }
       }
@@ -1563,8 +1563,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.1.242": [
-            "unn-185-93-1-242.datapacket.com."
+          "185.93.3.242": [
+            "unn-185-93-3-242.datapacket.com."
           ]
         }
       },
@@ -2436,8 +2436,13 @@
   "StarburstHost": {
     "urls": {
       "starbursthosting.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "dns1.registrar-servers.com.",
+          "dns2.registrar-servers.com."
+        ],
+        "a": {
+          "162.255.119.254": false
+        }
       }
     }
   },
