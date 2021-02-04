@@ -520,8 +520,10 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "157.230.103.136": false,
-          "157.230.120.63": false
+          "18.197.211.107": [
+            "ec2-18-197-211-107.eu-central-1.compute.amazonaws.com."
+          ],
+          "68.183.215.91": false
         }
       },
       "hostedtalk.net": {
@@ -799,8 +801,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.243": [
-            "unn-185-93-3-243.datapacket.com."
+          "89.187.164.66": [
+            "edge-491.b-cdn.net."
           ]
         }
       }
@@ -1569,8 +1571,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.243": [
-            "unn-185-93-3-243.datapacket.com."
+          "89.187.164.66": [
+            "edge-491.b-cdn.net."
           ]
         }
       },
@@ -1818,16 +1820,8 @@
   "OO-Xavier": {
     "urls": {
       "oneilonline.com": {
-        "ns": [
-          "ns1.oneilonline.com.",
-          "ns2.oneilonline.com.",
-          "ns3.oneilonline.com."
-        ],
-        "a": {
-          "44.240.87.177": [
-            "ec2-44-240-87-177.us-west-2.compute.amazonaws.com."
-          ]
-        }
+        "ns": false,
+        "a": {}
       },
       "wattaserver.com": {
         "ns": [
@@ -2441,7 +2435,9 @@
       },
       "x4b.net": {
         "ns": [
+          "ns1.vultr.com.",
           "ns1.x4b.net.",
+          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
