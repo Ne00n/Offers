@@ -238,29 +238,29 @@
           "lucy.ns.cloudflare.com."
         ],
         "a": {
-          "3.216.185.98": [
-            "ec2-3-216-185-98.compute-1.amazonaws.com."
+          "3.222.91.89": [
+            "ec2-3-222-91-89.compute-1.amazonaws.com."
           ],
-          "3.225.35.251": [
-            "ec2-3-225-35-251.compute-1.amazonaws.com."
+          "3.224.58.229": [
+            "ec2-3-224-58-229.compute-1.amazonaws.com."
           ],
-          "3.226.154.190": [
-            "ec2-3-226-154-190.compute-1.amazonaws.com."
+          "35.168.101.154": [
+            "ec2-35-168-101-154.compute-1.amazonaws.com."
           ],
-          "3.89.53.154": [
-            "ec2-3-89-53-154.compute-1.amazonaws.com."
+          "52.44.99.2": [
+            "ec2-52-44-99-2.compute-1.amazonaws.com."
           ],
-          "34.203.111.198": [
-            "ec2-34-203-111-198.compute-1.amazonaws.com."
+          "52.54.2.203": [
+            "ec2-52-54-2-203.compute-1.amazonaws.com."
           ],
-          "52.2.88.196": [
-            "ec2-52-2-88-196.compute-1.amazonaws.com."
+          "52.72.160.125": [
+            "ec2-52-72-160-125.compute-1.amazonaws.com."
           ],
-          "52.20.18.243": [
-            "ec2-52-20-18-243.compute-1.amazonaws.com."
+          "52.86.12.80": [
+            "ec2-52-86-12-80.compute-1.amazonaws.com."
           ],
-          "52.54.11.249": [
-            "ec2-52-54-11-249.compute-1.amazonaws.com."
+          "54.167.125.52": [
+            "ec2-54-167-125-52.compute-1.amazonaws.com."
           ]
         }
       },
@@ -1091,7 +1091,12 @@
     }
   },
   "cocoahost-mike": {
-    "urls": {}
+    "urls": {
+      "cocoahost.com": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "collabora": {
     "urls": {
@@ -2119,8 +2124,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "31.13.65.36": [
-            "edge-star-mini-shv-01-atl3.facebook.com."
+          "31.13.93.35": [
+            "edge-star-mini-shv-02-dfw5.facebook.com."
           ]
         }
       },
@@ -2362,16 +2367,8 @@
   "expertali": {
     "urls": {
       "deluxservers.com": {
-        "ns": [
-          "dns101.registrar-servers.com.",
-          "dns102.registrar-servers.com."
-        ],
-        "a": {
-          "198.54.117.197": false,
-          "198.54.117.198": false,
-          "198.54.117.199": false,
-          "198.54.117.200": false
-        }
+        "ns": false,
+        "a": {}
       }
     }
   },
@@ -2804,11 +2801,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.quokkadns.com.",
-          "ns2.quokkadns.com."
+          "ns1.koaladns.com.",
+          "ns2.koaladns.com."
         ],
         "a": {
-          "162.210.199.65": false
+          "207.244.65.58": false
         }
       }
     }
@@ -4859,15 +4856,8 @@
   "jbvps": {
     "urls": {
       "f9servers.com": {
-        "ns": [
-          "ns1.f9servers.com.",
-          "ns2.f9servers.com."
-        ],
-        "a": {
-          "199.47.241.200": [
-            "core.tor.web.f9servers.com."
-          ]
-        }
+        "ns": false,
+        "a": {}
       },
       "vps-hosting.ca": {
         "ns": [
@@ -4875,9 +4865,7 @@
           "nicole.ns.cloudflare.com."
         ],
         "a": {
-          "199.47.241.200": [
-            "core.tor.web.f9servers.com."
-          ]
+          "199.47.241.200": false
         }
       }
     }
@@ -5688,17 +5676,17 @@
           "ns-80.awsdns-10.com."
         ],
         "a": {
-          "13.226.220.112": [
-            "server-13-226-220-112.lax50.r.cloudfront.net."
+          "13.249.21.122": [
+            "server-13-249-21-122.iah50.r.cloudfront.net."
           ],
-          "13.226.220.33": [
-            "server-13-226-220-33.lax50.r.cloudfront.net."
+          "13.249.21.127": [
+            "server-13-249-21-127.iah50.r.cloudfront.net."
           ],
-          "13.226.220.38": [
-            "server-13-226-220-38.lax50.r.cloudfront.net."
+          "13.249.21.79": [
+            "server-13-249-21-79.iah50.r.cloudfront.net."
           ],
-          "13.226.220.72": [
-            "server-13-226-220-72.lax50.r.cloudfront.net."
+          "13.249.21.99": [
+            "server-13-249-21-99.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -5716,10 +5704,6 @@
   },
   "liam-d": {
     "urls": {
-      "myresellerhost.info": {
-        "ns": false,
-        "a": {}
-      },
       "revoltvps.com": {
         "ns": false,
         "a": {}
@@ -5830,8 +5814,8 @@
           "ns6.empire-technology.net."
         ],
         "a": {
-          "198.102.30.68": [
-            "secure.lowesthost.com."
+          "198.102.28.5": [
+            "reverse.empire-technology.com."
           ]
         }
       }
@@ -5910,10 +5894,10 @@
       },
       "magnite.net": {
         "ns": [
-          "ns-1008.awsdns-62.net.",
-          "ns-1287.awsdns-32.org.",
-          "ns-2022.awsdns-60.co.uk.",
-          "ns-280.awsdns-35.com."
+          "ns-cloud-c1.googledomains.com.",
+          "ns-cloud-c2.googledomains.com.",
+          "ns-cloud-c3.googledomains.com.",
+          "ns-cloud-c4.googledomains.com."
         ],
         "a": false
       }
@@ -6332,12 +6316,7 @@
     }
   },
   "moduleserver": {
-    "urls": {
-      "cocoahost.com": {
-        "ns": false,
-        "a": {}
-      }
-    }
+    "urls": {}
   },
   "monovm": {
     "urls": {
@@ -6459,7 +6438,12 @@
     }
   },
   "myreseller": {
-    "urls": {}
+    "urls": {
+      "myresellerhost.info": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "natan": {
     "urls": {
@@ -6675,11 +6659,7 @@
           "ns2.oneilonline.com.",
           "ns3.oneilonline.com."
         ],
-        "a": {
-          "44.240.87.177": [
-            "ec2-44-240-87-177.us-west-2.compute.amazonaws.com."
-          ]
-        }
+        "a": false
       },
       "wattaserver.com": {
         "ns": [
@@ -7688,11 +7668,11 @@
           "ns-630.awsdns-14.net."
         ],
         "a": {
-          "13.55.44.240": [
-            "ec2-13-55-44-240.ap-southeast-2.compute.amazonaws.com."
+          "54.252.229.173": [
+            "ec2-54-252-229-173.ap-southeast-2.compute.amazonaws.com."
           ],
-          "52.63.134.131": [
-            "ec2-52-63-134-131.ap-southeast-2.compute.amazonaws.com."
+          "54.79.110.88": [
+            "ec2-54-79-110-88.ap-southeast-2.compute.amazonaws.com."
           ]
         }
       },
@@ -8338,7 +8318,7 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.59": false
+          "185.107.56.57": false
         }
       },
       "webhostinggeeks.com": {
@@ -9926,10 +9906,7 @@
           "ns4.google.com."
         ],
         "a": {
-          "172.217.5.201": [
-            "lax28s10-in-f201.1e100.net.",
-            "lax28s10-in-f9.1e100.net."
-          ]
+          "172.253.125.191": false
         }
       },
       "host-tracker.com": {
