@@ -281,7 +281,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       },
       "mayohost.com": {
@@ -290,7 +292,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -516,8 +520,10 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "134.209.226.211": false,
-          "68.183.215.91": false
+          "165.22.65.139": false,
+          "18.197.211.107": [
+            "ec2-18-197-211-107.eu-central-1.compute.amazonaws.com."
+          ]
         }
       },
       "hostedtalk.net": {
@@ -795,8 +801,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.241": [
-            "unn-185-93-3-241.datapacket.com."
+          "89.187.164.66": [
+            "edge-491.b-cdn.net."
           ]
         }
       }
@@ -1565,8 +1571,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.241": [
-            "unn-185-93-3-241.datapacket.com."
+          "89.187.164.66": [
+            "edge-491.b-cdn.net."
           ]
         }
       },
@@ -1819,11 +1825,7 @@
           "ns2.oneilonline.com.",
           "ns3.oneilonline.com."
         ],
-        "a": {
-          "44.240.87.177": [
-            "ec2-44-240-87-177.us-west-2.compute.amazonaws.com."
-          ]
-        }
+        "a": false
       },
       "wattaserver.com": {
         "ns": [
@@ -2828,12 +2830,21 @@
           "ns3.systemdns.com."
         ],
         "a": {
-          "45.130.141.4": false
+          "45.130.141.4": [
+            "www.rochut.net."
+          ]
         }
       },
       "fyrnap.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.fyrnap.com.",
+          "ns2.fyrnap.com."
+        ],
+        "a": {
+          "45.130.141.250": [
+            "va2.aonap.net."
+          ]
+        }
       },
       "hostedtalk.net": {
         "ns": [
