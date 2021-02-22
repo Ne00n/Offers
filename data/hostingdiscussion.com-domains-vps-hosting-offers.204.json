@@ -241,26 +241,26 @@
           "3.211.59.43": [
             "ec2-3-211-59-43.compute-1.amazonaws.com."
           ],
-          "34.192.43.98": [
-            "ec2-34-192-43-98.compute-1.amazonaws.com."
+          "3.224.246.115": [
+            "ec2-3-224-246-115.compute-1.amazonaws.com."
           ],
-          "34.196.25.30": [
-            "ec2-34-196-25-30.compute-1.amazonaws.com."
+          "3.226.154.190": [
+            "ec2-3-226-154-190.compute-1.amazonaws.com."
           ],
-          "34.199.176.103": [
-            "ec2-34-199-176-103.compute-1.amazonaws.com."
+          "52.1.4.45": [
+            "ec2-52-1-4-45.compute-1.amazonaws.com."
           ],
-          "34.230.186.67": [
-            "ec2-34-230-186-67.compute-1.amazonaws.com."
-          ],
-          "52.200.31.227": [
-            "ec2-52-200-31-227.compute-1.amazonaws.com."
-          ],
-          "52.54.232.157": [
-            "ec2-52-54-232-157.compute-1.amazonaws.com."
+          "52.54.2.203": [
+            "ec2-52-54-2-203.compute-1.amazonaws.com."
           ],
           "52.86.12.80": [
             "ec2-52-86-12-80.compute-1.amazonaws.com."
+          ],
+          "54.236.83.95": [
+            "ec2-54-236-83-95.compute-1.amazonaws.com."
+          ],
+          "54.85.152.210": [
+            "ec2-54-85-152-210.compute-1.amazonaws.com."
           ]
         }
       },
@@ -681,8 +681,7 @@
       "bighost.lv": {
         "ns": [
           "ns.bighost.lv.",
-          "ns1.bighost.lv.",
-          "ns2.bighost.lv."
+          "ns1.bighost.lv."
         ],
         "a": {
           "159.148.186.129": [
@@ -763,8 +762,8 @@
           "b.ns.phonesear.ch."
         ],
         "a": {
-          "66.51.106.105": [
-            "ip-66-51-106-105.tera-byte.com."
+          "216.194.79.248": [
+            "ip-216-194-79-248.tera-byte.com."
           ]
         }
       }
@@ -1102,7 +1101,12 @@
     }
   },
   "cocoahost-mike": {
-    "urls": {}
+    "urls": {
+      "cocoahost.com": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "collabora": {
     "urls": {
@@ -1353,7 +1357,9 @@
           "ns038.onsecureweb.com."
         ],
         "a": {
-          "104.171.113.54": false
+          "104.171.113.54": [
+            "ncsea33.onsecureweb.com."
+          ]
         }
       }
     }
@@ -2120,8 +2126,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "31.13.70.36": [
-            "edge-star-mini-shv-01-lax3.facebook.com."
+          "157.240.14.35": [
+            "edge-star-mini-shv-02-mia3.facebook.com."
           ]
         }
       },
@@ -2803,11 +2809,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.kirklanddc.com.",
-          "ns2.kirklanddc.com."
+          "ns1.quokkadns.com.",
+          "ns2.quokkadns.com."
         ],
         "a": {
-          "5.79.68.109": false
+          "199.115.116.216": false
         }
       }
     }
@@ -5705,17 +5711,17 @@
           "ns-80.awsdns-10.com."
         ],
         "a": {
-          "13.225.146.116": [
-            "server-13-225-146-116.lax3.r.cloudfront.net."
+          "13.249.21.122": [
+            "server-13-249-21-122.iah50.r.cloudfront.net."
           ],
-          "13.225.146.119": [
-            "server-13-225-146-119.lax3.r.cloudfront.net."
+          "13.249.21.127": [
+            "server-13-249-21-127.iah50.r.cloudfront.net."
           ],
-          "13.225.146.37": [
-            "server-13-225-146-37.lax3.r.cloudfront.net."
+          "13.249.21.79": [
+            "server-13-249-21-79.iah50.r.cloudfront.net."
           ],
-          "13.225.146.85": [
-            "server-13-225-146-85.lax3.r.cloudfront.net."
+          "13.249.21.99": [
+            "server-13-249-21-99.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -5733,10 +5739,6 @@
   },
   "liam-d": {
     "urls": {
-      "myresellerhost.info": {
-        "ns": false,
-        "a": {}
-      },
       "revoltvps.com": {
         "ns": false,
         "a": {}
@@ -5929,10 +5931,10 @@
       },
       "magnite.net": {
         "ns": [
-          "ns-1008.awsdns-62.net.",
-          "ns-1287.awsdns-32.org.",
-          "ns-2022.awsdns-60.co.uk.",
-          "ns-280.awsdns-35.com."
+          "ns-cloud-c1.googledomains.com.",
+          "ns-cloud-c2.googledomains.com.",
+          "ns-cloud-c3.googledomains.com.",
+          "ns-cloud-c4.googledomains.com."
         ],
         "a": false
       }
@@ -6343,12 +6345,7 @@
     }
   },
   "moduleserver": {
-    "urls": {
-      "cocoahost.com": {
-        "ns": false,
-        "a": {}
-      }
-    }
+    "urls": {}
   },
   "monovm": {
     "urls": {
@@ -6470,7 +6467,12 @@
     }
   },
   "myreseller": {
-    "urls": {}
+    "urls": {
+      "myresellerhost.info": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "natan": {
     "urls": {
@@ -7854,17 +7856,17 @@
           "ns-642.awsdns-16.net."
         ],
         "a": {
-          "13.35.90.107": [
-            "server-13-35-90-107.lax3.r.cloudfront.net."
+          "99.86.100.115": [
+            "server-99-86-100-115.iah50.r.cloudfront.net."
           ],
-          "13.35.90.111": [
-            "server-13-35-90-111.lax3.r.cloudfront.net."
+          "99.86.100.121": [
+            "server-99-86-100-121.iah50.r.cloudfront.net."
           ],
-          "13.35.90.48": [
-            "server-13-35-90-48.lax3.r.cloudfront.net."
+          "99.86.100.86": [
+            "server-99-86-100-86.iah50.r.cloudfront.net."
           ],
-          "13.35.90.77": [
-            "server-13-35-90-77.lax3.r.cloudfront.net."
+          "99.86.100.89": [
+            "server-99-86-100-89.iah50.r.cloudfront.net."
           ]
         }
       }
@@ -8350,7 +8352,9 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.58": false
+          "64.32.8.68": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "webhostinggeeks.com": {
@@ -9423,8 +9427,8 @@
           "ns2.vpsville.com."
         ],
         "a": {
-          "54.39.153.3": [
-            "ip3.ip-54-39-153.net."
+          "54.39.153.2": [
+            "ip2.ip-54-39-153.net."
           ]
         }
       }
@@ -9928,8 +9932,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "172.217.11.169": [
-            "lax28s15-in-f9.1e100.net."
+          "173.194.201.191": [
+            "os-in-f191.1e100.net."
           ]
         }
       },
