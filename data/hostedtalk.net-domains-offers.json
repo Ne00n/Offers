@@ -516,8 +516,10 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "142.93.108.123": false,
-          "167.99.129.42": false
+          "167.99.137.12": false,
+          "18.197.211.107": [
+            "ec2-18-197-211-107.eu-central-1.compute.amazonaws.com."
+          ]
         }
       },
       "hostedtalk.net": {
@@ -795,8 +797,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "107.155.84.10": [
-            "edge-301.b-cdn.net."
+          "185.93.3.241": [
+            "unn-185-93-3-241.datapacket.com."
           ]
         }
       }
@@ -1604,8 +1606,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "107.155.84.10": [
-            "edge-301.b-cdn.net."
+          "185.93.3.241": [
+            "unn-185-93-3-241.datapacket.com."
           ]
         }
       },
@@ -1853,8 +1855,16 @@
   "OO-Xavier": {
     "urls": {
       "oneilonline.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.oneilonline.com.",
+          "ns2.oneilonline.com.",
+          "ns3.oneilonline.com."
+        ],
+        "a": {
+          "44.240.87.177": [
+            "ec2-44-240-87-177.us-west-2.compute.amazonaws.com."
+          ]
+        }
       },
       "wattaserver.com": {
         "ns": [
