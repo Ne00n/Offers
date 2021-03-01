@@ -251,8 +251,8 @@
     "urls": {
       "bigboxhost.com": {
         "ns": [
-          "ns7.bigboxhost.com.",
-          "ns8.bigboxhost.com."
+          "official1.bigboxhost.com.",
+          "official2.bigboxhost.com."
         ],
         "a": {
           "192.198.88.251": [
@@ -281,9 +281,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       },
       "mayohost.com": {
@@ -292,9 +290,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -307,11 +303,8 @@
           "ns2.squadhelp.com."
         ],
         "a": {
-          "52.201.79.206": [
-            "ec2-52-201-79-206.compute-1.amazonaws.com."
-          ],
-          "52.23.148.124": [
-            "ec2-52-23-148-124.compute-1.amazonaws.com."
+          "52.20.84.62": [
+            "ec2-52-20-84-62.compute-1.amazonaws.com."
           ]
         }
       },
@@ -352,11 +345,8 @@
           "ns2.squadhelp.com."
         ],
         "a": {
-          "52.201.79.206": [
-            "ec2-52-201-79-206.compute-1.amazonaws.com."
-          ],
-          "52.23.148.124": [
-            "ec2-52-23-148-124.compute-1.amazonaws.com."
+          "52.20.84.62": [
+            "ec2-52-20-84-62.compute-1.amazonaws.com."
           ]
         }
       },
@@ -464,11 +454,8 @@
           "ns2.squadhelp.com."
         ],
         "a": {
-          "52.201.79.206": [
-            "ec2-52-201-79-206.compute-1.amazonaws.com."
-          ],
-          "52.23.148.124": [
-            "ec2-52-23-148-124.compute-1.amazonaws.com."
+          "52.20.84.62": [
+            "ec2-52-20-84-62.compute-1.amazonaws.com."
           ]
         }
       }
@@ -520,8 +507,12 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "138.197.188.142": false,
-          "206.189.50.60": false
+          "3.125.252.47": [
+            "ec2-3-125-252-47.eu-central-1.compute.amazonaws.com."
+          ],
+          "3.64.200.242": [
+            "ec2-3-64-200-242.eu-central-1.compute.amazonaws.com."
+          ]
         }
       },
       "hostedtalk.net": {
@@ -799,8 +790,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.243": [
-            "unn-185-93-3-243.datapacket.com."
+          "107.155.84.10": [
+            "edge-301.b-cdn.net."
           ]
         }
       }
@@ -1608,8 +1599,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.243": [
-            "unn-185-93-3-243.datapacket.com."
+          "107.155.84.10": [
+            "edge-301.b-cdn.net."
           ]
         }
       },
@@ -1634,15 +1625,15 @@
       },
       "zfrmz.com": {
         "ns": [
-          "DNS1.P03.NSONE.NET.",
-          "DNS2.P03.NSONE.NET.",
-          "DNS3.P03.NSONE.NET.",
-          "DNS4.P03.NSONE.NET.",
-          "PDNS90.ULTRADNS.BIZ.",
-          "PDNS90.ULTRADNS.NET.",
-          "PDNS90.ULTRADNS.ORG.",
-          "PDNS90.ULTRADNS.com.",
-          "ns1.zohocorp.com."
+          "dns1.p03.nsone.net.",
+          "dns2.p03.nsone.net.",
+          "dns3.p03.nsone.net.",
+          "dns4.p03.nsone.net.",
+          "ns1.zohocorp.com.",
+          "pdns90.ultradns.biz.",
+          "pdns90.ultradns.com.",
+          "pdns90.ultradns.net.",
+          "pdns90.ultradns.org."
         ],
         "a": {
           "136.143.187.52": false
@@ -1863,11 +1854,7 @@
           "ns2.oneilonline.com.",
           "ns3.oneilonline.com."
         ],
-        "a": {
-          "44.240.87.177": [
-            "ec2-44-240-87-177.us-west-2.compute.amazonaws.com."
-          ]
-        }
+        "a": false
       },
       "wattaserver.com": {
         "ns": [
