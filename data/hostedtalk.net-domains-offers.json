@@ -511,10 +511,12 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "18.159.128.50": [
-            "ec2-18-159-128-50.eu-central-1.compute.amazonaws.com."
+          "3.125.252.47": [
+            "ec2-3-125-252-47.eu-central-1.compute.amazonaws.com."
           ],
-          "206.189.58.26": false
+          "3.64.200.242": [
+            "ec2-3-64-200-242.eu-central-1.compute.amazonaws.com."
+          ]
         }
       },
       "hostedtalk.net": {
@@ -792,8 +794,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.243": [
-            "unn-185-93-3-243.datapacket.com."
+          "89.187.164.66": [
+            "edge-491.b-cdn.net."
           ]
         }
       }
@@ -1022,9 +1024,7 @@
           "pns1.plesk.com."
         ],
         "a": {
-          "93.90.189.6": [
-            "dedicated-live.plesk.dogado.net."
-          ]
+          "93.90.189.6": false
         }
       }
     }
@@ -1601,8 +1601,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "185.93.3.243": [
-            "unn-185-93-3-243.datapacket.com."
+          "89.187.164.66": [
+            "edge-491.b-cdn.net."
           ]
         }
       },
@@ -2196,9 +2196,7 @@
           "ns11.constellix.com.",
           "ns21.constellix.com.",
           "ns31.constellix.com.",
-          "ns41.constellix.net.",
-          "ns51.constellix.net.",
-          "ns61.constellix.net."
+          "ns41.constellix.net."
         ],
         "a": {
           "209.68.24.127": [
@@ -2804,9 +2802,7 @@
           "ns11.constellix.com.",
           "ns21.constellix.com.",
           "ns31.constellix.com.",
-          "ns41.constellix.net.",
-          "ns51.constellix.net.",
-          "ns61.constellix.net."
+          "ns41.constellix.net."
         ],
         "a": {
           "209.68.24.127": [
@@ -2886,8 +2882,13 @@
   "aonaphost": {
     "urls": {
       "aonap.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.rochut.net.",
+          "ns2.rochut.net."
+        ],
+        "a": {
+          "45.130.141.3": false
+        }
       },
       "fyrnap.com": {
         "ns": false,
@@ -4012,9 +4013,7 @@
           "ns11.constellix.com.",
           "ns21.constellix.com.",
           "ns31.constellix.com.",
-          "ns41.constellix.net.",
-          "ns51.constellix.net.",
-          "ns61.constellix.net."
+          "ns41.constellix.net."
         ],
         "a": {
           "209.68.24.127": [
@@ -4263,9 +4262,7 @@
           "ns11.constellix.com.",
           "ns21.constellix.com.",
           "ns31.constellix.com.",
-          "ns41.constellix.net.",
-          "ns51.constellix.net.",
-          "ns61.constellix.net."
+          "ns41.constellix.net."
         ],
         "a": {
           "209.68.24.127": [
