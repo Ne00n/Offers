@@ -581,8 +581,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "89.187.164.66": [
-            "edge-491.b-cdn.net."
+          "185.93.3.241": [
+            "unn-185-93-3-241.datapacket.com."
           ]
         }
       },
@@ -700,9 +700,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -744,8 +742,8 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "159.65.118.56": false,
-          "167.99.242.112": false
+          "167.99.242.112": false,
+          "167.99.246.105": false
         }
       }
     }
@@ -858,17 +856,17 @@
           "ns-248.awsdns-31.com."
         ],
         "a": {
-          "99.86.100.35": [
-            "server-99-86-100-35.iah50.r.cloudfront.net."
+          "13.226.253.112": [
+            "server-13-226-253-112.lax50.r.cloudfront.net."
           ],
-          "99.86.100.36": [
-            "server-99-86-100-36.iah50.r.cloudfront.net."
+          "13.226.253.47": [
+            "server-13-226-253-47.lax50.r.cloudfront.net."
           ],
-          "99.86.100.39": [
-            "server-99-86-100-39.iah50.r.cloudfront.net."
+          "13.226.253.63": [
+            "server-13-226-253-63.lax50.r.cloudfront.net."
           ],
-          "99.86.100.86": [
-            "server-99-86-100-86.iah50.r.cloudfront.net."
+          "13.226.253.85": [
+            "server-13-226-253-85.lax50.r.cloudfront.net."
           ]
         }
       }
@@ -886,8 +884,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "89.187.164.66": [
-            "edge-491.b-cdn.net."
+          "185.93.3.241": [
+            "unn-185-93-3-241.datapacket.com."
           ]
         }
       }
@@ -1189,8 +1187,15 @@
   "MIonel": {
     "urls": {
       "ligahosting.ro": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.ligahosting.ro.",
+          "ns2.ligahosting.ro."
+        ],
+        "a": {
+          "198.251.83.215": [
+            "ns2.ligahosting.ro."
+          ]
+        }
       }
     }
   },
@@ -1839,17 +1844,17 @@
           "ns-770.awsdns-32.net."
         ],
         "a": {
-          "99.86.84.108": [
-            "server-99-86-84-108.iah50.r.cloudfront.net."
+          "13.35.90.104": [
+            "server-13-35-90-104.lax3.r.cloudfront.net."
           ],
-          "99.86.84.45": [
-            "server-99-86-84-45.iah50.r.cloudfront.net."
+          "13.35.90.16": [
+            "server-13-35-90-16.lax3.r.cloudfront.net."
           ],
-          "99.86.84.46": [
-            "server-99-86-84-46.iah50.r.cloudfront.net."
+          "13.35.90.8": [
+            "server-13-35-90-8.lax3.r.cloudfront.net."
           ],
-          "99.86.84.97": [
-            "server-99-86-84-97.iah50.r.cloudfront.net."
+          "13.35.90.95": [
+            "server-13-35-90-95.lax3.r.cloudfront.net."
           ]
         }
       },
@@ -2483,7 +2488,9 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.114.191": false
+          "172.217.14.105": [
+            "lax31s01-in-f9.1e100.net."
+          ]
         }
       },
       "cybera.ca": {
@@ -2505,17 +2512,17 @@
           "ns-745.awsdns-29.net."
         ],
         "a": {
-          "13.249.56.21": [
-            "server-13-249-56-21.iah50.r.cloudfront.net."
+          "52.85.192.109": [
+            "server-52-85-192-109.lax50.r.cloudfront.net."
           ],
-          "13.249.56.33": [
-            "server-13-249-56-33.iah50.r.cloudfront.net."
+          "52.85.192.118": [
+            "server-52-85-192-118.lax50.r.cloudfront.net."
           ],
-          "13.249.56.45": [
-            "server-13-249-56-45.iah50.r.cloudfront.net."
+          "52.85.192.85": [
+            "server-52-85-192-85.lax50.r.cloudfront.net."
           ],
-          "13.249.56.67": [
-            "server-13-249-56-67.iah50.r.cloudfront.net."
+          "52.85.192.89": [
+            "server-52-85-192-89.lax50.r.cloudfront.net."
           ]
         }
       },
@@ -2550,8 +2557,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.249.30.231": [
-            "server-13-249-30-231.iah50.r.cloudfront.net."
+          "13.226.233.200": [
+            "server-13-226-233-200.lax50.r.cloudfront.net."
           ]
         }
       },
@@ -2747,9 +2754,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "172.217.6.142": [
-            "dfw25s16-in-f14.1e100.net.",
-            "dfw25s16-in-f142.1e100.net."
+          "172.217.14.110": [
+            "lax31s01-in-f14.1e100.net."
           ]
         }
       },
@@ -2828,7 +2834,9 @@
     "urls": {
       "x4b.net": {
         "ns": [
+          "ns1.vultr.com.",
           "ns1.x4b.net.",
+          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
