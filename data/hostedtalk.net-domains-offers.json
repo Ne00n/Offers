@@ -292,7 +292,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -510,7 +512,7 @@
         ],
         "a": {
           "167.99.242.112": false,
-          "167.99.246.105": false
+          "206.189.50.60": false
         }
       },
       "hostedtalk.net": {
@@ -788,8 +790,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "89.187.164.66": [
-            "edge-491.b-cdn.net."
+          "185.93.3.241": [
+            "unn-185-93-3-241.datapacket.com."
           ]
         }
       }
@@ -1589,8 +1591,8 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "89.187.164.66": [
-            "edge-491.b-cdn.net."
+          "185.93.3.241": [
+            "unn-185-93-3-241.datapacket.com."
           ]
         }
       },
@@ -1615,15 +1617,15 @@
       },
       "zfrmz.com": {
         "ns": [
-          "dns1.p03.nsone.net.",
-          "dns2.p03.nsone.net.",
-          "dns3.p03.nsone.net.",
-          "dns4.p03.nsone.net.",
-          "ns1.zohocorp.com.",
-          "pdns90.ultradns.biz.",
-          "pdns90.ultradns.com.",
-          "pdns90.ultradns.net.",
-          "pdns90.ultradns.org."
+          "DNS1.P03.NSONE.NET.",
+          "DNS2.P03.NSONE.NET.",
+          "DNS3.P03.NSONE.NET.",
+          "DNS4.P03.NSONE.NET.",
+          "PDNS90.ULTRADNS.BIZ.",
+          "PDNS90.ULTRADNS.NET.",
+          "PDNS90.ULTRADNS.ORG.",
+          "PDNS90.ULTRADNS.com.",
+          "ns1.zohocorp.com."
         ],
         "a": {
           "136.143.187.52": false
@@ -1838,8 +1840,16 @@
   "OO-Xavier": {
     "urls": {
       "oneilonline.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.oneilonline.com.",
+          "ns2.oneilonline.com.",
+          "ns3.oneilonline.com."
+        ],
+        "a": {
+          "44.240.87.177": [
+            "ec2-44-240-87-177.us-west-2.compute.amazonaws.com."
+          ]
+        }
       },
       "wattaserver.com": {
         "ns": [
