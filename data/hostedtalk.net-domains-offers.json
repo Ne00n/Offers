@@ -280,7 +280,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       },
       "mayohost.com": {
@@ -289,7 +291,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -508,8 +512,8 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "167.99.242.112": false,
-          "167.99.246.105": false
+          "167.99.246.105": false,
+          "206.189.58.26": false
         }
       },
       "hostedtalk.net": {
@@ -791,17 +795,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "13.249.25.104": [
-            "server-13-249-25-104.iah50.r.cloudfront.net."
+          "13.226.219.110": [
+            "server-13-226-219-110.lax50.r.cloudfront.net."
           ],
-          "13.249.25.32": [
-            "server-13-249-25-32.iah50.r.cloudfront.net."
+          "13.226.219.50": [
+            "server-13-226-219-50.lax50.r.cloudfront.net."
           ],
-          "13.249.25.46": [
-            "server-13-249-25-46.iah50.r.cloudfront.net."
+          "13.226.219.86": [
+            "server-13-226-219-86.lax50.r.cloudfront.net."
           ],
-          "13.249.25.53": [
-            "server-13-249-25-53.iah50.r.cloudfront.net."
+          "13.226.219.93": [
+            "server-13-226-219-93.lax50.r.cloudfront.net."
           ]
         }
       }
@@ -1617,17 +1621,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "13.249.25.104": [
-            "server-13-249-25-104.iah50.r.cloudfront.net."
+          "13.226.219.110": [
+            "server-13-226-219-110.lax50.r.cloudfront.net."
           ],
-          "13.249.25.32": [
-            "server-13-249-25-32.iah50.r.cloudfront.net."
+          "13.226.219.50": [
+            "server-13-226-219-50.lax50.r.cloudfront.net."
           ],
-          "13.249.25.46": [
-            "server-13-249-25-46.iah50.r.cloudfront.net."
+          "13.226.219.86": [
+            "server-13-226-219-86.lax50.r.cloudfront.net."
           ],
-          "13.249.25.53": [
-            "server-13-249-25-53.iah50.r.cloudfront.net."
+          "13.226.219.93": [
+            "server-13-226-219-93.lax50.r.cloudfront.net."
           ]
         }
       },
@@ -1856,8 +1860,13 @@
   "Nodestop": {
     "urls": {
       "nodestop.net": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "phoenix.ns.cloudflare.com.",
+          "terin.ns.cloudflare.com."
+        ],
+        "a": {
+          "154.16.169.167": false
+        }
       }
     }
   },
@@ -2527,9 +2536,7 @@
       },
       "x4b.net": {
         "ns": [
-          "ns1.vultr.com.",
           "ns1.x4b.net.",
-          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
