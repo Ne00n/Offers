@@ -250,29 +250,29 @@
           "lucy.ns.cloudflare.com."
         ],
         "a": {
-          "34.192.137.109": [
-            "ec2-34-192-137-109.compute-1.amazonaws.com."
+          "3.229.18.97": [
+            "ec2-3-229-18-97.compute-1.amazonaws.com."
           ],
-          "34.194.153.26": [
-            "ec2-34-194-153-26.compute-1.amazonaws.com."
+          "34.206.57.22": [
+            "ec2-34-206-57-22.compute-1.amazonaws.com."
           ],
-          "34.205.204.79": [
-            "ec2-34-205-204-79.compute-1.amazonaws.com."
+          "34.230.212.197": [
+            "ec2-34-230-212-197.compute-1.amazonaws.com."
           ],
           "52.22.80.219": [
             "ec2-52-22-80-219.compute-1.amazonaws.com."
           ],
-          "52.5.119.46": [
-            "ec2-52-5-119-46.compute-1.amazonaws.com."
+          "52.44.195.53": [
+            "ec2-52-44-195-53.compute-1.amazonaws.com."
           ],
-          "52.72.98.175": [
-            "ec2-52-72-98-175.compute-1.amazonaws.com."
+          "52.86.88.15": [
+            "ec2-52-86-88-15.compute-1.amazonaws.com."
           ],
-          "54.167.125.52": [
-            "ec2-54-167-125-52.compute-1.amazonaws.com."
+          "54.158.112.248": [
+            "ec2-54-158-112-248.compute-1.amazonaws.com."
           ],
-          "54.237.169.70": [
-            "ec2-54-237-169-70.compute-1.amazonaws.com."
+          "54.196.59.195": [
+            "ec2-54-196-59-195.compute-1.amazonaws.com."
           ]
         }
       },
@@ -689,7 +689,8 @@
       "bighost.lv": {
         "ns": [
           "ns.bighost.lv.",
-          "ns1.bighost.lv."
+          "ns1.bighost.lv.",
+          "ns2.bighost.lv."
         ],
         "a": {
           "159.148.186.129": [
@@ -732,9 +733,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -984,8 +983,13 @@
   "cloudcandy-sale": {
     "urls": {
       "cloudcandyhost.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.dns.com.",
+          "ns2.dns.com."
+        ],
+        "a": {
+          "154.95.229.164": false
+        }
       }
     }
   },
@@ -1106,7 +1110,12 @@
     }
   },
   "cocoahost-mike": {
-    "urls": {}
+    "urls": {
+      "cocoahost.com": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "collabora": {
     "urls": {
@@ -2130,8 +2139,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.11.35": [
-            "edge-star-mini-shv-02-lax3.facebook.com."
+          "157.240.24.35": [
+            "edge-star-mini-shv-01-hou1.facebook.com."
           ]
         }
       },
@@ -2797,11 +2806,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.quokkadns.com.",
-          "ns2.quokkadns.com."
+          "ns1.koaladns.com.",
+          "ns2.koaladns.com."
         ],
         "a": {
-          "37.48.65.154": false
+          "5.79.68.109": false
         }
       }
     }
@@ -3491,7 +3500,9 @@
           "ns2.panamans.com."
         ],
         "a": {
-          "81.17.18.196": false
+          "192.187.111.221": [
+            "tyg.qwiqo.live."
+          ]
         }
       }
     }
@@ -5728,17 +5739,17 @@
           "ns-80.awsdns-10.com."
         ],
         "a": {
-          "13.225.148.16": [
-            "server-13-225-148-16.lax3.r.cloudfront.net."
+          "13.249.25.122": [
+            "server-13-249-25-122.iah50.r.cloudfront.net."
           ],
-          "13.225.148.17": [
-            "server-13-225-148-17.lax3.r.cloudfront.net."
+          "13.249.25.25": [
+            "server-13-249-25-25.iah50.r.cloudfront.net."
           ],
-          "13.225.148.41": [
-            "server-13-225-148-41.lax3.r.cloudfront.net."
+          "13.249.25.88": [
+            "server-13-249-25-88.iah50.r.cloudfront.net."
           ],
-          "13.225.148.6": [
-            "server-13-225-148-6.lax3.r.cloudfront.net."
+          "13.249.25.94": [
+            "server-13-249-25-94.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -5757,10 +5768,6 @@
   },
   "liam-d": {
     "urls": {
-      "myresellerhost.info": {
-        "ns": false,
-        "a": {}
-      },
       "revoltvps.com": {
         "ns": false,
         "a": {}
@@ -5953,10 +5960,10 @@
       },
       "magnite.net": {
         "ns": [
-          "ns-1008.awsdns-62.net.",
-          "ns-1287.awsdns-32.org.",
-          "ns-2022.awsdns-60.co.uk.",
-          "ns-280.awsdns-35.com."
+          "ns-cloud-c1.googledomains.com.",
+          "ns-cloud-c2.googledomains.com.",
+          "ns-cloud-c3.googledomains.com.",
+          "ns-cloud-c4.googledomains.com."
         ],
         "a": false
       }
@@ -6157,9 +6164,8 @@
           "terry.ns.cloudflare.com."
         ],
         "a": {
-          "95.217.117.42": [
-            "95-217-117-42.serverhub.ru."
-          ]
+          "104.21.59.192": false,
+          "172.67.182.237": false
         }
       },
       "nocster.net": {
@@ -6231,8 +6237,8 @@
           "ns2.namebrightdns.com."
         ],
         "a": {
-          "23.20.10.0": [
-            "ec2-23-20-10-0.compute-1.amazonaws.com."
+          "18.205.135.125": [
+            "ec2-18-205-135-125.compute-1.amazonaws.com."
           ],
           "23.20.193.48": [
             "ec2-23-20-193-48.compute-1.amazonaws.com."
@@ -6240,8 +6246,8 @@
           "34.192.125.132": [
             "ec2-34-192-125-132.compute-1.amazonaws.com."
           ],
-          "34.224.148.46": [
-            "ec2-34-224-148-46.compute-1.amazonaws.com."
+          "34.199.107.45": [
+            "ec2-34-199-107-45.compute-1.amazonaws.com."
           ],
           "34.225.3.125": [
             "ec2-34-225-3-125.compute-1.amazonaws.com."
@@ -6397,12 +6403,7 @@
     }
   },
   "moduleserver": {
-    "urls": {
-      "cocoahost.com": {
-        "ns": false,
-        "a": {}
-      }
-    }
+    "urls": {}
   },
   "monovm": {
     "urls": {
@@ -6530,7 +6531,12 @@
     }
   },
   "myreseller": {
-    "urls": {}
+    "urls": {
+      "myresellerhost.info": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "natan": {
     "urls": {
@@ -7943,17 +7949,17 @@
           "ns-642.awsdns-16.net."
         ],
         "a": {
-          "13.226.219.18": [
-            "server-13-226-219-18.lax50.r.cloudfront.net."
+          "99.86.100.115": [
+            "server-99-86-100-115.iah50.r.cloudfront.net."
           ],
-          "13.226.219.49": [
-            "server-13-226-219-49.lax50.r.cloudfront.net."
+          "99.86.100.121": [
+            "server-99-86-100-121.iah50.r.cloudfront.net."
           ],
-          "13.226.219.57": [
-            "server-13-226-219-57.lax50.r.cloudfront.net."
+          "99.86.100.86": [
+            "server-99-86-100-86.iah50.r.cloudfront.net."
           ],
-          "13.226.219.60": [
-            "server-13-226-219-60.lax50.r.cloudfront.net."
+          "99.86.100.89": [
+            "server-99-86-100-89.iah50.r.cloudfront.net."
           ]
         }
       }
@@ -8444,7 +8450,9 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.57": false
+          "64.32.8.69": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "webhostinggeeks.com": {
@@ -9918,17 +9926,17 @@
           "ns2.wiredtree.com."
         ],
         "a": {
-          "13.226.219.114": [
-            "server-13-226-219-114.lax50.r.cloudfront.net."
+          "13.225.230.118": [
+            "server-13-225-230-118.jfk51.r.cloudfront.net."
           ],
-          "13.226.219.18": [
-            "server-13-226-219-18.lax50.r.cloudfront.net."
+          "13.225.230.59": [
+            "server-13-225-230-59.jfk51.r.cloudfront.net."
           ],
-          "13.226.219.31": [
-            "server-13-226-219-31.lax50.r.cloudfront.net."
+          "13.225.230.67": [
+            "server-13-225-230-67.jfk51.r.cloudfront.net."
           ],
-          "13.226.219.65": [
-            "server-13-226-219-65.lax50.r.cloudfront.net."
+          "13.225.230.86": [
+            "server-13-225-230-86.jfk51.r.cloudfront.net."
           ]
         }
       }
@@ -10060,9 +10068,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "216.58.192.105": [
-            "las15s02-in-f9.1e100.net.",
-            "mia07s35-in-f105.1e100.net."
+          "142.250.68.169": [
+            "dfw25s41-in-f9.1e100.net."
           ]
         }
       },
