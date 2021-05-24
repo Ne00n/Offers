@@ -303,9 +303,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -531,7 +529,9 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "167.99.246.105": false,
+          "18.159.128.50": [
+            "ec2-18-159-128-50.eu-central-1.compute.amazonaws.com."
+          ],
           "206.189.58.26": false
         }
       },
@@ -814,17 +814,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "13.249.25.104": [
-            "server-13-249-25-104.iah50.r.cloudfront.net."
+          "13.226.219.110": [
+            "server-13-226-219-110.lax50.r.cloudfront.net."
           ],
-          "13.249.25.32": [
-            "server-13-249-25-32.iah50.r.cloudfront.net."
+          "13.226.219.50": [
+            "server-13-226-219-50.lax50.r.cloudfront.net."
           ],
-          "13.249.25.46": [
-            "server-13-249-25-46.iah50.r.cloudfront.net."
+          "13.226.219.86": [
+            "server-13-226-219-86.lax50.r.cloudfront.net."
           ],
-          "13.249.25.53": [
-            "server-13-249-25-53.iah50.r.cloudfront.net."
+          "13.226.219.93": [
+            "server-13-226-219-93.lax50.r.cloudfront.net."
           ]
         }
       }
@@ -1661,17 +1661,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "13.249.25.104": [
-            "server-13-249-25-104.iah50.r.cloudfront.net."
+          "13.226.219.110": [
+            "server-13-226-219-110.lax50.r.cloudfront.net."
           ],
-          "13.249.25.32": [
-            "server-13-249-25-32.iah50.r.cloudfront.net."
+          "13.226.219.50": [
+            "server-13-226-219-50.lax50.r.cloudfront.net."
           ],
-          "13.249.25.46": [
-            "server-13-249-25-46.iah50.r.cloudfront.net."
+          "13.226.219.86": [
+            "server-13-226-219-86.lax50.r.cloudfront.net."
           ],
-          "13.249.25.53": [
-            "server-13-249-25-53.iah50.r.cloudfront.net."
+          "13.226.219.93": [
+            "server-13-226-219-93.lax50.r.cloudfront.net."
           ]
         }
       },
@@ -2578,7 +2578,9 @@
       },
       "x4b.net": {
         "ns": [
+          "ns1.vultr.com.",
           "ns1.x4b.net.",
+          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
@@ -3920,8 +3922,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.24.35": [
-            "edge-star-mini-shv-01-hou1.facebook.com."
+          "31.13.70.36": [
+            "edge-star-mini-shv-01-lax3.facebook.com."
           ]
         }
       },
@@ -4115,8 +4117,8 @@
           "ns2.magpiedns.com."
         ],
         "a": {
-          "74.63.241.19": [
-            "19-241-63-74.static.reverse.lstn.net."
+          "63.143.32.93": [
+            "93-32-143-63.static.reverse.lstn.net."
           ]
         }
       }
@@ -4296,8 +4298,15 @@
         }
       },
       "theserverstore.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "dns1.3dcart.com.",
+          "dns2.3dcart.com.",
+          "dns3.3dcart.com."
+        ],
+        "a": {
+          "104.16.152.130": false,
+          "104.16.153.130": false
+        }
       }
     }
   },
@@ -4493,8 +4502,9 @@
           "zara.ns.cloudflare.com."
         ],
         "a": {
-          "104.21.26.13": false,
-          "172.67.135.33": false
+          "104.26.6.75": false,
+          "104.26.7.75": false,
+          "172.67.72.176": false
         }
       }
     }
