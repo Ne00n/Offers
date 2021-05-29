@@ -294,7 +294,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       },
       "mayohost.com": {
@@ -303,7 +305,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -529,7 +533,9 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "206.189.50.60": false,
+          "18.159.128.50": [
+            "ec2-18-159-128-50.eu-central-1.compute.amazonaws.com."
+          ],
           "3.125.252.47": [
             "ec2-3-125-252-47.eu-central-1.compute.amazonaws.com."
           ]
@@ -814,17 +820,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "99.86.83.107": [
-            "server-99-86-83-107.iah50.r.cloudfront.net."
+          "13.226.219.110": [
+            "server-13-226-219-110.lax50.r.cloudfront.net."
           ],
-          "99.86.83.123": [
-            "server-99-86-83-123.iah50.r.cloudfront.net."
+          "13.226.219.50": [
+            "server-13-226-219-50.lax50.r.cloudfront.net."
           ],
-          "99.86.83.26": [
-            "server-99-86-83-26.iah50.r.cloudfront.net."
+          "13.226.219.86": [
+            "server-13-226-219-86.lax50.r.cloudfront.net."
           ],
-          "99.86.83.71": [
-            "server-99-86-83-71.iah50.r.cloudfront.net."
+          "13.226.219.93": [
+            "server-13-226-219-93.lax50.r.cloudfront.net."
           ]
         }
       }
@@ -1680,17 +1686,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "99.86.83.107": [
-            "server-99-86-83-107.iah50.r.cloudfront.net."
+          "13.226.219.110": [
+            "server-13-226-219-110.lax50.r.cloudfront.net."
           ],
-          "99.86.83.123": [
-            "server-99-86-83-123.iah50.r.cloudfront.net."
+          "13.226.219.50": [
+            "server-13-226-219-50.lax50.r.cloudfront.net."
           ],
-          "99.86.83.26": [
-            "server-99-86-83-26.iah50.r.cloudfront.net."
+          "13.226.219.86": [
+            "server-13-226-219-86.lax50.r.cloudfront.net."
           ],
-          "99.86.83.71": [
-            "server-99-86-83-71.iah50.r.cloudfront.net."
+          "13.226.219.93": [
+            "server-13-226-219-93.lax50.r.cloudfront.net."
           ]
         }
       },
@@ -1715,15 +1721,15 @@
       },
       "zfrmz.com": {
         "ns": [
-          "dns1.p03.nsone.net.",
-          "dns2.p03.nsone.net.",
-          "dns3.p03.nsone.net.",
-          "dns4.p03.nsone.net.",
-          "ns1.zohocorp.com.",
-          "pdns90.ultradns.biz.",
-          "pdns90.ultradns.com.",
-          "pdns90.ultradns.net.",
-          "pdns90.ultradns.org."
+          "DNS1.P03.NSONE.NET.",
+          "DNS2.P03.NSONE.NET.",
+          "DNS3.P03.NSONE.NET.",
+          "DNS4.P03.NSONE.NET.",
+          "PDNS90.ULTRADNS.BIZ.",
+          "PDNS90.ULTRADNS.NET.",
+          "PDNS90.ULTRADNS.ORG.",
+          "PDNS90.ULTRADNS.com.",
+          "ns1.zohocorp.com."
         ],
         "a": {
           "136.143.187.52": false
@@ -3942,8 +3948,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.2.35": [
-            "edge-star-mini-shv-01-ort2.facebook.com."
+          "157.240.13.35": [
+            "edge-star-mini-shv-02-sin6.facebook.com."
           ]
         }
       },
@@ -4132,8 +4138,13 @@
         }
       },
       "simplimail.co": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.chookdns.com.",
+          "ns2.chookdns.com."
+        ],
+        "a": {
+          "37.48.65.150": false
+        }
       }
     }
   },
