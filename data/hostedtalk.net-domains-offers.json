@@ -533,10 +533,10 @@
           "pns24.cloudns.net."
         ],
         "a": {
+          "206.189.58.26": false,
           "3.125.252.47": [
             "ec2-3-125-252-47.eu-central-1.compute.amazonaws.com."
-          ],
-          "46.101.121.244": false
+          ]
         }
       },
       "hostedtalk.net": {
@@ -818,17 +818,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "13.226.219.110": [
-            "server-13-226-219-110.lax50.r.cloudfront.net."
+          "99.86.83.107": [
+            "server-99-86-83-107.iah50.r.cloudfront.net."
           ],
-          "13.226.219.50": [
-            "server-13-226-219-50.lax50.r.cloudfront.net."
+          "99.86.83.123": [
+            "server-99-86-83-123.iah50.r.cloudfront.net."
           ],
-          "13.226.219.86": [
-            "server-13-226-219-86.lax50.r.cloudfront.net."
+          "99.86.83.26": [
+            "server-99-86-83-26.iah50.r.cloudfront.net."
           ],
-          "13.226.219.93": [
-            "server-13-226-219-93.lax50.r.cloudfront.net."
+          "99.86.83.71": [
+            "server-99-86-83-71.iah50.r.cloudfront.net."
           ]
         }
       }
@@ -1678,17 +1678,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "13.226.219.110": [
-            "server-13-226-219-110.lax50.r.cloudfront.net."
+          "99.86.83.107": [
+            "server-99-86-83-107.iah50.r.cloudfront.net."
           ],
-          "13.226.219.50": [
-            "server-13-226-219-50.lax50.r.cloudfront.net."
+          "99.86.83.123": [
+            "server-99-86-83-123.iah50.r.cloudfront.net."
           ],
-          "13.226.219.86": [
-            "server-13-226-219-86.lax50.r.cloudfront.net."
+          "99.86.83.26": [
+            "server-99-86-83-26.iah50.r.cloudfront.net."
           ],
-          "13.226.219.93": [
-            "server-13-226-219-93.lax50.r.cloudfront.net."
+          "99.86.83.71": [
+            "server-99-86-83-71.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -3938,8 +3938,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.13.35": [
-            "edge-star-mini-shv-02-sin6.facebook.com."
+          "31.13.93.35": [
+            "edge-star-mini-shv-02-dfw5.facebook.com."
           ]
         }
       },
@@ -4129,13 +4129,11 @@
       },
       "simplimail.co": {
         "ns": [
-          "ns1.magpiedns.com.",
-          "ns2.magpiedns.com."
+          "ns1.weaponizedcow.com.",
+          "ns2.weaponizedcow.com."
         ],
         "a": {
-          "74.63.241.25": [
-            "25-241-63-74.static.reverse.lstn.net."
-          ]
+          "207.244.67.214": false
         }
       }
     }
@@ -4314,8 +4312,15 @@
         }
       },
       "theserverstore.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "dns1.3dcart.com.",
+          "dns2.3dcart.com.",
+          "dns3.3dcart.com."
+        ],
+        "a": {
+          "104.16.152.130": false,
+          "104.16.153.130": false
+        }
       }
     }
   },
