@@ -245,29 +245,29 @@
           "lucy.ns.cloudflare.com."
         ],
         "a": {
-          "3.212.156.219": [
-            "ec2-3-212-156-219.compute-1.amazonaws.com."
-          ],
-          "3.214.173.11": [
-            "ec2-3-214-173-11.compute-1.amazonaws.com."
+          "23.22.180.24": [
+            "ec2-23-22-180-24.compute-1.amazonaws.com."
           ],
           "3.219.246.57": [
             "ec2-3-219-246-57.compute-1.amazonaws.com."
           ],
-          "3.227.29.88": [
-            "ec2-3-227-29-88.compute-1.amazonaws.com."
+          "3.223.221.167": [
+            "ec2-3-223-221-167.compute-1.amazonaws.com."
           ],
-          "3.94.248.118": [
-            "ec2-3-94-248-118.compute-1.amazonaws.com."
+          "3.228.145.6": [
+            "ec2-3-228-145-6.compute-1.amazonaws.com."
           ],
-          "34.237.27.35": [
-            "ec2-34-237-27-35.compute-1.amazonaws.com."
+          "35.170.181.200": [
+            "ec2-35-170-181-200.compute-1.amazonaws.com."
           ],
-          "52.22.241.37": [
-            "ec2-52-22-241-37.compute-1.amazonaws.com."
+          "52.207.10.65": [
+            "ec2-52-207-10-65.compute-1.amazonaws.com."
           ],
-          "54.156.72.145": [
-            "ec2-54-156-72-145.compute-1.amazonaws.com."
+          "52.5.119.46": [
+            "ec2-52-5-119-46.compute-1.amazonaws.com."
+          ],
+          "52.5.6.26": [
+            "ec2-52-5-6-26.compute-1.amazonaws.com."
           ]
         }
       },
@@ -727,9 +727,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -1106,12 +1104,7 @@
     }
   },
   "cocoahost-mike": {
-    "urls": {
-      "cocoahost.com": {
-        "ns": false,
-        "a": {}
-      }
-    }
+    "urls": {}
   },
   "collabora": {
     "urls": {
@@ -2140,8 +2133,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.24.35": [
-            "edge-star-mini-shv-01-hou1.facebook.com."
+          "157.240.11.35": [
+            "edge-star-mini-shv-02-lax3.facebook.com."
           ]
         }
       },
@@ -2778,8 +2771,15 @@
   "gofindus": {
     "urls": {
       "gofindus.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "nsg1.namebrightdns.com.",
+          "nsg2.namebrightdns.com."
+        ],
+        "a": {
+          "18.211.9.206": [
+            "ec2-18-211-9-206.compute-1.amazonaws.com."
+          ]
+        }
       },
       "webhostingstuff.com": {
         "ns": [
@@ -2816,11 +2816,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.kirklanddc.com.",
-          "ns2.kirklanddc.com."
+          "ns1.brainydns.com.",
+          "ns2.brainydns.com."
         ],
         "a": {
-          "207.244.67.138": false
+          "162.210.196.167": false
         }
       }
     }
@@ -3794,7 +3794,9 @@
           "ns2.hostslim.eu."
         ],
         "a": {
-          "103.219.154.81": false
+          "103.219.154.81": [
+            "server.hostslim.eu."
+          ]
         }
       },
       "vpsslim.com": {
@@ -4354,83 +4356,8 @@
         }
       },
       "avaya.com": {
-        "ns": [
-          "coextdns.avaya.com.",
-          "frextdns.avaya.com.",
-          "ohextdns.avaya.com.",
-          "sgextdns.avaya.com."
-        ],
-        "a": {
-          "135.11.53.87": [
-            "avaya-telephone-systems.co.uk.",
-            "avaya-tenovis.be.",
-            "avaya.co.cr.",
-            "avaya.co.hu.",
-            "avaya.co.jp.",
-            "avaya.co.kr.",
-            "avaya.co.ve.",
-            "avaya.com.ec.",
-            "avaya.com.pa.",
-            "avaya.com.pe.",
-            "avaya.com.pr.",
-            "avaya.in.",
-            "avaya.no.",
-            "avaya.pe.",
-            "avayaacademia.com.",
-            "avayaarts.com.",
-            "avayacustomerengagement.com.",
-            "avayadirect.co.uk.",
-            "avayadirect.com.",
-            "avayagov.com.",
-            "avayamarketleaders.com.",
-            "avayaphilanthropy.com.",
-            "avayasponsorship.com.",
-            "avayasponsorships.com.",
-            "avayasports.com.",
-            "avayathoughtleadership.com.",
-            "ccp.avaya.com.",
-            "csc.avaya.com.",
-            "loyalty2gether.com.",
-            "loyalty2gether.net.",
-            "multilink.com.",
-            "myavaya.com.",
-            "onecare.avaya.com.",
-            "sipcenter.com.",
-            "tenovis.be.",
-            "ugc.avaya.com.",
-            "www.avaya-tenovis.be.",
-            "www.avaya.at.",
-            "www.avaya.co.cr.",
-            "www.avaya.co.hu.",
-            "www.avaya.co.jp.",
-            "www.avaya.co.kr.",
-            "www.avaya.co.ve.",
-            "www.avaya.com.ec.",
-            "www.avaya.com.pa.",
-            "www.avaya.com.pe.",
-            "www.avaya.cz.",
-            "www.avaya.eu.",
-            "www.avaya.fi.",
-            "www.avaya.in.",
-            "www.avaya.pe.",
-            "www.avaya.sk.",
-            "www.avayaacademia.com.",
-            "www.avayaarts.com.",
-            "www.avayacustomerengagement.com.",
-            "www.avayagov.com.",
-            "www.avayamarketleaders.com.",
-            "www.avayaphilanthropy.com.",
-            "www.avayasponsorship.com.",
-            "www.avayasponsorships.com.",
-            "www.avayasports.com.",
-            "www.avayathoughtleadership.com.",
-            "www.cala.avaya.com.",
-            "www.loyalty2gether.com.",
-            "www.loyalty2gether.net.",
-            "www.sipcenter.com.",
-            "www.tenovis.be."
-          ]
-        }
+        "ns": false,
+        "a": {}
       },
       "evoswitch.com": {
         "ns": [
@@ -5726,17 +5653,17 @@
           "ns-80.awsdns-10.com."
         ],
         "a": {
-          "13.249.25.122": [
-            "server-13-249-25-122.iah50.r.cloudfront.net."
+          "13.225.138.18": [
+            "server-13-225-138-18.lax3.r.cloudfront.net."
           ],
-          "13.249.25.25": [
-            "server-13-249-25-25.iah50.r.cloudfront.net."
+          "13.225.138.53": [
+            "server-13-225-138-53.lax3.r.cloudfront.net."
           ],
-          "13.249.25.88": [
-            "server-13-249-25-88.iah50.r.cloudfront.net."
+          "13.225.138.66": [
+            "server-13-225-138-66.lax3.r.cloudfront.net."
           ],
-          "13.249.25.94": [
-            "server-13-249-25-94.iah50.r.cloudfront.net."
+          "13.225.138.86": [
+            "server-13-225-138-86.lax3.r.cloudfront.net."
           ]
         }
       },
@@ -5755,6 +5682,10 @@
   },
   "liam-d": {
     "urls": {
+      "myresellerhost.info": {
+        "ns": false,
+        "a": {}
+      },
       "revoltvps.com": {
         "ns": false,
         "a": {}
@@ -5947,10 +5878,10 @@
       },
       "magnite.net": {
         "ns": [
-          "ns-cloud-c1.googledomains.com.",
-          "ns-cloud-c2.googledomains.com.",
-          "ns-cloud-c3.googledomains.com.",
-          "ns-cloud-c4.googledomains.com."
+          "ns-1008.awsdns-62.net.",
+          "ns-1287.awsdns-32.org.",
+          "ns-2022.awsdns-60.co.uk.",
+          "ns-280.awsdns-35.com."
         ],
         "a": false
       }
@@ -6147,8 +6078,8 @@
       },
       "magmahost.com": {
         "ns": [
-          "maxim.ns.cloudflare.com.",
-          "rafe.ns.cloudflare.com."
+          "eva.ns.cloudflare.com.",
+          "terry.ns.cloudflare.com."
         ],
         "a": {
           "104.21.59.192": false,
@@ -6384,7 +6315,12 @@
     }
   },
   "moduleserver": {
-    "urls": {}
+    "urls": {
+      "cocoahost.com": {
+        "ns": false,
+        "a": {}
+      }
+    }
   },
   "monovm": {
     "urls": {
@@ -6512,12 +6448,7 @@
     }
   },
   "myreseller": {
-    "urls": {
-      "myresellerhost.info": {
-        "ns": false,
-        "a": {}
-      }
-    }
+    "urls": {}
   },
   "natan": {
     "urls": {
@@ -7735,8 +7666,15 @@
   "scarabweb": {
     "urls": {
       "scarabweb.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.scarabweb.com.",
+          "ns2.scarabweb.com."
+        ],
+        "a": {
+          "199.114.216.147": [
+            "scarabweb.com."
+          ]
+        }
       }
     }
   },
@@ -7923,17 +7861,17 @@
           "ns-642.awsdns-16.net."
         ],
         "a": {
-          "99.86.100.115": [
-            "server-99-86-100-115.iah50.r.cloudfront.net."
+          "99.84.224.113": [
+            "server-99-84-224-113.sfo5.r.cloudfront.net."
           ],
-          "99.86.100.121": [
-            "server-99-86-100-121.iah50.r.cloudfront.net."
+          "99.84.224.152": [
+            "server-99-84-224-152.sfo5.r.cloudfront.net."
           ],
-          "99.86.100.86": [
-            "server-99-86-100-86.iah50.r.cloudfront.net."
+          "99.84.224.157": [
+            "server-99-84-224-157.sfo5.r.cloudfront.net."
           ],
-          "99.86.100.89": [
-            "server-99-86-100-89.iah50.r.cloudfront.net."
+          "99.84.224.164": [
+            "server-99-84-224-164.sfo5.r.cloudfront.net."
           ]
         }
       }
@@ -9523,8 +9461,8 @@
           "ns2.vpsville.com."
         ],
         "a": {
-          "54.39.153.3": [
-            "ip3.ip-54-39-153.net."
+          "54.39.153.2": [
+            "ip2.ip-54-39-153.net."
           ]
         }
       }
@@ -9898,17 +9836,17 @@
           "ns2.wiredtree.com."
         ],
         "a": {
-          "99.84.39.22": [
-            "server-99-84-39-22.ewr52.r.cloudfront.net."
+          "13.225.138.18": [
+            "server-13-225-138-18.lax3.r.cloudfront.net."
           ],
-          "99.84.39.54": [
-            "server-99-84-39-54.ewr52.r.cloudfront.net."
+          "13.225.138.21": [
+            "server-13-225-138-21.lax3.r.cloudfront.net."
           ],
-          "99.84.39.61": [
-            "server-99-84-39-61.ewr52.r.cloudfront.net."
+          "13.225.138.41": [
+            "server-13-225-138-41.lax3.r.cloudfront.net."
           ],
-          "99.84.39.8": [
-            "server-99-84-39-8.ewr52.r.cloudfront.net."
+          "13.225.138.94": [
+            "server-13-225-138-94.lax3.r.cloudfront.net."
           ]
         }
       }
@@ -10040,7 +9978,10 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.114.191": false
+          "172.217.4.169": [
+            "lax28s01-in-f169.1e100.net.",
+            "lax28s01-in-f9.1e100.net."
+          ]
         }
       },
       "host-tracker.com": {
