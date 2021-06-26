@@ -759,7 +759,9 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "102.129.254.77": false
+          "45.56.77.123": [
+            "li927-123.members.linode.com."
+          ]
         }
       }
     }
@@ -1592,7 +1594,9 @@
           "ns2.hostslim.eu."
         ],
         "a": {
-          "103.219.154.81": false
+          "103.219.154.81": [
+            "server.hostslim.eu."
+          ]
         }
       },
       "hostslim.nl": {
@@ -1681,8 +1685,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.11.35": [
-            "edge-star-mini-shv-02-lax3.facebook.com."
+          "157.240.24.35": [
+            "edge-star-mini-shv-01-hou1.facebook.com."
           ]
         }
       },
@@ -2461,11 +2465,11 @@
           "ns2.namebrightdns.com."
         ],
         "a": {
-          "18.205.135.125": [
-            "ec2-18-205-135-125.compute-1.amazonaws.com."
+          "54.146.240.23": [
+            "ec2-54-146-240-23.compute-1.amazonaws.com."
           ],
-          "34.199.107.45": [
-            "ec2-34-199-107-45.compute-1.amazonaws.com."
+          "54.159.211.165": [
+            "ec2-54-159-211-165.compute-1.amazonaws.com."
           ]
         }
       }
@@ -2576,8 +2580,22 @@
   "moshulabs": {
     "urls": {
       "moshulabs.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.dnsowl.com.",
+          "ns2.dnsowl.com.",
+          "ns3.dnsowl.com."
+        ],
+        "a": {
+          "107.161.23.204": [
+            "parking.namesilo.com."
+          ],
+          "192.161.187.200": [
+            "192.161.187.200.static.quadranet.com."
+          ],
+          "209.141.38.71": [
+            "parking.namesilo.com."
+          ]
+        }
       },
       "postimg.org": {
         "ns": false,
@@ -2777,8 +2795,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.225.142.216": [
-            "server-13-225-142-216.lax3.r.cloudfront.net."
+          "13.249.30.231": [
+            "server-13-249-30-231.iah50.r.cloudfront.net."
           ]
         }
       },
