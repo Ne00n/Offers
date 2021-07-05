@@ -445,12 +445,24 @@
   "F7N": {
     "urls": {
       "clienthl.eu": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.hostlease.com.",
+          "ns2.hostlease.com."
+        ],
+        "a": {
+          "5.253.84.139": false,
+          "5.253.86.18": false
+        }
       },
       "hostlease.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.hostlease.com.",
+          "ns2.hostlease.com."
+        ],
+        "a": {
+          "5.253.84.139": false,
+          "5.253.86.18": false
+        }
       }
     }
   },
@@ -1651,9 +1663,7 @@
           "ns2.hostslim.eu."
         ],
         "a": {
-          "103.219.154.81": [
-            "server.hostslim.eu."
-          ]
+          "103.219.154.81": false
         }
       },
       "hostslim.nl": {
@@ -2842,8 +2852,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.226.187.201": [
-            "server-13-226-187-201.dfw55.r.cloudfront.net."
+          "13.249.30.231": [
+            "server-13-249-30-231.iah50.r.cloudfront.net."
           ]
         }
       },
