@@ -445,8 +445,14 @@
   "F7N": {
     "urls": {
       "clienthl.eu": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.hostlease.com.",
+          "ns2.hostlease.com."
+        ],
+        "a": {
+          "5.253.84.139": false,
+          "5.253.86.18": false
+        }
       },
       "hostlease.com": {
         "ns": [
@@ -625,7 +631,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -791,9 +799,7 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "45.56.77.123": [
-            "li927-123.members.linode.com."
-          ]
+          "102.129.254.77": false
         }
       }
     }
@@ -1746,8 +1752,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.24.35": [
-            "edge-star-mini-shv-01-hou1.facebook.com."
+          "157.240.11.35": [
+            "edge-star-mini-shv-02-lax3.facebook.com."
           ]
         }
       },
@@ -1807,7 +1813,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -2846,8 +2854,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.225.89.217": [
-            "server-13-225-89-217.hkg60.r.cloudfront.net."
+          "13.225.142.216": [
+            "server-13-225-142-216.lax3.r.cloudfront.net."
           ]
         }
       },
