@@ -314,9 +314,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -526,11 +524,9 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "3.125.252.47": [
-            "ec2-3-125-252-47.eu-central-1.compute.amazonaws.com."
-          ],
-          "3.64.200.242": [
-            "ec2-3-64-200-242.eu-central-1.compute.amazonaws.com."
+          "138.197.188.142": false,
+          "18.159.128.50": [
+            "ec2-18-159-128-50.eu-central-1.compute.amazonaws.com."
           ]
         }
       },
@@ -3143,9 +3139,7 @@
           "tiger.noamweb.net."
         ],
         "a": {
-          "195.130.247.94": [
-            "mail.noamweb.com."
-          ]
+          "195.130.247.94": false
         }
       },
       "wisegroupcenter.com": {
@@ -3989,8 +3983,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "31.13.93.35": [
-            "edge-star-mini-shv-02-dfw5.facebook.com."
+          "157.240.11.35": [
+            "edge-star-mini-shv-02-lax3.facebook.com."
           ]
         }
       },
@@ -4210,9 +4204,7 @@
           "ns2.weaponizedcow.com."
         ],
         "a": {
-          "206.221.176.184": [
-            "255.255.255.0."
-          ]
+          "199.115.115.116": false
         }
       }
     }
@@ -4393,8 +4385,15 @@
         }
       },
       "theserverstore.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "dns1.3dcart.com.",
+          "dns2.3dcart.com.",
+          "dns3.3dcart.com."
+        ],
+        "a": {
+          "104.16.152.130": false,
+          "104.16.153.130": false
+        }
       }
     }
   },
