@@ -526,8 +526,12 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "161.35.218.92": false,
-          "206.189.50.215": false
+          "3.125.252.47": [
+            "ec2-3-125-252-47.eu-central-1.compute.amazonaws.com."
+          ],
+          "3.64.200.242": [
+            "ec2-3-64-200-242.eu-central-1.compute.amazonaws.com."
+          ]
         }
       },
       "hostedtalk.net": {
@@ -3985,8 +3989,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.11.35": [
-            "edge-star-mini-shv-02-lax3.facebook.com."
+          "31.13.93.35": [
+            "edge-star-mini-shv-02-dfw5.facebook.com."
           ]
         }
       },
@@ -4202,11 +4206,13 @@
       },
       "simplimail.co": {
         "ns": [
-          "ns1.commonmx.com.",
-          "ns2.commonmx.com."
+          "ns1.weaponizedcow.com.",
+          "ns2.weaponizedcow.com."
         ],
         "a": {
-          "199.115.115.119": false
+          "206.221.176.184": [
+            "255.255.255.0."
+          ]
         }
       }
     }
@@ -4387,15 +4393,8 @@
         }
       },
       "theserverstore.com": {
-        "ns": [
-          "dns1.3dcart.com.",
-          "dns2.3dcart.com.",
-          "dns3.3dcart.com."
-        ],
-        "a": {
-          "104.16.152.130": false,
-          "104.16.153.130": false
-        }
+        "ns": false,
+        "a": {}
       }
     }
   },
