@@ -169,10 +169,15 @@
     "urls": {
       "impactshared.com": {
         "ns": [
-          "ivy.ns.cloudflare.com.",
-          "rex.ns.cloudflare.com."
+          "dns1.name-services.com.",
+          "dns2.name-services.com.",
+          "dns3.name-services.com.",
+          "dns4.name-services.com.",
+          "dns5.name-services.com."
         ],
-        "a": false
+        "a": {
+          "91.195.240.87": false
+        }
       },
       "subnetlabs.com": {
         "ns": [
@@ -621,9 +626,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -789,7 +792,9 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "102.129.254.77": false
+          "45.56.77.123": [
+            "li927-123.members.linode.com."
+          ]
         }
       }
     }
@@ -896,8 +901,9 @@
           "darwin.ns.cloudflare.com."
         ],
         "a": {
-          "104.21.192.108": false,
-          "104.21.192.109": false
+          "104.26.14.202": false,
+          "104.26.15.202": false,
+          "172.67.71.214": false
         }
       }
     }
@@ -1744,8 +1750,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.11.35": [
-            "edge-star-mini-shv-02-lax3.facebook.com."
+          "157.240.24.35": [
+            "edge-star-mini-shv-01-hou1.facebook.com."
           ]
         }
       },
@@ -1806,9 +1812,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -2839,8 +2843,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.225.142.216": [
-            "server-13-225-142-216.lax3.r.cloudfront.net."
+          "13.225.33.217": [
+            "server-13-225-33-217.cdg3.r.cloudfront.net."
           ]
         }
       },
