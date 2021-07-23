@@ -256,29 +256,29 @@
           "lucy.ns.cloudflare.com."
         ],
         "a": {
-          "3.214.173.11": [
-            "ec2-3-214-173-11.compute-1.amazonaws.com."
+          "34.199.140.75": [
+            "ec2-34-199-140-75.compute-1.amazonaws.com."
           ],
-          "3.223.221.167": [
-            "ec2-3-223-221-167.compute-1.amazonaws.com."
-          ],
-          "3.224.209.49": [
-            "ec2-3-224-209-49.compute-1.amazonaws.com."
-          ],
-          "34.205.204.79": [
-            "ec2-34-205-204-79.compute-1.amazonaws.com."
+          "34.206.253.122": [
+            "ec2-34-206-253-122.compute-1.amazonaws.com."
           ],
           "34.227.42.87": [
             "ec2-34-227-42-87.compute-1.amazonaws.com."
           ],
-          "34.228.50.116": [
-            "ec2-34-228-50-116.compute-1.amazonaws.com."
+          "52.0.12.63": [
+            "ec2-52-0-12-63.compute-1.amazonaws.com."
           ],
-          "34.237.27.35": [
-            "ec2-34-237-27-35.compute-1.amazonaws.com."
+          "52.22.80.219": [
+            "ec2-52-22-80-219.compute-1.amazonaws.com."
           ],
-          "52.5.119.46": [
-            "ec2-52-5-119-46.compute-1.amazonaws.com."
+          "52.4.151.188": [
+            "ec2-52-4-151-188.compute-1.amazonaws.com."
+          ],
+          "54.159.26.13": [
+            "ec2-54-159-26-13.compute-1.amazonaws.com."
+          ],
+          "54.225.151.147": [
+            "ec2-54-225-151-147.compute-1.amazonaws.com."
           ]
         }
       },
@@ -688,7 +688,8 @@
       "bighost.lv": {
         "ns": [
           "ns.bighost.lv.",
-          "ns1.bighost.lv."
+          "ns1.bighost.lv.",
+          "ns2.bighost.lv."
         ],
         "a": {
           "159.148.186.129": [
@@ -1411,15 +1412,8 @@
   "dafthost": {
     "urls": {
       "dafthost.com": {
-        "ns": [
-          "ns1.waski.net.",
-          "ns2.waski.net."
-        ],
-        "a": {
-          "213.155.184.94": [
-            "dafthost.com."
-          ]
-        }
+        "ns": false,
+        "a": {}
       }
     }
   },
@@ -2871,11 +2865,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.koaladns.com.",
-          "ns2.koaladns.com."
+          "ns1.kirklanddc.com.",
+          "ns2.kirklanddc.com."
         ],
         "a": {
-          "162.210.195.123": false
+          "162.210.196.167": false
         }
       }
     }
@@ -3557,9 +3551,7 @@
           "ns2.panamans.com."
         ],
         "a": {
-          "192.187.111.221": [
-            "tyg.qwiqo.live."
-          ]
+          "63.141.242.46": false
         }
       }
     }
@@ -5824,17 +5816,17 @@
           "ns-80.awsdns-10.com."
         ],
         "a": {
-          "143.204.53.116": [
-            "server-143-204-53-116.osl50.r.cloudfront.net."
+          "13.249.25.122": [
+            "server-13-249-25-122.iah50.r.cloudfront.net."
           ],
-          "143.204.53.4": [
-            "server-143-204-53-4.osl50.r.cloudfront.net."
+          "13.249.25.25": [
+            "server-13-249-25-25.iah50.r.cloudfront.net."
           ],
-          "143.204.53.49": [
-            "server-143-204-53-49.osl50.r.cloudfront.net."
+          "13.249.25.88": [
+            "server-13-249-25-88.iah50.r.cloudfront.net."
           ],
-          "143.204.53.66": [
-            "server-143-204-53-66.osl50.r.cloudfront.net."
+          "13.249.25.94": [
+            "server-13-249-25-94.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -8015,10 +8007,18 @@
           "ns-642.awsdns-16.net."
         ],
         "a": {
-          "65.9.27.3": false,
-          "65.9.27.36": false,
-          "65.9.27.39": false,
-          "65.9.27.85": false
+          "143.204.233.29": [
+            "server-143-204-233-29.cph50.r.cloudfront.net."
+          ],
+          "143.204.233.5": [
+            "server-143-204-233-5.cph50.r.cloudfront.net."
+          ],
+          "143.204.233.56": [
+            "server-143-204-233-56.cph50.r.cloudfront.net."
+          ],
+          "143.204.233.81": [
+            "server-143-204-233-81.cph50.r.cloudfront.net."
+          ]
         }
       }
     }
@@ -8507,9 +8507,7 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "64.32.8.69": [
-            "customer.sharktech.net."
-          ]
+          "185.107.56.59": false
         }
       },
       "webhostinggeeks.com": {
@@ -8545,9 +8543,7 @@
           "ns4.iwonhost.com."
         ],
         "a": {
-          "199.191.56.114": [
-            "server.iwonhost.com."
-          ]
+          "199.191.56.114": false
         }
       }
     }
