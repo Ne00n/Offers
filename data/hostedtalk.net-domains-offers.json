@@ -314,7 +314,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -375,8 +377,14 @@
         }
       },
       "graphicvm.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "fay.ns.cloudflare.com.",
+          "jarred.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.21.35.102": false,
+          "172.67.217.74": false
+        }
       },
       "hostedtalk.net": {
         "ns": [
@@ -522,10 +530,8 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "206.189.58.26": false,
-          "3.67.153.12": [
-            "ec2-3-67-153-12.eu-central-1.compute.amazonaws.com."
-          ]
+          "161.35.218.92": false,
+          "206.189.58.26": false
         }
       },
       "hostedtalk.net": {
@@ -1836,8 +1842,8 @@
           "jeff.ns.cloudflare.com."
         ],
         "a": {
-          "172.64.192.27": false,
-          "172.64.193.27": false
+          "104.21.0.230": false,
+          "172.67.128.94": false
         }
       }
     }
@@ -2157,8 +2163,8 @@
           "jeff.ns.cloudflare.com."
         ],
         "a": {
-          "172.64.192.27": false,
-          "172.64.193.27": false
+          "104.21.0.230": false,
+          "172.67.128.94": false
         }
       }
     }
@@ -2640,7 +2646,9 @@
       },
       "x4b.net": {
         "ns": [
+          "ns1.vultr.com.",
           "ns1.x4b.net.",
+          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
@@ -3521,6 +3529,27 @@
   },
   "hostup": {
     "urls": {
+      "boomer.host": {
+        "ns": [
+          "annalise.ns.cloudflare.com.",
+          "patrick.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.21.48.178": false,
+          "172.67.155.85": false
+        }
+      },
+      "hostedtalk.net": {
+        "ns": [
+          "leif.ns.cloudflare.com.",
+          "tessa.ns.cloudflare.com."
+        ],
+        "a": {
+          "195.201.165.98": [
+            "hostedtalk.net."
+          ]
+        }
+      },
       "hostup.org": {
         "ns": [
           "annalise.ns.cloudflare.com.",
@@ -4206,7 +4235,7 @@
           "ns2.weaponizedcow.com."
         ],
         "a": {
-          "199.115.115.102": false
+          "199.115.115.116": false
         }
       }
     }
