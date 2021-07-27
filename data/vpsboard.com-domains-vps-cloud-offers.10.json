@@ -671,11 +671,11 @@
       },
       "nanovz.com": {
         "ns": [
-          "ns1.koaladns.com.",
-          "ns2.koaladns.com."
+          "ns1.quokkadns.com.",
+          "ns2.quokkadns.com."
         ],
         "a": {
-          "162.210.199.65": false
+          "199.115.116.216": false
         }
       }
     }
@@ -1465,8 +1465,15 @@
         }
       },
       "freevps.club": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.above.com.",
+          "ns2.above.com."
+        ],
+        "a": {
+          "103.224.182.208": [
+            "lb-182-208.above.com."
+          ]
+        }
       }
     }
   },
@@ -1768,7 +1775,7 @@
           "ns2.panamans.com."
         ],
         "a": {
-          "81.17.18.195": false
+          "63.141.242.43": false
         }
       }
     }
@@ -2167,8 +2174,8 @@
           "52.19.97.83": [
             "ec2-52-19-97-83.eu-west-1.compute.amazonaws.com."
           ],
-          "52.49.149.91": [
-            "ec2-52-49-149-91.eu-west-1.compute.amazonaws.com."
+          "52.214.20.222": [
+            "ec2-52-214-20-222.eu-west-1.compute.amazonaws.com."
           ]
         }
       },
@@ -2485,11 +2492,11 @@
     "urls": {
       "galaxyhostplus.com": {
         "ns": [
-          "ns1.chookdns.com.",
-          "ns2.chookdns.com."
+          "ns1.wombatdns.com.",
+          "ns2.wombatdns.com."
         ],
         "a": {
-          "207.244.67.214": false
+          "207.244.67.216": false
         }
       }
     }
@@ -2600,11 +2607,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.kirklanddc.com.",
-          "ns2.kirklanddc.com."
+          "ns1.brainydns.com.",
+          "ns2.brainydns.com."
         ],
         "a": {
-          "37.48.65.143": false
+          "162.210.196.166": false
         }
       },
       "jsdelivr.net": {
@@ -3254,8 +3261,8 @@
           "ns-705.awsdns-24.net."
         ],
         "a": {
-          "54.187.159.182": [
-            "ip-54-187-159-182.stripe.com."
+          "54.187.119.242": [
+            "ip-54-187-119-242.stripe.com."
           ]
         }
       }
@@ -3468,9 +3475,7 @@
           "ns2.panamans.com."
         ],
         "a": {
-          "192.187.111.219": [
-            "arf.qwiqo.live."
-          ]
+          "63.141.242.45": false
         }
       }
     }
@@ -5076,12 +5081,12 @@
     "urls": {
       "elasticnode.net": {
         "ns": [
-          "ns1.torresdns.com.",
-          "ns2.torresdns.com."
+          "ns1.weaponizedcow.com.",
+          "ns2.weaponizedcow.com."
         ],
         "a": {
-          "209.126.123.11": [
-            "static-ip-209-126-123-11.inaddr.ip-pool.com."
+          "209.126.123.13": [
+            "static-ip-209-126-123-13.inaddr.ip-pool.com."
           ]
         }
       }
@@ -6121,8 +6126,8 @@
       },
       "hostigation.com": {
         "ns": [
-          "ns3.whhdns.com.",
-          "ns4.whhdns.com."
+          "ns1.whhdns.com.",
+          "ns2.whhdns.com."
         ],
         "a": {
           "209.198.8.27": false
@@ -6575,7 +6580,7 @@
           "ns2.weaponizedcow.com."
         ],
         "a": {
-          "81.171.22.6": false
+          "81.171.22.5": false
         }
       }
     }
@@ -7378,26 +7383,26 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "3.212.219.217": [
-            "ec2-3-212-219-217.compute-1.amazonaws.com."
+          "3.213.165.59": [
+            "ec2-3-213-165-59.compute-1.amazonaws.com."
           ],
-          "3.215.21.243": [
-            "ec2-3-215-21-243.compute-1.amazonaws.com."
+          "44.193.52.174": [
+            "ec2-44-193-52-174.compute-1.amazonaws.com."
           ],
-          "3.228.119.185": [
-            "ec2-3-228-119-185.compute-1.amazonaws.com."
+          "50.19.6.110": [
+            "ec2-50-19-6-110.compute-1.amazonaws.com."
           ],
-          "34.195.88.198": [
-            "ec2-34-195-88-198.compute-1.amazonaws.com."
-          ],
-          "34.196.64.221": [
-            "ec2-34-196-64-221.compute-1.amazonaws.com."
-          ],
-          "52.45.159.115": [
-            "ec2-52-45-159-115.compute-1.amazonaws.com."
+          "52.202.35.83": [
+            "ec2-52-202-35-83.compute-1.amazonaws.com."
           ],
           "52.45.2.162": [
             "ec2-52-45-2-162.compute-1.amazonaws.com."
+          ],
+          "52.45.34.4": [
+            "ec2-52-45-34-4.compute-1.amazonaws.com."
+          ],
+          "52.45.38.23": [
+            "ec2-52-45-38-23.compute-1.amazonaws.com."
           ],
           "52.55.225.227": [
             "ec2-52-55-225-227.compute-1.amazonaws.com."
@@ -7844,8 +7849,6 @@
       },
       "nyi.net": {
         "ns": [
-          "auth100.ns.nyi.net.",
-          "auth200.ns.nyi.net.",
           "dns0.nyi.net.",
           "dns1.nyi.net.",
           "dns2.nyi.net.",
@@ -8552,8 +8555,8 @@
       },
       "anynode.net": {
         "ns": [
-          "ns3.whhdns.com.",
-          "ns4.whhdns.com."
+          "ns1.whhdns.com.",
+          "ns2.whhdns.com."
         ],
         "a": {
           "209.198.8.27": false
@@ -9253,7 +9256,9 @@
           "ns4.iwonhost.com."
         ],
         "a": {
-          "199.191.56.114": false
+          "199.191.56.114": [
+            "server.iwonhost.com."
+          ]
         }
       }
     }
@@ -10409,9 +10414,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
