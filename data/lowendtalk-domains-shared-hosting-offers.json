@@ -1648,9 +1648,7 @@
           "ns2.hostslim.eu."
         ],
         "a": {
-          "103.219.154.81": [
-            "server.hostslim.eu."
-          ]
+          "103.219.154.81": false
         }
       },
       "hostslim.nl": {
@@ -2731,8 +2729,14 @@
   "ratherbak3d": {
     "urls": {
       "virtual6.net": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ed.ns.cloudflare.com.",
+          "eva.ns.cloudflare.com."
+        ],
+        "a": {
+          "104.21.15.249": false,
+          "172.67.165.89": false
+        }
       },
       "wp.com": {
         "ns": [
@@ -2833,8 +2837,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.225.49.217": [
-            "server-13-225-49-217.dfw50.r.cloudfront.net."
+          "13.249.30.231": [
+            "server-13-249-30-231.iah50.r.cloudfront.net."
           ]
         }
       },
