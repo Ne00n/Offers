@@ -314,9 +314,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -528,7 +526,9 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "161.35.218.92": false,
+          "3.125.252.47": [
+            "ec2-3-125-252-47.eu-central-1.compute.amazonaws.com."
+          ],
           "3.64.200.242": [
             "ec2-3-64-200-242.eu-central-1.compute.amazonaws.com."
           ]
@@ -785,10 +785,8 @@
     "urls": {
       "coinpayments.net": {
         "ns": [
-          "ns1.path.net.",
-          "ns2.path.net.",
-          "ns3.path.net.",
-          "ns4.path.net."
+          "dns1.path.net.",
+          "dns2.path.net."
         ],
         "a": {
           "205.220.231.4": false
@@ -813,17 +811,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "99.86.83.107": [
-            "server-99-86-83-107.iah50.r.cloudfront.net."
+          "99.84.206.52": [
+            "server-99-84-206-52.lax3.r.cloudfront.net."
           ],
-          "99.86.83.123": [
-            "server-99-86-83-123.iah50.r.cloudfront.net."
+          "99.84.206.54": [
+            "server-99-84-206-54.lax3.r.cloudfront.net."
           ],
-          "99.86.83.26": [
-            "server-99-86-83-26.iah50.r.cloudfront.net."
+          "99.84.206.55": [
+            "server-99-84-206-55.lax3.r.cloudfront.net."
           ],
-          "99.86.83.71": [
-            "server-99-86-83-71.iah50.r.cloudfront.net."
+          "99.84.206.98": [
+            "server-99-84-206-98.lax3.r.cloudfront.net."
           ]
         }
       }
@@ -1224,21 +1222,14 @@
           "theo.ns.cloudflare.com."
         ],
         "a": {
-          "51.195.139.147": [
-            "cloud.hostxnow.com."
+          "51.158.111.191": [
+            "pf-1001.whm.fr-par.scw.cloud."
           ]
         }
       },
       "stablewebs.com": {
-        "ns": [
-          "ns1.hostxnow.com.",
-          "ns2.hostxnow.com."
-        ],
-        "a": {
-          "51.195.139.147": [
-            "cloud.hostxnow.com."
-          ]
-        }
+        "ns": false,
+        "a": {}
       },
       "storagespider.com": {
         "ns": false,
@@ -1730,17 +1721,17 @@
           "ns-992.awsdns-60.net."
         ],
         "a": {
-          "99.86.83.107": [
-            "server-99-86-83-107.iah50.r.cloudfront.net."
+          "99.84.206.52": [
+            "server-99-84-206-52.lax3.r.cloudfront.net."
           ],
-          "99.86.83.123": [
-            "server-99-86-83-123.iah50.r.cloudfront.net."
+          "99.84.206.54": [
+            "server-99-84-206-54.lax3.r.cloudfront.net."
           ],
-          "99.86.83.26": [
-            "server-99-86-83-26.iah50.r.cloudfront.net."
+          "99.84.206.55": [
+            "server-99-84-206-55.lax3.r.cloudfront.net."
           ],
-          "99.86.83.71": [
-            "server-99-86-83-71.iah50.r.cloudfront.net."
+          "99.84.206.98": [
+            "server-99-84-206-98.lax3.r.cloudfront.net."
           ]
         }
       },
@@ -1766,15 +1757,15 @@
       },
       "zfrmz.com": {
         "ns": [
-          "dns1.p03.nsone.net.",
-          "dns2.p03.nsone.net.",
-          "dns3.p03.nsone.net.",
-          "dns4.p03.nsone.net.",
-          "ns1.zohocorp.com.",
-          "pdns90.ultradns.biz.",
-          "pdns90.ultradns.com.",
-          "pdns90.ultradns.net.",
-          "pdns90.ultradns.org."
+          "DNS1.P03.NSONE.NET.",
+          "DNS2.P03.NSONE.NET.",
+          "DNS3.P03.NSONE.NET.",
+          "DNS4.P03.NSONE.NET.",
+          "PDNS90.ULTRADNS.BIZ.",
+          "PDNS90.ULTRADNS.NET.",
+          "PDNS90.ULTRADNS.ORG.",
+          "PDNS90.ULTRADNS.com.",
+          "ns1.zohocorp.com."
         ],
         "a": {
           "136.143.187.52": false
@@ -4017,8 +4008,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.24.35": [
-            "edge-star-mini-shv-01-hou1.facebook.com."
+          "31.13.70.36": [
+            "edge-star-mini-shv-01-lax3.facebook.com."
           ]
         }
       },
@@ -4234,11 +4225,11 @@
       },
       "simplimail.co": {
         "ns": [
-          "ns1.commonmx.com.",
-          "ns2.commonmx.com."
+          "ns1.wombatdns.com.",
+          "ns2.wombatdns.com."
         ],
         "a": {
-          "185.107.56.200": false
+          "207.244.67.139": false
         }
       }
     }
