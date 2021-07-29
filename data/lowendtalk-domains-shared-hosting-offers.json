@@ -619,7 +619,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -785,7 +787,9 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "102.129.254.77": false
+          "45.56.77.123": [
+            "li927-123.members.linode.com."
+          ]
         }
       }
     }
@@ -1734,8 +1738,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.11.35": [
-            "edge-star-mini-shv-02-lax3.facebook.com."
+          "157.240.24.35": [
+            "edge-star-mini-shv-01-hou1.facebook.com."
           ]
         }
       },
@@ -1796,7 +1800,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -2144,8 +2150,13 @@
         "a": {}
       },
       "stablecloud.uk": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "dns1.registrar-servers.com.",
+          "dns2.registrar-servers.com."
+        ],
+        "a": {
+          "192.64.119.51": false
+        }
       }
     }
   },
@@ -2244,6 +2255,15 @@
   },
   "dedicatserver_ro": {
     "urls": {
+      "clubitc.ro": {
+        "ns": [
+          "ns1.work.ro.",
+          "ns2.work.ro."
+        ],
+        "a": {
+          "31.14.18.26": false
+        }
+      },
       "ddos-hosting.ro": {
         "ns": [
           "ns1.astimp.ro.",
@@ -2833,8 +2853,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.226.233.200": [
-            "server-13-226-233-200.lax50.r.cloudfront.net."
+          "13.249.30.231": [
+            "server-13-249-30-231.iah50.r.cloudfront.net."
           ]
         }
       },
