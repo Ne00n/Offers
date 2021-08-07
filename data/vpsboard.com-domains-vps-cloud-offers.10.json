@@ -555,9 +555,9 @@
     "urls": {
       "asia.cloud": {
         "ns": [
-          "ns1.asia.cloud.",
-          "ns2.asia.cloud.",
-          "ns3.asia.cloud."
+          "ns1.everleap.com.",
+          "ns2.everleap.com.",
+          "ns3.everleap.com."
         ],
         "a": {
           "182.16.100.10": [
@@ -680,7 +680,7 @@
           "ns2.brainydns.com."
         ],
         "a": {
-          "37.48.65.154": false
+          "37.48.65.136": false
         }
       }
     }
@@ -1782,7 +1782,7 @@
           "ns2.thednscloud.com."
         ],
         "a": {
-          "23.82.12.29": false
+          "108.59.12.99": false
         }
       }
     }
@@ -2169,11 +2169,11 @@
           "ns-955.awsdns-55.net."
         ],
         "a": {
-          "34.240.72.176": [
-            "ec2-34-240-72-176.eu-west-1.compute.amazonaws.com."
+          "34.251.62.139": [
+            "ec2-34-251-62-139.eu-west-1.compute.amazonaws.com."
           ],
-          "99.80.93.13": [
-            "ec2-99-80-93-13.eu-west-1.compute.amazonaws.com."
+          "52.212.229.108": [
+            "ec2-52-212-229-108.eu-west-1.compute.amazonaws.com."
           ]
         }
       },
@@ -2494,7 +2494,7 @@
           "ns2.weaponizedcow.com."
         ],
         "a": {
-          "199.115.115.118": false
+          "207.244.67.218": false
         }
       }
     }
@@ -2605,11 +2605,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.quokkadns.com.",
-          "ns2.quokkadns.com."
+          "ns1.kirklanddc.com.",
+          "ns2.kirklanddc.com."
         ],
         "a": {
-          "207.244.65.58": false
+          "185.107.56.195": false
         }
       },
       "jsdelivr.net": {
@@ -3259,8 +3259,8 @@
           "ns-705.awsdns-24.net."
         ],
         "a": {
-          "54.186.23.98": [
-            "ip-54-186-23-98.stripe.com."
+          "54.187.159.182": [
+            "ip-54-187-159-182.stripe.com."
           ]
         }
       }
@@ -3275,9 +3275,7 @@
           "ns2.swissns.ch."
         ],
         "a": {
-          "185.230.185.5": [
-            "www.swissns.ch."
-          ]
+          "185.230.185.5": false
         }
       }
     }
@@ -3362,8 +3360,8 @@
           "kara.ns.cloudflare.com."
         ],
         "a": {
-          "104.21.20.140": false,
-          "172.67.192.243": false
+          "172.64.168.14": false,
+          "172.64.169.14": false
         }
       }
     }
@@ -3473,7 +3471,7 @@
           "ns2.panamans.com."
         ],
         "a": {
-          "81.17.18.194": false
+          "63.141.242.45": false
         }
       }
     }
@@ -4677,7 +4675,9 @@
       "dailyrazor.com": {
         "ns": [
           "cns1.dailyrazor.com.",
-          "cns2.dailyrazor.com."
+          "cns2.dailyrazor.com.",
+          "primaryns.dailyrazor.com.",
+          "territoryns.dailyrazor.com."
         ],
         "a": {
           "66.70.176.39": [
@@ -4704,9 +4704,7 @@
           "ns2.swissns.ch."
         ],
         "a": {
-          "185.230.185.5": [
-            "www.swissns.ch."
-          ]
+          "185.230.185.5": false
         }
       },
       "wordpress.org": {
@@ -5078,11 +5076,13 @@
     "urls": {
       "elasticnode.net": {
         "ns": [
-          "ns1.weaponizedcow.com.",
-          "ns2.weaponizedcow.com."
+          "ns1.magpiedns.com.",
+          "ns2.magpiedns.com."
         ],
         "a": {
-          "199.115.115.118": false
+          "74.63.241.23": [
+            "23-241-63-74.static.reverse.lstn.net."
+          ]
         }
       }
     }
@@ -5267,8 +5267,8 @@
           "d.ns.whatsapp.net."
         ],
         "a": {
-          "31.13.89.53": [
-            "whatsapp-cdn-shv-01-qro1.fbcdn.net."
+          "157.240.25.60": [
+            "whatsapp-cdn-shv-02-qro1.fbcdn.net."
           ]
         }
       }
@@ -5486,9 +5486,7 @@
           "ns2.hugeserver.com."
         ],
         "a": {
-          "107.161.48.7": [
-            "hugeserver.com."
-          ]
+          "185.133.32.2": false
         }
       }
     }
@@ -6320,9 +6318,7 @@
           "jade.ns.cloudflare.com."
         ],
         "a": {
-          "104.26.2.84": false,
-          "104.26.3.84": false,
-          "172.67.71.213": false
+          "210.211.99.22": false
         }
       }
     }
@@ -6571,11 +6567,11 @@
     "urls": {
       "nodeweb.net": {
         "ns": [
-          "ns1.weaponizedcow.com.",
-          "ns2.weaponizedcow.com."
+          "ns1.magpiedns.com.",
+          "ns2.magpiedns.com."
         ],
         "a": {
-          "199.115.115.119": false
+          "82.192.82.228": false
         }
       }
     }
@@ -7325,8 +7321,9 @@
           "tani.ns.cloudflare.com."
         ],
         "a": {
-          "104.21.63.55": false,
-          "172.67.169.248": false
+          "148.163.99.3": [
+            "usvip1.noc81.com."
+          ]
         }
       },
       "jsdelivr.net": {
@@ -7354,8 +7351,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "31.13.93.35": [
-            "edge-star-mini-shv-02-dfw5.facebook.com."
+          "157.240.14.35": [
+            "edge-star-mini-shv-02-mia3.facebook.com."
           ]
         }
       },
@@ -7377,26 +7374,26 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "3.217.220.107": [
-            "ec2-3-217-220-107.compute-1.amazonaws.com."
+          "3.234.77.173": [
+            "ec2-3-234-77-173.compute-1.amazonaws.com."
           ],
-          "3.218.70.191": [
-            "ec2-3-218-70-191.compute-1.amazonaws.com."
+          "34.192.220.41": [
+            "ec2-34-192-220-41.compute-1.amazonaws.com."
           ],
-          "3.228.156.171": [
-            "ec2-3-228-156-171.compute-1.amazonaws.com."
+          "34.239.30.50": [
+            "ec2-34-239-30-50.compute-1.amazonaws.com."
           ],
-          "34.203.159.69": [
-            "ec2-34-203-159-69.compute-1.amazonaws.com."
+          "50.16.165.212": [
+            "ec2-50-16-165-212.compute-1.amazonaws.com."
           ],
-          "34.228.108.156": [
-            "ec2-34-228-108-156.compute-1.amazonaws.com."
+          "52.55.225.227": [
+            "ec2-52-55-225-227.compute-1.amazonaws.com."
           ],
-          "44.196.181.185": [
-            "ec2-44-196-181-185.compute-1.amazonaws.com."
+          "52.86.144.72": [
+            "ec2-52-86-144-72.compute-1.amazonaws.com."
           ],
-          "54.209.131.108": [
-            "ec2-54-209-131-108.compute-1.amazonaws.com."
+          "54.174.143.90": [
+            "ec2-54-174-143-90.compute-1.amazonaws.com."
           ],
           "54.225.129.59": [
             "ec2-54-225-129-59.compute-1.amazonaws.com."
@@ -7843,6 +7840,8 @@
       },
       "nyi.net": {
         "ns": [
+          "auth100.ns.nyi.net.",
+          "auth200.ns.nyi.net.",
           "dns0.nyi.net.",
           "dns1.nyi.net.",
           "dns2.nyi.net.",
@@ -9807,7 +9806,9 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "162.210.195.122": false
+          "64.32.8.70": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "sunbiz.org": {
@@ -10407,7 +10408,9 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": false
+          "208.91.104.148": [
+            "hostmayo.com."
+          ]
         }
       }
     }
@@ -10648,8 +10651,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.251.32.227": [
-            "dfw25s43-in-f3.1e100.net."
+          "142.251.32.195": [
+            "dfw25s42-in-f3.1e100.net."
           ]
         }
       },
