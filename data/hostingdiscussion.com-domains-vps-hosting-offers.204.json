@@ -256,29 +256,29 @@
           "lucy.ns.cloudflare.com."
         ],
         "a": {
+          "23.22.180.24": [
+            "ec2-23-22-180-24.compute-1.amazonaws.com."
+          ],
+          "3.213.42.86": [
+            "ec2-3-213-42-86.compute-1.amazonaws.com."
+          ],
+          "3.219.126.122": [
+            "ec2-3-219-126-122.compute-1.amazonaws.com."
+          ],
           "3.221.43.225": [
             "ec2-3-221-43-225.compute-1.amazonaws.com."
-          ],
-          "3.224.209.49": [
-            "ec2-3-224-209-49.compute-1.amazonaws.com."
           ],
           "34.227.42.87": [
             "ec2-34-227-42-87.compute-1.amazonaws.com."
           ],
-          "34.237.27.35": [
-            "ec2-34-237-27-35.compute-1.amazonaws.com."
+          "52.45.150.232": [
+            "ec2-52-45-150-232.compute-1.amazonaws.com."
           ],
-          "35.169.173.194": [
-            "ec2-35-169-173-194.compute-1.amazonaws.com."
+          "54.156.27.150": [
+            "ec2-54-156-27-150.compute-1.amazonaws.com."
           ],
-          "52.0.12.63": [
-            "ec2-52-0-12-63.compute-1.amazonaws.com."
-          ],
-          "52.55.40.16": [
-            "ec2-52-55-40-16.compute-1.amazonaws.com."
-          ],
-          "54.236.176.76": [
-            "ec2-54-236-176-76.compute-1.amazonaws.com."
+          "54.156.72.145": [
+            "ec2-54-156-72-145.compute-1.amazonaws.com."
           ]
         }
       },
@@ -688,7 +688,8 @@
       "bighost.lv": {
         "ns": [
           "ns.bighost.lv.",
-          "ns1.bighost.lv."
+          "ns1.bighost.lv.",
+          "ns2.bighost.lv."
         ],
         "a": {
           "159.148.186.129": [
@@ -1406,15 +1407,8 @@
   "dafthost": {
     "urls": {
       "dafthost.com": {
-        "ns": [
-          "ns1.waski.net.",
-          "ns2.waski.net."
-        ],
-        "a": {
-          "213.155.184.94": [
-            "dafthost.com."
-          ]
-        }
+        "ns": false,
+        "a": {}
       }
     }
   },
@@ -1838,7 +1832,9 @@
           "lex.ns.cloudflare.com."
         ],
         "a": {
-          "104.171.114.198": false
+          "104.171.114.198": [
+            "ns1.dts-net.com."
+          ]
         }
       }
     }
@@ -2182,8 +2178,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.11.35": [
-            "edge-star-mini-shv-02-lax3.facebook.com."
+          "31.13.70.36": [
+            "edge-star-mini-shv-01-lax3.facebook.com."
           ]
         }
       },
@@ -2306,8 +2302,8 @@
           "34.240.72.176": [
             "ec2-34-240-72-176.eu-west-1.compute.amazonaws.com."
           ],
-          "99.80.93.13": [
-            "ec2-99-80-93-13.eu-west-1.compute.amazonaws.com."
+          "52.212.229.108": [
+            "ec2-52-212-229-108.eu-west-1.compute.amazonaws.com."
           ]
         }
       },
@@ -2372,8 +2368,8 @@
           "34.240.72.176": [
             "ec2-34-240-72-176.eu-west-1.compute.amazonaws.com."
           ],
-          "99.80.93.13": [
-            "ec2-99-80-93-13.eu-west-1.compute.amazonaws.com."
+          "52.212.229.108": [
+            "ec2-52-212-229-108.eu-west-1.compute.amazonaws.com."
           ]
         }
       }
@@ -2868,7 +2864,7 @@
           "ns2.brainydns.com."
         ],
         "a": {
-          "162.210.199.85": false
+          "207.244.65.58": false
         }
       }
     }
@@ -3545,8 +3541,15 @@
   "hostinghouston": {
     "urls": {
       "hostinginhouston.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.panamans.com.",
+          "ns2.panamans.com."
+        ],
+        "a": {
+          "192.187.111.222": [
+            "ehy.qwiqo.live."
+          ]
+        }
       }
     }
   },
@@ -6874,9 +6877,7 @@
           "coco.ns.cloudflare.com."
         ],
         "a": {
-          "216.230.225.100": [
-            "216-230-225-100.static.houston.tx.oplink.net."
-          ]
+          "216.230.225.100": false
         }
       }
     }
@@ -8132,8 +8133,8 @@
           "kim.ns.cloudflare.com."
         ],
         "a": {
-          "104.21.67.211": false,
-          "172.67.181.34": false
+          "104.21.63.43": false,
+          "172.67.143.18": false
         }
       },
       "shineservers.in": {
@@ -10149,8 +10150,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.189.9": [
-            "lax31s16-in-f9.1e100.net."
+          "172.217.14.105": [
+            "lax31s01-in-f9.1e100.net."
           ]
         }
       },
