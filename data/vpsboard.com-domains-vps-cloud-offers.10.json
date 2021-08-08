@@ -555,14 +555,12 @@
     "urls": {
       "asia.cloud": {
         "ns": [
-          "ns1.everleap.com.",
-          "ns2.everleap.com.",
-          "ns3.everleap.com."
+          "ns1.asia.cloud.",
+          "ns2.asia.cloud.",
+          "ns3.asia.cloud."
         ],
         "a": {
-          "182.16.100.10": [
-            "182-16-100-10.asia.cloud."
-          ]
+          "182.16.100.10": false
         }
       }
     }
@@ -676,11 +674,13 @@
       },
       "nanovz.com": {
         "ns": [
-          "ns1.brainydns.com.",
-          "ns2.brainydns.com."
+          "ns1.koaladns.com.",
+          "ns2.koaladns.com."
         ],
         "a": {
-          "37.48.65.136": false
+          "96.47.230.67": [
+            "96.47.230.67.static.rivalserver.com."
+          ]
         }
       }
     }
@@ -1782,7 +1782,7 @@
           "ns2.thednscloud.com."
         ],
         "a": {
-          "108.59.12.99": false
+          "23.82.12.29": false
         }
       }
     }
@@ -2169,8 +2169,8 @@
           "ns-955.awsdns-55.net."
         ],
         "a": {
-          "34.251.62.139": [
-            "ec2-34-251-62-139.eu-west-1.compute.amazonaws.com."
+          "34.240.72.176": [
+            "ec2-34-240-72-176.eu-west-1.compute.amazonaws.com."
           ],
           "52.212.229.108": [
             "ec2-52-212-229-108.eu-west-1.compute.amazonaws.com."
@@ -2490,11 +2490,11 @@
     "urls": {
       "galaxyhostplus.com": {
         "ns": [
-          "ns1.weaponizedcow.com.",
-          "ns2.weaponizedcow.com."
+          "ns1.quokkadns.com.",
+          "ns2.quokkadns.com."
         ],
         "a": {
-          "207.244.67.218": false
+          "162.210.196.166": false
         }
       }
     }
@@ -2609,7 +2609,7 @@
           "ns2.kirklanddc.com."
         ],
         "a": {
-          "185.107.56.195": false
+          "207.244.65.58": false
         }
       },
       "jsdelivr.net": {
@@ -3259,8 +3259,8 @@
           "ns-705.awsdns-24.net."
         ],
         "a": {
-          "54.187.159.182": [
-            "ip-54-187-159-182.stripe.com."
+          "54.187.119.242": [
+            "ip-54-187-119-242.stripe.com."
           ]
         }
       }
@@ -3275,7 +3275,9 @@
           "ns2.swissns.ch."
         ],
         "a": {
-          "185.230.185.5": false
+          "185.230.185.5": [
+            "www.swissns.ch."
+          ]
         }
       }
     }
@@ -3360,8 +3362,8 @@
           "kara.ns.cloudflare.com."
         ],
         "a": {
-          "172.64.168.14": false,
-          "172.64.169.14": false
+          "104.21.20.140": false,
+          "172.67.192.243": false
         }
       }
     }
@@ -3471,7 +3473,7 @@
           "ns2.panamans.com."
         ],
         "a": {
-          "63.141.242.45": false
+          "81.17.29.150": false
         }
       }
     }
@@ -4247,13 +4249,8 @@
         }
       },
       "infinitetech.eu": {
-        "ns": [
-          "ns1.sedoparking.com.",
-          "ns2.sedoparking.com."
-        ],
-        "a": {
-          "64.190.62.111": false
-        }
+        "ns": false,
+        "a": {}
       },
       "ripe.net": {
         "ns": [
@@ -4704,7 +4701,9 @@
           "ns2.swissns.ch."
         ],
         "a": {
-          "185.230.185.5": false
+          "185.230.185.5": [
+            "www.swissns.ch."
+          ]
         }
       },
       "wordpress.org": {
@@ -5076,12 +5075,12 @@
     "urls": {
       "elasticnode.net": {
         "ns": [
-          "ns1.magpiedns.com.",
-          "ns2.magpiedns.com."
+          "ns1.torresdns.com.",
+          "ns2.torresdns.com."
         ],
         "a": {
-          "74.63.241.23": [
-            "23-241-63-74.static.reverse.lstn.net."
+          "209.126.123.12": [
+            "static-ip-209-126-123-12.inaddr.ip-pool.com."
           ]
         }
       }
@@ -5442,16 +5441,8 @@
   "lv-matt": {
     "urls": {
       "lovevps.com": {
-        "ns": [
-          "dns1.name-services.com.",
-          "dns2.name-services.com.",
-          "dns3.name-services.com.",
-          "dns4.name-services.com.",
-          "dns5.name-services.com."
-        ],
-        "a": {
-          "91.195.240.87": false
-        }
+        "ns": false,
+        "a": {}
       },
       "mylovevps.com": {
         "ns": [
@@ -5486,7 +5477,9 @@
           "ns2.hugeserver.com."
         ],
         "a": {
-          "185.133.32.2": false
+          "107.161.48.7": [
+            "hugeserver.com."
+          ]
         }
       }
     }
@@ -6567,11 +6560,13 @@
     "urls": {
       "nodeweb.net": {
         "ns": [
-          "ns1.magpiedns.com.",
-          "ns2.magpiedns.com."
+          "ns1.torresdns.com.",
+          "ns2.torresdns.com."
         ],
         "a": {
-          "82.192.82.228": false
+          "209.126.123.11": [
+            "static-ip-209-126-123-11.inaddr.ip-pool.com."
+          ]
         }
       }
     }
@@ -7351,8 +7346,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.14.35": [
-            "edge-star-mini-shv-02-mia3.facebook.com."
+          "31.13.88.35": [
+            "edge-star-mini-shv-02-atl3.facebook.com."
           ]
         }
       },
@@ -7374,29 +7369,29 @@
           "ns4.dnsimple.com."
         ],
         "a": {
-          "3.234.77.173": [
-            "ec2-3-234-77-173.compute-1.amazonaws.com."
+          "3.217.220.107": [
+            "ec2-3-217-220-107.compute-1.amazonaws.com."
           ],
-          "34.192.220.41": [
-            "ec2-34-192-220-41.compute-1.amazonaws.com."
+          "3.218.70.191": [
+            "ec2-3-218-70-191.compute-1.amazonaws.com."
           ],
-          "34.239.30.50": [
-            "ec2-34-239-30-50.compute-1.amazonaws.com."
+          "34.197.157.142": [
+            "ec2-34-197-157-142.compute-1.amazonaws.com."
           ],
-          "50.16.165.212": [
-            "ec2-50-16-165-212.compute-1.amazonaws.com."
+          "34.228.108.156": [
+            "ec2-34-228-108-156.compute-1.amazonaws.com."
+          ],
+          "52.45.2.162": [
+            "ec2-52-45-2-162.compute-1.amazonaws.com."
           ],
           "52.55.225.227": [
             "ec2-52-55-225-227.compute-1.amazonaws.com."
           ],
-          "52.86.144.72": [
-            "ec2-52-86-144-72.compute-1.amazonaws.com."
+          "54.165.187.168": [
+            "ec2-54-165-187-168.compute-1.amazonaws.com."
           ],
-          "54.174.143.90": [
-            "ec2-54-174-143-90.compute-1.amazonaws.com."
-          ],
-          "54.225.129.59": [
-            "ec2-54-225-129-59.compute-1.amazonaws.com."
+          "54.225.238.166": [
+            "ec2-54-225-238-166.compute-1.amazonaws.com."
           ]
         }
       },
@@ -7840,8 +7835,6 @@
       },
       "nyi.net": {
         "ns": [
-          "auth100.ns.nyi.net.",
-          "auth200.ns.nyi.net.",
           "dns0.nyi.net.",
           "dns1.nyi.net.",
           "dns2.nyi.net.",
@@ -9806,7 +9799,7 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "64.32.8.70": [
+          "64.32.8.68": [
             "customer.sharktech.net."
           ]
         }
@@ -10741,9 +10734,7 @@
           "ns2.resellerhostingcheap.net."
         ],
         "a": {
-          "144.91.84.176": [
-            "cpanel.resellerhostingcheap.net."
-          ]
+          "144.91.84.176": false
         }
       }
     }
