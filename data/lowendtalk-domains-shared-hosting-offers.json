@@ -595,7 +595,9 @@
           "ns2.hosthoney.com."
         ],
         "a": {
-          "192.254.73.130": false
+          "192.254.73.130": [
+            "ds.hosthoney.com."
+          ]
         }
       }
     }
@@ -801,7 +803,9 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "102.129.254.77": false
+          "45.56.77.123": [
+            "li927-123.members.linode.com."
+          ]
         }
       }
     }
@@ -1752,8 +1756,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "31.13.70.36": [
-            "edge-star-mini-shv-01-lax3.facebook.com."
+          "157.240.2.35": [
+            "edge-star-mini-shv-01-ort2.facebook.com."
           ]
         }
       },
@@ -2818,8 +2822,16 @@
   "rootwelt": {
     "urls": {
       "hostwelt.de": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns.inwx.de.",
+          "ns2.inwx.de.",
+          "ns3.inwx.eu."
+        ],
+        "a": {
+          "62.113.234.28": [
+            "hostwelt.de."
+          ]
+        }
       }
     }
   },
@@ -2851,8 +2863,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.226.233.200": [
-            "server-13-226-233-200.lax50.r.cloudfront.net."
+          "13.249.30.231": [
+            "server-13-249-30-231.iah50.r.cloudfront.net."
           ]
         }
       },
