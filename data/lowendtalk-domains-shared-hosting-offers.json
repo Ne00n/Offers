@@ -228,8 +228,13 @@
   "BlaZe": {
     "urls": {
       "dranzel.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.bodis.com.",
+          "ns2.bodis.com."
+        ],
+        "a": {
+          "199.59.242.153": false
+        }
       }
     }
   },
@@ -627,9 +632,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -795,7 +798,9 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "102.129.254.77": false
+          "45.56.77.123": [
+            "li927-123.members.linode.com."
+          ]
         }
       }
     }
@@ -1746,8 +1751,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "31.13.70.36": [
-            "edge-star-mini-shv-01-lax3.facebook.com."
+          "157.240.19.35": [
+            "edge-star-mini-shv-01-dfw5.facebook.com."
           ]
         }
       },
@@ -1808,9 +1813,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -2461,8 +2464,8 @@
           "lily.ns.cloudflare.com."
         ],
         "a": {
-          "172.64.204.19": false,
-          "172.64.205.19": false
+          "104.21.69.247": false,
+          "172.67.216.19": false
         }
       }
     }
@@ -2530,11 +2533,11 @@
           "ns2.namebrightdns.com."
         ],
         "a": {
+          "3.232.205.82": [
+            "ec2-3-232-205-82.compute-1.amazonaws.com."
+          ],
           "52.203.81.245": [
             "ec2-52-203-81-245.compute-1.amazonaws.com."
-          ],
-          "52.206.51.55": [
-            "ec2-52-206-51-55.compute-1.amazonaws.com."
           ]
         }
       }
@@ -2857,8 +2860,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.226.233.200": [
-            "server-13-226-233-200.lax50.r.cloudfront.net."
+          "13.249.30.231": [
+            "server-13-249-30-231.iah50.r.cloudfront.net."
           ]
         }
       },
