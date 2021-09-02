@@ -118,9 +118,7 @@
           "ns15.dnsmadeeasy.com."
         ],
         "a": {
-          "185.35.79.41": [
-            "corgitech.com."
-          ]
+          "185.35.79.41": false
         }
       },
       "crissic.net": {
@@ -220,7 +218,9 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.57": false
+          "64.32.8.67": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "frantech.ca": {
@@ -574,17 +574,17 @@
           "ns-836.awsdns-40.net."
         ],
         "a": {
-          "52.85.192.19": [
-            "server-52-85-192-19.lax50.r.cloudfront.net."
+          "99.86.100.32": [
+            "server-99-86-100-32.iah50.r.cloudfront.net."
           ],
-          "52.85.192.20": [
-            "server-52-85-192-20.lax50.r.cloudfront.net."
+          "99.86.100.37": [
+            "server-99-86-100-37.iah50.r.cloudfront.net."
           ],
-          "52.85.192.50": [
-            "server-52-85-192-50.lax50.r.cloudfront.net."
+          "99.86.100.51": [
+            "server-99-86-100-51.iah50.r.cloudfront.net."
           ],
-          "52.85.192.99": [
-            "server-52-85-192-99.lax50.r.cloudfront.net."
+          "99.86.100.82": [
+            "server-99-86-100-82.iah50.r.cloudfront.net."
           ]
         }
       }
@@ -728,17 +728,17 @@
           "ns-514.awsdns-00.net."
         ],
         "a": {
-          "13.226.241.3": [
-            "server-13-226-241-3.lax50.r.cloudfront.net."
+          "13.249.48.15": [
+            "server-13-249-48-15.iah50.r.cloudfront.net."
           ],
-          "13.226.241.40": [
-            "server-13-226-241-40.lax50.r.cloudfront.net."
+          "13.249.48.33": [
+            "server-13-249-48-33.iah50.r.cloudfront.net."
           ],
-          "13.226.241.52": [
-            "server-13-226-241-52.lax50.r.cloudfront.net."
+          "13.249.48.56": [
+            "server-13-249-48-56.iah50.r.cloudfront.net."
           ],
-          "13.226.241.62": [
-            "server-13-226-241-62.lax50.r.cloudfront.net."
+          "13.249.48.57": [
+            "server-13-249-48-57.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -1092,6 +1092,10 @@
           ]
         }
       },
+      "dcnhost.com": {
+        "ns": false,
+        "a": {}
+      },
       "drserver.net": {
         "ns": [
           "dina.ns.cloudflare.com.",
@@ -1165,6 +1169,10 @@
           ]
         }
       },
+      "kayhosting.com": {
+        "ns": false,
+        "a": {}
+      },
       "lax-noc.com": {
         "ns": [
           "ns1.lax-noc.com.",
@@ -1197,10 +1205,6 @@
           "104.26.9.4": false,
           "172.67.68.9": false
         }
-      },
-      "n3servers.com": {
-        "ns": false,
-        "a": {}
       },
       "nfphosting.com": {
         "ns": [
@@ -1777,6 +1781,10 @@
           ]
         }
       },
+      "alienvps.com": {
+        "ns": false,
+        "a": {}
+      },
       "alpharacks.com": {
         "ns": [
           "dns1.registrar-servers.com.",
@@ -1861,8 +1869,8 @@
           "ns-570.awsdns-07.net."
         ],
         "a": {
-          "108.168.194.93": [
-            "5d.c2.a86c.ip4.static.sl-reverse.com."
+          "75.126.118.184": [
+            "b8.76.7e4b.ip4.static.sl-reverse.com."
           ]
         }
       },
@@ -2124,10 +2132,6 @@
             "ec2-54-148-162-32.us-west-2.compute.amazonaws.com."
           ]
         }
-      },
-      "dcnhost.com": {
-        "ns": false,
-        "a": {}
       },
       "dedicontrol.com": {
         "ns": [
@@ -2442,6 +2446,10 @@
           "172.67.220.162": false
         }
       },
+      "hosting73.com": {
+        "ns": false,
+        "a": {}
+      },
       "hostinginside.com": {
         "ns": [
           "kai.ns.cloudflare.com.",
@@ -2702,10 +2710,6 @@
           "104.26.15.247": false,
           "172.67.69.167": false
         }
-      },
-      "kayhosting.com": {
-        "ns": false,
-        "a": {}
       },
       "kudohosting.com": {
         "ns": false,
@@ -3303,8 +3307,8 @@
           "miles.ns.cloudflare.com."
         ],
         "a": {
-          "23.42.90.20": [
-            "a23-42-90-20.deploy.static.akamaitechnologies.com."
+          "23.34.71.119": [
+            "a23-34-71-119.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -3351,6 +3355,10 @@
           "jm2.dns.com."
         ],
         "a": false
+      },
+      "supremevps.com": {
+        "ns": false,
+        "a": {}
       },
       "swedendedicated.com": {
         "ns": [
@@ -3674,6 +3682,10 @@
           ]
         }
       },
+      "welcomehosting.com": {
+        "ns": false,
+        "a": {}
+      },
       "whitelabelitsolutions.com": {
         "ns": [
           "ns1.whitelabelitsolutions.com.",
@@ -3720,7 +3732,9 @@
       },
       "x4b.net": {
         "ns": [
+          "ns1.vultr.com.",
           "ns1.x4b.net.",
+          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
@@ -3836,6 +3850,10 @@
             "ec2-3-223-115-185.compute-1.amazonaws.com."
           ]
         }
+      },
+      "as62639.com": {
+        "ns": false,
+        "a": {}
       },
       "avenuehost.com": {
         "ns": [
@@ -3963,10 +3981,6 @@
           "5.28.3.94": false
         }
       },
-      "dotvps.co": {
-        "ns": false,
-        "a": {}
-      },
       "ecvps.com": {
         "ns": [
           "nsg1.namebrightdns.com.",
@@ -3984,7 +3998,9 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.57": false
+          "64.32.8.67": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "gbservers.co.uk": {
@@ -4199,6 +4215,10 @@
           "172.67.23.181": false
         }
       },
+      "vpscorner.co.uk": {
+        "ns": false,
+        "a": {}
+      },
       "yesuphost.com": {
         "ns": [
           "dns1.name-services.com.",
@@ -4245,17 +4265,17 @@
           "ns-514.awsdns-00.net."
         ],
         "a": {
-          "13.226.241.3": [
-            "server-13-226-241-3.lax50.r.cloudfront.net."
+          "13.249.48.15": [
+            "server-13-249-48-15.iah50.r.cloudfront.net."
           ],
-          "13.226.241.40": [
-            "server-13-226-241-40.lax50.r.cloudfront.net."
+          "13.249.48.33": [
+            "server-13-249-48-33.iah50.r.cloudfront.net."
           ],
-          "13.226.241.52": [
-            "server-13-226-241-52.lax50.r.cloudfront.net."
+          "13.249.48.56": [
+            "server-13-249-48-56.iah50.r.cloudfront.net."
           ],
-          "13.226.241.62": [
-            "server-13-226-241-62.lax50.r.cloudfront.net."
+          "13.249.48.57": [
+            "server-13-249-48-57.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -4803,6 +4823,10 @@
           ]
         }
       },
+      "skdedicated.com": {
+        "ns": false,
+        "a": {}
+      },
       "ssdnodes.com": {
         "ns": [
           "andy.ns.cloudflare.com.",
@@ -4968,17 +4992,17 @@
           "nina.ns.cloudflare.com."
         ],
         "a": {
-          "13.35.89.101": [
-            "server-13-35-89-101.lax3.r.cloudfront.net."
+          "13.225.51.106": [
+            "server-13-225-51-106.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.113": [
-            "server-13-35-89-113.lax3.r.cloudfront.net."
+          "13.225.51.46": [
+            "server-13-225-51-46.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.49": [
-            "server-13-35-89-49.lax3.r.cloudfront.net."
+          "13.225.51.56": [
+            "server-13-225-51-56.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.8": [
-            "server-13-35-89-8.lax3.r.cloudfront.net."
+          "13.225.51.7": [
+            "server-13-225-51-7.dfw50.r.cloudfront.net."
           ]
         }
       },
@@ -5200,23 +5224,19 @@
           "ns-514.awsdns-00.net."
         ],
         "a": {
-          "13.226.241.3": [
-            "server-13-226-241-3.lax50.r.cloudfront.net."
+          "13.249.48.15": [
+            "server-13-249-48-15.iah50.r.cloudfront.net."
           ],
-          "13.226.241.40": [
-            "server-13-226-241-40.lax50.r.cloudfront.net."
+          "13.249.48.33": [
+            "server-13-249-48-33.iah50.r.cloudfront.net."
           ],
-          "13.226.241.52": [
-            "server-13-226-241-52.lax50.r.cloudfront.net."
+          "13.249.48.56": [
+            "server-13-249-48-56.iah50.r.cloudfront.net."
           ],
-          "13.226.241.62": [
-            "server-13-226-241-62.lax50.r.cloudfront.net."
+          "13.249.48.57": [
+            "server-13-249-48-57.iah50.r.cloudfront.net."
           ]
         }
-      },
-      "fusa.is": {
-        "ns": false,
-        "a": {}
       },
       "gbclients.co.uk": {
         "ns": [
@@ -5938,8 +5958,10 @@
           "todd.ns.cloudflare.com."
         ],
         "a": {
-          "138.68.61.186": false,
-          "138.68.7.48": false
+          "54.211.114.166": [
+            "ec2-54-211-114-166.compute-1.amazonaws.com."
+          ],
+          "68.183.27.198": false
         }
       },
       "behemothvps.com": {
@@ -5963,17 +5985,17 @@
           "nina.ns.cloudflare.com."
         ],
         "a": {
-          "13.35.89.101": [
-            "server-13-35-89-101.lax3.r.cloudfront.net."
+          "13.225.51.106": [
+            "server-13-225-51-106.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.113": [
-            "server-13-35-89-113.lax3.r.cloudfront.net."
+          "13.225.51.46": [
+            "server-13-225-51-46.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.49": [
-            "server-13-35-89-49.lax3.r.cloudfront.net."
+          "13.225.51.56": [
+            "server-13-225-51-56.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.8": [
-            "server-13-35-89-8.lax3.r.cloudfront.net."
+          "13.225.51.7": [
+            "server-13-225-51-7.dfw50.r.cloudfront.net."
           ]
         }
       },
@@ -5995,8 +6017,8 @@
           "dns4.p01.nsone.net."
         ],
         "a": {
-          "54.176.163.86": [
-            "ec2-54-176-163-86.us-west-1.compute.amazonaws.com."
+          "18.221.126.228": [
+            "ec2-18-221-126-228.us-east-2.compute.amazonaws.com."
           ]
         }
       },
@@ -6572,17 +6594,17 @@
           "ns-514.awsdns-00.net."
         ],
         "a": {
-          "13.226.241.3": [
-            "server-13-226-241-3.lax50.r.cloudfront.net."
+          "13.249.48.15": [
+            "server-13-249-48-15.iah50.r.cloudfront.net."
           ],
-          "13.226.241.40": [
-            "server-13-226-241-40.lax50.r.cloudfront.net."
+          "13.249.48.33": [
+            "server-13-249-48-33.iah50.r.cloudfront.net."
           ],
-          "13.226.241.52": [
-            "server-13-226-241-52.lax50.r.cloudfront.net."
+          "13.249.48.56": [
+            "server-13-249-48-56.iah50.r.cloudfront.net."
           ],
-          "13.226.241.62": [
-            "server-13-226-241-62.lax50.r.cloudfront.net."
+          "13.249.48.57": [
+            "server-13-249-48-57.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -6596,6 +6618,10 @@
         "a": {
           "131.196.253.94": false
         }
+      },
+      "fusa.is": {
+        "ns": false,
+        "a": {}
       },
       "gbhost.net": {
         "ns": [
@@ -6840,7 +6866,11 @@
           "ns1.hostmayo.com.",
           "ns2.hostmayo.com."
         ],
-        "a": false
+        "a": {
+          "92.118.234.83": [
+            "hostmayo.com."
+          ]
+        }
       },
       "hostmem.com": {
         "ns": [
@@ -7240,9 +7270,9 @@
           "vera.ns.cloudflare.com."
         ],
         "a": {
-          "138.68.235.89": false,
-          "184.72.19.87": [
-            "ec2-184-72-19-87.us-west-1.compute.amazonaws.com."
+          "167.172.136.193": false,
+          "52.203.36.44": [
+            "ec2-52-203-36-44.compute-1.amazonaws.com."
           ]
         }
       },
@@ -7908,17 +7938,17 @@
           "ns-663.awsdns-18.net."
         ],
         "a": {
-          "13.35.89.68": [
-            "server-13-35-89-68.lax3.r.cloudfront.net."
+          "13.249.48.104": [
+            "server-13-249-48-104.iah50.r.cloudfront.net."
           ],
-          "13.35.89.69": [
-            "server-13-35-89-69.lax3.r.cloudfront.net."
+          "13.249.48.109": [
+            "server-13-249-48-109.iah50.r.cloudfront.net."
           ],
-          "13.35.89.7": [
-            "server-13-35-89-7.lax3.r.cloudfront.net."
+          "13.249.48.20": [
+            "server-13-249-48-20.iah50.r.cloudfront.net."
           ],
-          "13.35.89.78": [
-            "server-13-35-89-78.lax3.r.cloudfront.net."
+          "13.249.48.9": [
+            "server-13-249-48-9.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -8439,9 +8469,7 @@
           "marek.ns.cloudflare.com."
         ],
         "a": {
-          "192.198.80.3": [
-            "server.softaculous.com."
-          ]
+          "192.198.80.3": false
         }
       },
       "vmbox.co": {
@@ -8595,7 +8623,9 @@
       },
       "x4b.net": {
         "ns": [
+          "ns1.vultr.com.",
           "ns1.x4b.net.",
+          "ns2.vultr.com.",
           "ns2.x4b.net."
         ],
         "a": {
@@ -8634,8 +8664,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.217.142": [
-            "lax31s19-in-f14.1e100.net."
+          "142.250.68.174": [
+            "dfw25s41-in-f14.1e100.net."
           ]
         }
       },
@@ -8816,10 +8846,6 @@
           ]
         }
       },
-      "as62639.com": {
-        "ns": false,
-        "a": {}
-      },
       "berry.pw": {
         "ns": [
           "ns1.sedoparking.com.",
@@ -8835,17 +8861,17 @@
           "nina.ns.cloudflare.com."
         ],
         "a": {
-          "13.35.89.101": [
-            "server-13-35-89-101.lax3.r.cloudfront.net."
+          "13.225.51.106": [
+            "server-13-225-51-106.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.113": [
-            "server-13-35-89-113.lax3.r.cloudfront.net."
+          "13.225.51.46": [
+            "server-13-225-51-46.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.49": [
-            "server-13-35-89-49.lax3.r.cloudfront.net."
+          "13.225.51.56": [
+            "server-13-225-51-56.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.8": [
-            "server-13-35-89-8.lax3.r.cloudfront.net."
+          "13.225.51.7": [
+            "server-13-225-51-7.dfw50.r.cloudfront.net."
           ]
         }
       },
@@ -9166,17 +9192,17 @@
           "ns-986.awsdns-59.net."
         ],
         "a": {
-          "13.226.241.112": [
-            "server-13-226-241-112.lax50.r.cloudfront.net."
+          "13.249.48.105": [
+            "server-13-249-48-105.iah50.r.cloudfront.net."
           ],
-          "13.226.241.16": [
-            "server-13-226-241-16.lax50.r.cloudfront.net."
+          "13.249.48.2": [
+            "server-13-249-48-2.iah50.r.cloudfront.net."
           ],
-          "13.226.241.47": [
-            "server-13-226-241-47.lax50.r.cloudfront.net."
+          "13.249.48.54": [
+            "server-13-249-48-54.iah50.r.cloudfront.net."
           ],
-          "13.226.241.63": [
-            "server-13-226-241-63.lax50.r.cloudfront.net."
+          "13.249.48.57": [
+            "server-13-249-48-57.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -9200,11 +9226,11 @@
       },
       "galaxyhostplus.com": {
         "ns": [
-          "ns1.weaponizedcow.com.",
-          "ns2.weaponizedcow.com."
+          "ns1.chookdns.com.",
+          "ns2.chookdns.com."
         ],
         "a": {
-          "199.115.115.119": false
+          "37.48.65.153": false
         }
       },
       "gdbi.info": {
@@ -10125,6 +10151,10 @@
           "154.86.107.102": false
         }
       },
+      "2host.com": {
+        "ns": false,
+        "a": {}
+      },
       "96mb.com": {
         "ns": [
           "kay.ns.cloudflare.com.",
@@ -10314,8 +10344,10 @@
           "todd.ns.cloudflare.com."
         ],
         "a": {
-          "138.68.61.186": false,
-          "138.68.7.48": false
+          "54.211.114.166": [
+            "ec2-54-211-114-166.compute-1.amazonaws.com."
+          ],
+          "68.183.27.198": false
         }
       },
       "bandwagonhost.com": {
@@ -10371,17 +10403,17 @@
           "nina.ns.cloudflare.com."
         ],
         "a": {
-          "13.35.89.101": [
-            "server-13-35-89-101.lax3.r.cloudfront.net."
+          "13.225.51.106": [
+            "server-13-225-51-106.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.113": [
-            "server-13-35-89-113.lax3.r.cloudfront.net."
+          "13.225.51.46": [
+            "server-13-225-51-46.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.49": [
-            "server-13-35-89-49.lax3.r.cloudfront.net."
+          "13.225.51.56": [
+            "server-13-225-51-56.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.8": [
-            "server-13-35-89-8.lax3.r.cloudfront.net."
+          "13.225.51.7": [
+            "server-13-225-51-7.dfw50.r.cloudfront.net."
           ]
         }
       },
@@ -10508,10 +10540,6 @@
           "104.21.61.158": false,
           "172.67.211.141": false
         }
-      },
-      "chvps.com": {
-        "ns": false,
-        "a": {}
       },
       "cl.ly": {
         "ns": [
@@ -10908,7 +10936,9 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.57": false
+          "64.32.8.67": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "flipperhost.com": {
@@ -11011,15 +11041,6 @@
           "104.26.8.239": false,
           "104.26.9.239": false,
           "172.67.69.238": false
-        }
-      },
-      "g-netics.de": {
-        "ns": [
-          "ns1.all4online.de.",
-          "ns2.all4online.de."
-        ],
-        "a": {
-          "95.130.17.35": false
         }
       },
       "gbclients.co.uk": {
@@ -12637,8 +12658,8 @@
           "ns4.techcrunch.com."
         ],
         "a": {
-          "67.195.231.20": [
-            "media-router-aol71.prod.media.vip.gq1.yahoo.com."
+          "76.13.32.141": [
+            "media-router-aol71.prod.media.vip.bf1.yahoo.com."
           ]
         }
       },
@@ -12791,10 +12812,6 @@
           "104.21.2.47": false,
           "172.67.152.134": false
         }
-      },
-      "vpscorner.co.uk": {
-        "ns": false,
-        "a": {}
       },
       "vpsdatabase.com": {
         "ns": [
@@ -12972,6 +12989,10 @@
           "172.67.211.201": false
         }
       },
+      "xfusesolutions.net": {
+        "ns": false,
+        "a": {}
+      },
       "ycombinator.com": {
         "ns": [
           "ns-1411.awsdns-48.org.",
@@ -12980,17 +13001,17 @@
           "ns-556.awsdns-05.net."
         ],
         "a": {
-          "13.225.149.120": [
-            "server-13-225-149-120.lax3.r.cloudfront.net."
+          "13.249.25.11": [
+            "server-13-249-25-11.iah50.r.cloudfront.net."
           ],
-          "13.225.149.38": [
-            "server-13-225-149-38.lax3.r.cloudfront.net."
+          "13.249.25.23": [
+            "server-13-249-25-23.iah50.r.cloudfront.net."
           ],
-          "13.225.149.54": [
-            "server-13-225-149-54.lax3.r.cloudfront.net."
+          "13.249.25.28": [
+            "server-13-249-25-28.iah50.r.cloudfront.net."
           ],
-          "13.225.149.58": [
-            "server-13-225-149-58.lax3.r.cloudfront.net."
+          "13.249.25.58": [
+            "server-13-249-25-58.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -13083,10 +13104,6 @@
         "a": {}
       },
       "1xen.co.uk": {
-        "ns": false,
-        "a": {}
-      },
-      "2host.com": {
         "ns": false,
         "a": {}
       },
@@ -13334,10 +13351,6 @@
             "ec2-52-58-78-16.eu-central-1.compute.amazonaws.com."
           ]
         }
-      },
-      "alienvps.com": {
-        "ns": false,
-        "a": {}
       },
       "allsimple.net": {
         "ns": [
@@ -13897,8 +13910,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.251.2.191": [
-            "dl-in-f191.1e100.net."
+          "142.250.68.169": [
+            "dfw25s41-in-f9.1e100.net."
           ]
         }
       },
@@ -14285,6 +14298,10 @@
         "ns": false,
         "a": {}
       },
+      "chvps.com": {
+        "ns": false,
+        "a": {}
+      },
       "cinfu.com": {
         "ns": [
           "kim.ns.cloudflare.com.",
@@ -14626,9 +14643,7 @@
           "ns15.dnsmadeeasy.com."
         ],
         "a": {
-          "185.35.79.41": [
-            "corgitech.com."
-          ]
+          "185.35.79.41": false
         }
       },
       "corong.com": {
@@ -15944,13 +15959,8 @@
         }
       },
       "g-netics.de": {
-        "ns": [
-          "ns1.all4online.de.",
-          "ns2.all4online.de."
-        ],
-        "a": {
-          "95.130.17.35": false
-        }
+        "ns": false,
+        "a": {}
       },
       "gamersway.nl": {
         "ns": false,
@@ -16801,8 +16811,8 @@
           "a9-64.akam.net."
         ],
         "a": {
-          "104.117.123.80": [
-            "a104-117-123-80.deploy.static.akamaitechnologies.com."
+          "23.211.67.235": [
+            "a23-211-67-235.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -17405,17 +17415,17 @@
           "ns-724.awsdns-26.net."
         ],
         "a": {
-          "13.226.241.18": [
-            "server-13-226-241-18.lax50.r.cloudfront.net."
+          "13.249.25.12": [
+            "server-13-249-25-12.iah50.r.cloudfront.net."
           ],
-          "13.226.241.22": [
-            "server-13-226-241-22.lax50.r.cloudfront.net."
+          "13.249.25.129": [
+            "server-13-249-25-129.iah50.r.cloudfront.net."
           ],
-          "13.226.241.29": [
-            "server-13-226-241-29.lax50.r.cloudfront.net."
+          "13.249.25.5": [
+            "server-13-249-25-5.iah50.r.cloudfront.net."
           ],
-          "13.226.241.75": [
-            "server-13-226-241-75.lax50.r.cloudfront.net."
+          "13.249.25.54": [
+            "server-13-249-25-54.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -19922,11 +19932,11 @@
       },
       "sysrack.com": {
         "ns": [
-          "ns1.weaponizedcow.com.",
-          "ns2.weaponizedcow.com."
+          "ns1.quokkadns.com.",
+          "ns2.quokkadns.com."
         ],
         "a": {
-          "207.244.67.215": false
+          "37.48.65.148": false
         }
       },
       "systeminplace.net": {
@@ -21412,8 +21422,8 @@
           "ns2.wikimedia.org."
         ],
         "a": {
-          "198.35.26.96": [
-            "text-lb.ulsfo.wikimedia.org."
+          "208.80.153.224": [
+            "text-lb.codfw.wikimedia.org."
           ]
         }
       },
@@ -21550,9 +21560,7 @@
           "ns2.hostfurious.com."
         ],
         "a": {
-          "173.212.237.43": [
-            "vmi480428.contaboserver.net."
-          ]
+          "173.212.237.43": false
         }
       },
       "xensmart.co.uk": {
@@ -21676,17 +21684,17 @@
           "ns-556.awsdns-05.net."
         ],
         "a": {
-          "13.225.149.120": [
-            "server-13-225-149-120.lax3.r.cloudfront.net."
+          "13.249.25.11": [
+            "server-13-249-25-11.iah50.r.cloudfront.net."
           ],
-          "13.225.149.38": [
-            "server-13-225-149-38.lax3.r.cloudfront.net."
+          "13.249.25.23": [
+            "server-13-249-25-23.iah50.r.cloudfront.net."
           ],
-          "13.225.149.54": [
-            "server-13-225-149-54.lax3.r.cloudfront.net."
+          "13.249.25.28": [
+            "server-13-249-25-28.iah50.r.cloudfront.net."
           ],
-          "13.225.149.58": [
-            "server-13-225-149-58.lax3.r.cloudfront.net."
+          "13.249.25.58": [
+            "server-13-249-25-58.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -22061,17 +22069,17 @@
           "nina.ns.cloudflare.com."
         ],
         "a": {
-          "13.35.89.101": [
-            "server-13-35-89-101.lax3.r.cloudfront.net."
+          "13.225.51.106": [
+            "server-13-225-51-106.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.113": [
-            "server-13-35-89-113.lax3.r.cloudfront.net."
+          "13.225.51.46": [
+            "server-13-225-51-46.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.49": [
-            "server-13-35-89-49.lax3.r.cloudfront.net."
+          "13.225.51.56": [
+            "server-13-225-51-56.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.8": [
-            "server-13-35-89-8.lax3.r.cloudfront.net."
+          "13.225.51.7": [
+            "server-13-225-51-7.dfw50.r.cloudfront.net."
           ]
         }
       },
@@ -22650,7 +22658,9 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.57": false
+          "64.32.8.67": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "flipperhost.com": {
@@ -22748,11 +22758,11 @@
       },
       "galaxyhostplus.com": {
         "ns": [
-          "ns1.weaponizedcow.com.",
-          "ns2.weaponizedcow.com."
+          "ns1.chookdns.com.",
+          "ns2.chookdns.com."
         ],
         "a": {
-          "199.115.115.119": false
+          "37.48.65.153": false
         }
       },
       "gamedatainc.com": {
@@ -23087,7 +23097,7 @@
           "ns2.milesmx.com."
         ],
         "a": {
-          "199.115.116.162": false
+          "162.210.196.171": false
         }
       },
       "jamies-servers.co.uk": {
@@ -23406,16 +23416,24 @@
       },
       "nanovz.com": {
         "ns": [
-          "ns1.brainydns.com.",
-          "ns2.brainydns.com."
+          "ns1.kirklanddc.com.",
+          "ns2.kirklanddc.com."
         ],
         "a": {
-          "192.157.56.140": false
+          "162.210.199.87": false
         }
       },
       "nealpoole.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.dreamhost.com.",
+          "ns2.dreamhost.com.",
+          "ns3.dreamhost.com."
+        ],
+        "a": {
+          "64.90.42.63": [
+            "apache2-linus.bakercity.dreamhost.com."
+          ]
+        }
       },
       "nodedeploy.com": {
         "ns": [
@@ -24074,10 +24092,6 @@
           "172.67.71.199": false
         }
       },
-      "skdedicated.com": {
-        "ns": false,
-        "a": {}
-      },
       "softlayer.com": {
         "ns": [
           "ns1.networklayer.com.",
@@ -24222,8 +24236,8 @@
           "a9-66.akam.net."
         ],
         "a": {
-          "104.77.49.235": [
-            "a104-77-49-235.deploy.static.akamaitechnologies.com."
+          "23.204.9.127": [
+            "a23-204-9-127.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -24651,10 +24665,6 @@
           "172.67.211.201": false
         }
       },
-      "xfusesolutions.net": {
-        "ns": false,
-        "a": {}
-      },
       "xtservers.com": {
         "ns": [
           "ns1.xtservers.com.",
@@ -25047,10 +25057,6 @@
           ]
         }
       },
-      "host-slim.com": {
-        "ns": false,
-        "a": {}
-      },
       "host4fun.com": {
         "ns": [
           "sid.ns.cloudflare.com.",
@@ -25194,9 +25200,7 @@
           "ns2.hugeserver.com."
         ],
         "a": {
-          "107.161.48.7": [
-            "hugeserver.com."
-          ]
+          "185.133.32.2": false
         }
       },
       "hyperexpert.com": {
@@ -25972,8 +25976,8 @@
           "donna.ns.cloudflare.com."
         ],
         "a": {
-          "84.17.44.181": [
-            "edge-637.bunnyinfra.net."
+          "107.155.84.10": [
+            "edge-301.b-cdn.net."
           ]
         }
       },
@@ -26098,8 +26102,10 @@
           "pns24.cloudns.net."
         ],
         "a": {
-          "167.99.242.112": false,
-          "206.189.52.23": false
+          "18.192.76.182": [
+            "ec2-18-192-76-182.eu-central-1.compute.amazonaws.com."
+          ],
+          "46.101.121.244": false
         }
       },
       "ftpit.com": {
@@ -26170,6 +26176,10 @@
           "172.67.146.217": false
         }
       },
+      "host-slim.com": {
+        "ns": false,
+        "a": {}
+      },
       "hostedsimply.com": {
         "ns": false,
         "a": {}
@@ -26183,10 +26193,6 @@
           "104.20.2.91": false,
           "104.20.3.91": false
         }
-      },
-      "hosting73.com": {
-        "ns": false,
-        "a": {}
       },
       "hostingadvice.com": {
         "ns": [
@@ -26335,6 +26341,10 @@
         ],
         "a": false
       },
+      "n3servers.com": {
+        "ns": false,
+        "a": {}
+      },
       "nfphosting.com": {
         "ns": [
           "dns1.registrar-servers.com.",
@@ -26432,10 +26442,6 @@
         "a": {
           "89.47.1.15": false
         }
-      },
-      "supremevps.com": {
-        "ns": false,
-        "a": {}
       },
       "techvps.com": {
         "ns": [
@@ -26586,10 +26592,6 @@
           ]
         }
       },
-      "welcomehosting.com": {
-        "ns": false,
-        "a": {}
-      },
       "yourlasthost.com": {
         "ns": [
           "curt.ns.cloudflare.com.",
@@ -26666,7 +26668,9 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "185.107.56.57": false
+          "64.32.8.67": [
+            "customer.sharktech.net."
+          ]
         }
       },
       "gigapros.com": {
@@ -26883,9 +26887,9 @@
           "vera.ns.cloudflare.com."
         ],
         "a": {
-          "138.68.235.89": false,
-          "184.72.19.87": [
-            "ec2-184-72-19-87.us-west-1.compute.amazonaws.com."
+          "167.172.136.193": false,
+          "52.203.36.44": [
+            "ec2-52-203-36-44.compute-1.amazonaws.com."
           ]
         }
       },
@@ -26897,17 +26901,17 @@
           "ns-724.awsdns-26.net."
         ],
         "a": {
-          "13.226.241.18": [
-            "server-13-226-241-18.lax50.r.cloudfront.net."
+          "13.249.25.12": [
+            "server-13-249-25-12.iah50.r.cloudfront.net."
           ],
-          "13.226.241.22": [
-            "server-13-226-241-22.lax50.r.cloudfront.net."
+          "13.249.25.129": [
+            "server-13-249-25-129.iah50.r.cloudfront.net."
           ],
-          "13.226.241.29": [
-            "server-13-226-241-29.lax50.r.cloudfront.net."
+          "13.249.25.5": [
+            "server-13-249-25-5.iah50.r.cloudfront.net."
           ],
-          "13.226.241.75": [
-            "server-13-226-241-75.lax50.r.cloudfront.net."
+          "13.249.25.54": [
+            "server-13-249-25-54.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -27460,8 +27464,8 @@
           "a9-66.akam.net."
         ],
         "a": {
-          "104.77.49.235": [
-            "a104-77-49-235.deploy.static.akamaitechnologies.com."
+          "23.204.9.127": [
+            "a23-204-9-127.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -27652,17 +27656,17 @@
           "nina.ns.cloudflare.com."
         ],
         "a": {
-          "13.35.89.101": [
-            "server-13-35-89-101.lax3.r.cloudfront.net."
+          "13.225.51.106": [
+            "server-13-225-51-106.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.113": [
-            "server-13-35-89-113.lax3.r.cloudfront.net."
+          "13.225.51.46": [
+            "server-13-225-51-46.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.49": [
-            "server-13-35-89-49.lax3.r.cloudfront.net."
+          "13.225.51.56": [
+            "server-13-225-51-56.dfw50.r.cloudfront.net."
           ],
-          "13.35.89.8": [
-            "server-13-35-89-8.lax3.r.cloudfront.net."
+          "13.225.51.7": [
+            "server-13-225-51-7.dfw50.r.cloudfront.net."
           ]
         }
       },
@@ -27838,6 +27842,10 @@
             "vz01-phx.stablehost.com."
           ]
         }
+      },
+      "dotvps.co": {
+        "ns": false,
+        "a": {}
       },
       "drgn.biz": {
         "ns": [
@@ -28869,15 +28877,8 @@
         "a": false
       },
       "theserverreviews.com": {
-        "ns": [
-          "ns09.domaincontrol.com.",
-          "ns10.domaincontrol.com."
-        ],
-        "a": {
-          "34.98.99.30": [
-            "30.99.98.34.bc.googleusercontent.com."
-          ]
-        }
+        "ns": false,
+        "a": {}
       },
       "truste.com": {
         "ns": [
@@ -29034,17 +29035,17 @@
           "ns-836.awsdns-40.net."
         ],
         "a": {
-          "52.85.192.19": [
-            "server-52-85-192-19.lax50.r.cloudfront.net."
+          "99.86.100.32": [
+            "server-99-86-100-32.iah50.r.cloudfront.net."
           ],
-          "52.85.192.20": [
-            "server-52-85-192-20.lax50.r.cloudfront.net."
+          "99.86.100.37": [
+            "server-99-86-100-37.iah50.r.cloudfront.net."
           ],
-          "52.85.192.50": [
-            "server-52-85-192-50.lax50.r.cloudfront.net."
+          "99.86.100.51": [
+            "server-99-86-100-51.iah50.r.cloudfront.net."
           ],
-          "52.85.192.99": [
-            "server-52-85-192-99.lax50.r.cloudfront.net."
+          "99.86.100.82": [
+            "server-99-86-100-82.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -29679,8 +29680,8 @@
           "dns2.registrar-servers.com."
         ],
         "a": {
-          "89.187.185.164": [
-            "edge-613.bunnyinfra.net."
+          "89.187.185.162": [
+            "edge-558.bunnyinfra.net."
           ]
         }
       },
@@ -29838,8 +29839,8 @@
           "ns0241.secondary.cloudflare.com."
         ],
         "a": {
-          "23.62.176.93": [
-            "a23-62-176-93.deploy.static.akamaitechnologies.com."
+          "96.7.168.89": [
+            "a96-7-168-89.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -29908,9 +29909,11 @@
           "lola.ns.cloudflare.com."
         ],
         "a": {
-          "138.68.235.89": false,
-          "52.52.138.60": [
-            "ec2-52-52-138-60.us-west-1.compute.amazonaws.com."
+          "52.203.36.44": [
+            "ec2-52-203-36-44.compute-1.amazonaws.com."
+          ],
+          "52.73.87.228": [
+            "ec2-52-73-87-228.compute-1.amazonaws.com."
           ]
         }
       },
@@ -30163,8 +30166,8 @@
           "ns-570.awsdns-07.net."
         ],
         "a": {
-          "108.168.194.93": [
-            "5d.c2.a86c.ip4.static.sl-reverse.com."
+          "75.126.118.184": [
+            "b8.76.7e4b.ip4.static.sl-reverse.com."
           ]
         }
       },
@@ -30237,8 +30240,8 @@
           "donna.ns.cloudflare.com."
         ],
         "a": {
-          "84.17.44.181": [
-            "edge-637.bunnyinfra.net."
+          "107.155.84.10": [
+            "edge-301.b-cdn.net."
           ]
         }
       },
@@ -30254,8 +30257,8 @@
           "ns22.businesswire.com."
         ],
         "a": {
-          "23.65.45.93": [
-            "a23-65-45-93.deploy.static.akamaitechnologies.com."
+          "104.105.243.155": [
+            "a104-105-243-155.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -30389,17 +30392,17 @@
           "ns-792.awsdns-35.net."
         ],
         "a": {
-          "13.226.211.108": [
-            "server-13-226-211-108.lax50.r.cloudfront.net."
+          "99.86.83.121": [
+            "server-99-86-83-121.iah50.r.cloudfront.net."
           ],
-          "13.226.211.112": [
-            "server-13-226-211-112.lax50.r.cloudfront.net."
+          "99.86.83.55": [
+            "server-99-86-83-55.iah50.r.cloudfront.net."
           ],
-          "13.226.211.32": [
-            "server-13-226-211-32.lax50.r.cloudfront.net."
+          "99.86.83.58": [
+            "server-99-86-83-58.iah50.r.cloudfront.net."
           ],
-          "13.226.211.8": [
-            "server-13-226-211-8.lax50.r.cloudfront.net."
+          "99.86.83.93": [
+            "server-99-86-83-93.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -31173,17 +31176,17 @@
           "ns-514.awsdns-00.net."
         ],
         "a": {
-          "13.226.241.3": [
-            "server-13-226-241-3.lax50.r.cloudfront.net."
+          "13.249.48.15": [
+            "server-13-249-48-15.iah50.r.cloudfront.net."
           ],
-          "13.226.241.40": [
-            "server-13-226-241-40.lax50.r.cloudfront.net."
+          "13.249.48.33": [
+            "server-13-249-48-33.iah50.r.cloudfront.net."
           ],
-          "13.226.241.52": [
-            "server-13-226-241-52.lax50.r.cloudfront.net."
+          "13.249.48.56": [
+            "server-13-249-48-56.iah50.r.cloudfront.net."
           ],
-          "13.226.241.62": [
-            "server-13-226-241-62.lax50.r.cloudfront.net."
+          "13.249.48.57": [
+            "server-13-249-48-57.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -31307,8 +31310,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.189.3": [
-            "lax31s16-in-f3.1e100.net."
+          "142.251.46.131": [
+            "dfw28s35-in-f3.1e100.net."
           ]
         }
       },
@@ -31542,7 +31545,11 @@
           "ns1.hostmayo.com.",
           "ns2.hostmayo.com."
         ],
-        "a": false
+        "a": {
+          "92.118.234.83": [
+            "hostmayo.com."
+          ]
+        }
       },
       "hostmem.com": {
         "ns": [
@@ -31720,9 +31727,7 @@
           "ns2.hugeserver.com."
         ],
         "a": {
-          "107.161.48.7": [
-            "hugeserver.com."
-          ]
+          "185.133.32.2": false
         }
       },
       "hydrovps.com": {
@@ -31768,8 +31773,8 @@
           "usw2.akam.net."
         ],
         "a": {
-          "104.108.128.72": [
-            "a104-108-128-72.deploy.static.akamaitechnologies.com."
+          "23.211.38.43": [
+            "a23-211-38-43.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -32079,9 +32084,9 @@
           "vera.ns.cloudflare.com."
         ],
         "a": {
-          "138.68.235.89": false,
-          "184.72.19.87": [
-            "ec2-184-72-19-87.us-west-1.compute.amazonaws.com."
+          "167.172.136.193": false,
+          "52.203.36.44": [
+            "ec2-52-203-36-44.compute-1.amazonaws.com."
           ]
         }
       },
@@ -32342,17 +32347,17 @@
           "ns-705.awsdns-24.net."
         ],
         "a": {
-          "13.35.89.100": [
-            "server-13-35-89-100.lax3.r.cloudfront.net."
+          "99.86.100.102": [
+            "server-99-86-100-102.iah50.r.cloudfront.net."
           ],
-          "13.35.89.129": [
-            "server-13-35-89-129.lax3.r.cloudfront.net."
+          "99.86.100.115": [
+            "server-99-86-100-115.iah50.r.cloudfront.net."
           ],
-          "13.35.89.48": [
-            "server-13-35-89-48.lax3.r.cloudfront.net."
+          "99.86.100.119": [
+            "server-99-86-100-119.iah50.r.cloudfront.net."
           ],
-          "13.35.89.77": [
-            "server-13-35-89-77.lax3.r.cloudfront.net."
+          "99.86.100.19": [
+            "server-99-86-100-19.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -32489,7 +32494,7 @@
       },
       "msn.com": {
         "ns": [
-          "dns2.p09.nsone.net.",
+          "dns3.p09.nsone.net.",
           "ns1-204.azure-dns.com.",
           "ns2-204.azure-dns.net.",
           "ns3-204.azure-dns.org.",
@@ -32618,8 +32623,8 @@
           "a7-65.akam.net."
         ],
         "a": {
-          "23.38.127.204": [
-            "a23-38-127-204.deploy.static.akamaitechnologies.com."
+          "23.211.55.92": [
+            "a23-211-55-92.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -32989,9 +32994,6 @@
           "34.246.210.165": [
             "ec2-34-246-210-165.eu-west-1.compute.amazonaws.com."
           ],
-          "34.255.175.180": [
-            "ec2-34-255-175-180.eu-west-1.compute.amazonaws.com."
-          ],
           "52.214.135.34": [
             "ec2-52-214-135-34.eu-west-1.compute.amazonaws.com."
           ],
@@ -33000,6 +33002,9 @@
           ],
           "54.229.200.250": [
             "ec2-54-229-200-250.eu-west-1.compute.amazonaws.com."
+          ],
+          "54.72.225.179": [
+            "ec2-54-72-225-179.eu-west-1.compute.amazonaws.com."
           ]
         }
       },
@@ -33351,17 +33356,17 @@
           "ns-938.awsdns-53.net."
         ],
         "a": {
-          "13.226.241.101": [
-            "server-13-226-241-101.lax50.r.cloudfront.net."
+          "99.86.100.18": [
+            "server-99-86-100-18.iah50.r.cloudfront.net."
           ],
-          "13.226.241.119": [
-            "server-13-226-241-119.lax50.r.cloudfront.net."
+          "99.86.100.74": [
+            "server-99-86-100-74.iah50.r.cloudfront.net."
           ],
-          "13.226.241.38": [
-            "server-13-226-241-38.lax50.r.cloudfront.net."
+          "99.86.100.90": [
+            "server-99-86-100-90.iah50.r.cloudfront.net."
           ],
-          "13.226.241.64": [
-            "server-13-226-241-64.lax50.r.cloudfront.net."
+          "99.86.100.91": [
+            "server-99-86-100-91.iah50.r.cloudfront.net."
           ]
         }
       },
@@ -33414,8 +33419,8 @@
           "a7-65.akam.net."
         ],
         "a": {
-          "23.78.210.73": [
-            "a23-78-210-73.deploy.static.akamaitechnologies.com."
+          "23.211.51.13": [
+            "a23-211-51-13.deploy.static.akamaitechnologies.com."
           ]
         }
       },
@@ -33830,8 +33835,8 @@
           "ns4.techcrunch.com."
         ],
         "a": {
-          "67.195.231.20": [
-            "media-router-aol71.prod.media.vip.gq1.yahoo.com."
+          "76.13.32.141": [
+            "media-router-aol71.prod.media.vip.bf1.yahoo.com."
           ]
         }
       },
@@ -34459,8 +34464,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.250.217.142": [
-            "lax31s19-in-f14.1e100.net."
+          "142.250.68.174": [
+            "dfw25s41-in-f14.1e100.net."
           ]
         }
       },
