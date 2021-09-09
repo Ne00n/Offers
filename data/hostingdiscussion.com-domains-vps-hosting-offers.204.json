@@ -257,29 +257,29 @@
           "lucy.ns.cloudflare.com."
         ],
         "a": {
-          "3.223.104.152": [
-            "ec2-3-223-104-152.compute-1.amazonaws.com."
+          "3.213.42.86": [
+            "ec2-3-213-42-86.compute-1.amazonaws.com."
+          ],
+          "3.224.183.135": [
+            "ec2-3-224-183-135.compute-1.amazonaws.com."
+          ],
+          "3.226.222.88": [
+            "ec2-3-226-222-88.compute-1.amazonaws.com."
           ],
           "3.227.29.88": [
             "ec2-3-227-29-88.compute-1.amazonaws.com."
           ],
-          "34.204.154.154": [
-            "ec2-34-204-154-154.compute-1.amazonaws.com."
+          "34.230.212.197": [
+            "ec2-34-230-212-197.compute-1.amazonaws.com."
           ],
-          "34.228.50.116": [
-            "ec2-34-228-50-116.compute-1.amazonaws.com."
+          "52.0.12.63": [
+            "ec2-52-0-12-63.compute-1.amazonaws.com."
           ],
-          "52.200.230.128": [
-            "ec2-52-200-230-128.compute-1.amazonaws.com."
+          "54.156.27.150": [
+            "ec2-54-156-27-150.compute-1.amazonaws.com."
           ],
-          "52.45.150.232": [
-            "ec2-52-45-150-232.compute-1.amazonaws.com."
-          ],
-          "52.55.40.16": [
-            "ec2-52-55-40-16.compute-1.amazonaws.com."
-          ],
-          "54.156.72.145": [
-            "ec2-54-156-72-145.compute-1.amazonaws.com."
+          "54.236.144.57": [
+            "ec2-54-236-144-57.compute-1.amazonaws.com."
           ]
         }
       },
@@ -1037,7 +1037,9 @@
           "c4.cloudcone.net."
         ],
         "a": {
-          "173.82.220.140": false
+          "173.82.220.140": [
+            "app.cloudcone.com."
+          ]
         }
       },
       "jsdelivr.net": {
@@ -1390,7 +1392,9 @@
           "ns038.onsecureweb.com."
         ],
         "a": {
-          "104.171.113.54": false
+          "104.171.113.54": [
+            "ncsea33.onsecureweb.com."
+          ]
         }
       }
     }
@@ -1412,8 +1416,15 @@
   "dafthost": {
     "urls": {
       "dafthost.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.waski.net.",
+          "ns2.waski.net."
+        ],
+        "a": {
+          "213.155.184.94": [
+            "dafthost.com."
+          ]
+        }
       }
     }
   },
@@ -1748,7 +1759,9 @@
           "pat.ns.cloudflare.com."
         ],
         "a": {
-          "194.124.244.30": false
+          "194.124.244.30": [
+            "30.244-124-194.rdns.scalabledns.com."
+          ]
         }
       },
       "crissic.com": {
@@ -2203,8 +2216,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.24.35": [
-            "edge-star-mini-shv-01-hou1.facebook.com."
+          "157.240.11.35": [
+            "edge-star-mini-shv-02-lax3.facebook.com."
           ]
         }
       },
@@ -2451,8 +2464,8 @@
           "ns2.torresdns.com."
         ],
         "a": {
-          "209.126.123.12": [
-            "static-ip-209-126-123-12.inaddr.ip-pool.com."
+          "78.41.204.34": [
+            "server368.snel.com."
           ]
         }
       }
@@ -2888,11 +2901,11 @@
     "urls": {
       "greenhostbox.com": {
         "ns": [
-          "ns1.koaladns.com.",
-          "ns2.koaladns.com."
+          "ns1.brainydns.com.",
+          "ns2.brainydns.com."
         ],
         "a": {
-          "185.107.56.55": false
+          "162.210.199.87": false
         }
       }
     }
@@ -3584,7 +3597,7 @@
           "ns2.thednscloud.com."
         ],
         "a": {
-          "212.32.237.92": false
+          "212.32.237.91": false
         }
       }
     }
@@ -5835,17 +5848,17 @@
           "ns-80.awsdns-10.com."
         ],
         "a": {
-          "13.249.22.113": [
-            "server-13-249-22-113.iah50.r.cloudfront.net."
+          "13.226.211.4": [
+            "server-13-226-211-4.lax50.r.cloudfront.net."
           ],
-          "13.249.22.38": [
-            "server-13-249-22-38.iah50.r.cloudfront.net."
+          "13.226.211.40": [
+            "server-13-226-211-40.lax50.r.cloudfront.net."
           ],
-          "13.249.22.72": [
-            "server-13-249-22-72.iah50.r.cloudfront.net."
+          "13.226.211.81": [
+            "server-13-226-211-81.lax50.r.cloudfront.net."
           ],
-          "13.249.22.93": [
-            "server-13-249-22-93.iah50.r.cloudfront.net."
+          "13.226.211.88": [
+            "server-13-226-211-88.lax50.r.cloudfront.net."
           ]
         }
       },
@@ -5857,6 +5870,10 @@
   },
   "liam-d": {
     "urls": {
+      "myresellerhost.info": {
+        "ns": false,
+        "a": {}
+      },
       "revoltvps.com": {
         "ns": false,
         "a": {}
@@ -6044,10 +6061,10 @@
       },
       "magnite.net": {
         "ns": [
-          "ns-cloud-c1.googledomains.com.",
-          "ns-cloud-c2.googledomains.com.",
-          "ns-cloud-c3.googledomains.com.",
-          "ns-cloud-c4.googledomains.com."
+          "ns-1008.awsdns-62.net.",
+          "ns-1287.awsdns-32.org.",
+          "ns-2022.awsdns-60.co.uk.",
+          "ns-280.awsdns-35.com."
         ],
         "a": false
       }
@@ -6603,12 +6620,7 @@
     }
   },
   "myreseller": {
-    "urls": {
-      "myresellerhost.info": {
-        "ns": false,
-        "a": {}
-      }
-    }
+    "urls": {}
   },
   "natan": {
     "urls": {
@@ -7810,8 +7822,15 @@
   "santrex-net": {
     "urls": {
       "santrex.net": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.parklogic.com.",
+          "ns2.parklogic.com."
+        ],
+        "a": {
+          "69.16.230.42": [
+            "lb01.parklogic.com."
+          ]
+        }
       }
     }
   },
@@ -8026,17 +8045,17 @@
           "ns-642.awsdns-16.net."
         ],
         "a": {
-          "99.86.100.115": [
-            "server-99-86-100-115.iah50.r.cloudfront.net."
+          "13.35.89.114": [
+            "server-13-35-89-114.lax3.r.cloudfront.net."
           ],
-          "99.86.100.121": [
-            "server-99-86-100-121.iah50.r.cloudfront.net."
+          "13.35.89.16": [
+            "server-13-35-89-16.lax3.r.cloudfront.net."
           ],
-          "99.86.100.86": [
-            "server-99-86-100-86.iah50.r.cloudfront.net."
+          "13.35.89.48": [
+            "server-13-35-89-48.lax3.r.cloudfront.net."
           ],
-          "99.86.100.89": [
-            "server-99-86-100-89.iah50.r.cloudfront.net."
+          "13.35.89.59": [
+            "server-13-35-89-59.lax3.r.cloudfront.net."
           ]
         }
       }
@@ -8525,9 +8544,7 @@
           "ns2.dnsnuts.com."
         ],
         "a": {
-          "64.32.8.69": [
-            "customer.sharktech.net."
-          ]
+          "185.107.56.58": false
         }
       },
       "webhostinggeeks.com": {
@@ -10004,17 +10021,17 @@
           "ns2.wiredtree.com."
         ],
         "a": {
-          "99.84.41.128": [
-            "server-99-84-41-128.ewr52.r.cloudfront.net."
+          "13.225.4.119": [
+            "server-13-225-4-119.sin52.r.cloudfront.net."
           ],
-          "99.84.41.28": [
-            "server-99-84-41-28.ewr52.r.cloudfront.net."
+          "13.225.4.43": [
+            "server-13-225-4-43.sin52.r.cloudfront.net."
           ],
-          "99.84.41.52": [
-            "server-99-84-41-52.ewr52.r.cloudfront.net."
+          "13.225.4.46": [
+            "server-13-225-4-46.sin52.r.cloudfront.net."
           ],
-          "99.84.41.9": [
-            "server-99-84-41-9.ewr52.r.cloudfront.net."
+          "13.225.4.99": [
+            "server-13-225-4-99.sin52.r.cloudfront.net."
           ]
         }
       }
@@ -10146,8 +10163,8 @@
           "ns4.google.com."
         ],
         "a": {
-          "142.251.32.233": [
-            "dfw25s43-in-f9.1e100.net."
+          "142.251.2.191": [
+            "dl-in-f191.1e100.net."
           ]
         }
       },
@@ -10379,7 +10396,9 @@
           "pat.ns.cloudflare.com."
         ],
         "a": {
-          "194.124.244.30": false
+          "194.124.244.30": [
+            "30.244-124-194.rdns.scalabledns.com."
+          ]
         }
       },
       "datacentermap.com": {
