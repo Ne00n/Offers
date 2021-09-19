@@ -161,12 +161,15 @@
       },
       "archhosting.net": {
         "ns": [
-          "liv.ns.cloudflare.com.",
-          "micah.ns.cloudflare.com."
+          "dns1.registrar-servers.com.",
+          "dns101.registrar-servers.com.",
+          "dns102.registrar-servers.com.",
+          "dns2.registrar-servers.com."
         ],
         "a": {
-          "104.21.13.118": false,
-          "172.67.167.240": false
+          "99.83.154.118": [
+            "a51062ecadbb5a26e.awsglobalaccelerator.com."
+          ]
         }
       }
     }
@@ -789,9 +792,7 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "45.56.77.123": [
-            "li927-123.members.linode.com."
-          ]
+          "102.129.254.77": false
         }
       }
     }
@@ -1675,8 +1676,9 @@
           "jean.ns.cloudflare.com."
         ],
         "a": {
-          "104.21.71.155": false,
-          "172.67.145.201": false
+          "104.22.14.126": false,
+          "104.22.15.126": false,
+          "172.67.4.249": false
         }
       },
       "vpshared.com": {
@@ -1739,8 +1741,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.24.35": [
-            "edge-star-mini-shv-01-hou1.facebook.com."
+          "157.240.11.35": [
+            "edge-star-mini-shv-02-lax3.facebook.com."
           ]
         }
       },
@@ -2872,8 +2874,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.249.30.231": [
-            "server-13-249-30-231.iah50.r.cloudfront.net."
+          "13.226.233.200": [
+            "server-13-226-233-200.lax50.r.cloudfront.net."
           ]
         }
       },
