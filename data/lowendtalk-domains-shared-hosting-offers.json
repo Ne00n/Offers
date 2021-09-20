@@ -2,8 +2,11 @@
   "17brownj": {
     "urls": {
       "inspireshared.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "nsg1.namebrightdns.com.",
+          "nsg2.namebrightdns.com."
+        ],
+        "a": false
       },
       "inspiresolutions.co": {
         "ns": [
@@ -592,9 +595,7 @@
           "ns2.hosthoney.com."
         ],
         "a": {
-          "192.254.73.130": [
-            "ds.hosthoney.com."
-          ]
+          "192.254.73.130": false
         }
       }
     }
@@ -681,8 +682,15 @@
   "HostSlayer": {
     "urls": {
       "hostslayer.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.hostslayer.com.",
+          "ns2.hostslayer.com."
+        ],
+        "a": {
+          "103.214.4.2": [
+            "cpanel.hostslayer.com."
+          ]
+        }
       }
     }
   },
@@ -794,9 +802,7 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "45.56.77.123": [
-            "li927-123.members.linode.com."
-          ]
+          "102.129.254.77": false
         }
       }
     }
@@ -829,11 +835,8 @@
         }
       },
       "wpfastest.com": {
-        "ns": [
-          "nsg1.namebrightdns.com.",
-          "nsg2.namebrightdns.com."
-        ],
-        "a": false
+        "ns": false,
+        "a": {}
       }
     }
   },
@@ -1727,11 +1730,7 @@
           "nsg1.namebrightdns.com.",
           "nsg2.namebrightdns.com."
         ],
-        "a": {
-          "3.223.115.185": [
-            "ec2-3-223-115-185.compute-1.amazonaws.com."
-          ]
-        }
+        "a": false
       }
     }
   },
@@ -1745,8 +1744,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.24.35": [
-            "edge-star-mini-shv-01-hou1.facebook.com."
+          "157.240.11.35": [
+            "edge-star-mini-shv-02-lax3.facebook.com."
           ]
         }
       },
@@ -2111,8 +2110,22 @@
   "ZweiTiger": {
     "urls": {
       "spaceweb.eu": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "ns1.dnsowl.com.",
+          "ns2.dnsowl.com.",
+          "ns3.dnsowl.com."
+        ],
+        "a": {
+          "107.161.23.204": [
+            "parking.namesilo.com."
+          ],
+          "192.161.187.200": [
+            "192.161.187.200.static.quadranet.com."
+          ],
+          "209.141.38.71": [
+            "parking.namesilo.com."
+          ]
+        }
       }
     }
   },
@@ -2880,8 +2893,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.249.30.231": [
-            "server-13-249-30-231.iah50.r.cloudfront.net."
+          "13.225.148.216": [
+            "server-13-225-148-216.lax3.r.cloudfront.net."
           ]
         }
       },
