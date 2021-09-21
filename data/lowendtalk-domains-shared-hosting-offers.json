@@ -2,8 +2,15 @@
   "17brownj": {
     "urls": {
       "inspireshared.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "nsg1.namebrightdns.com.",
+          "nsg2.namebrightdns.com."
+        ],
+        "a": {
+          "18.211.9.206": [
+            "ec2-18-211-9-206.compute-1.amazonaws.com."
+          ]
+        }
       },
       "inspiresolutions.co": {
         "ns": [
@@ -633,9 +640,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -801,9 +806,7 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "45.56.77.123": [
-            "li927-123.members.linode.com."
-          ]
+          "102.129.254.77": false
         }
       }
     }
@@ -836,8 +839,11 @@
         }
       },
       "wpfastest.com": {
-        "ns": false,
-        "a": {}
+        "ns": [
+          "nsg1.namebrightdns.com.",
+          "nsg2.namebrightdns.com."
+        ],
+        "a": false
       }
     }
   },
@@ -1731,7 +1737,11 @@
           "nsg1.namebrightdns.com.",
           "nsg2.namebrightdns.com."
         ],
-        "a": false
+        "a": {
+          "3.223.115.185": [
+            "ec2-3-223-115-185.compute-1.amazonaws.com."
+          ]
+        }
       }
     }
   },
@@ -1745,8 +1755,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.24.35": [
-            "edge-star-mini-shv-01-hou1.facebook.com."
+          "157.240.11.35": [
+            "edge-star-mini-shv-02-lax3.facebook.com."
           ]
         }
       },
@@ -1808,9 +1818,7 @@
           "ns2.fastssdserver.com."
         ],
         "a": {
-          "208.91.104.148": [
-            "hostmayo.com."
-          ]
+          "208.91.104.148": false
         }
       }
     }
@@ -2558,8 +2566,8 @@
           "ns2.namebrightdns.com."
         ],
         "a": {
-          "23.20.208.181": [
-            "ec2-23-20-208-181.compute-1.amazonaws.com."
+          "52.204.77.43": [
+            "ec2-52-204-77-43.compute-1.amazonaws.com."
           ],
           "54.85.93.188": [
             "ec2-54-85-93-188.compute-1.amazonaws.com."
@@ -2885,8 +2893,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.249.30.231": [
-            "server-13-249-30-231.iah50.r.cloudfront.net."
+          "13.226.233.200": [
+            "server-13-226-233-200.lax50.r.cloudfront.net."
           ]
         }
       },
