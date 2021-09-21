@@ -2,11 +2,8 @@
   "17brownj": {
     "urls": {
       "inspireshared.com": {
-        "ns": [
-          "nsg1.namebrightdns.com.",
-          "nsg2.namebrightdns.com."
-        ],
-        "a": false
+        "ns": false,
+        "a": {}
       },
       "inspiresolutions.co": {
         "ns": [
@@ -595,7 +592,9 @@
           "ns2.hosthoney.com."
         ],
         "a": {
-          "192.254.73.130": false
+          "192.254.73.130": [
+            "ds.hosthoney.com."
+          ]
         }
       }
     }
@@ -802,7 +801,9 @@
           "fay.ns.cloudflare.com."
         ],
         "a": {
-          "102.129.254.77": false
+          "45.56.77.123": [
+            "li927-123.members.linode.com."
+          ]
         }
       }
     }
@@ -1744,8 +1745,8 @@
           "d.ns.facebook.com."
         ],
         "a": {
-          "157.240.11.35": [
-            "edge-star-mini-shv-02-lax3.facebook.com."
+          "157.240.24.35": [
+            "edge-star-mini-shv-01-hou1.facebook.com."
           ]
         }
       },
@@ -2111,20 +2112,11 @@
     "urls": {
       "spaceweb.eu": {
         "ns": [
-          "ns1.dnsowl.com.",
-          "ns2.dnsowl.com.",
-          "ns3.dnsowl.com."
+          "ns1.sedoparking.com.",
+          "ns2.sedoparking.com."
         ],
         "a": {
-          "107.161.23.204": [
-            "parking.namesilo.com."
-          ],
-          "192.161.187.200": [
-            "192.161.187.200.static.quadranet.com."
-          ],
-          "209.141.38.71": [
-            "parking.namesilo.com."
-          ]
+          "64.190.62.111": false
         }
       }
     }
@@ -2893,8 +2885,8 @@
           "ns-674.awsdns-20.net."
         ],
         "a": {
-          "13.225.148.216": [
-            "server-13-225-148-216.lax3.r.cloudfront.net."
+          "13.249.30.231": [
+            "server-13-249-30-231.iah50.r.cloudfront.net."
           ]
         }
       },
