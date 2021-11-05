@@ -38,7 +38,7 @@ class Base:
         browser.set_page_load_timeout(60)
 
     def fetch(self,url):
-        wait,count = randint(7,80),0
+        wait,count = randint(7,60),0
         print("Getting",url)
         while count < 3:
             try:
