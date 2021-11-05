@@ -208,7 +208,7 @@ class Base:
         while True:
 
             print("Getting",cat)
-            response = self.fetch("https:/"+site+"/"+cat+f"/&page={count}&sort=threadstarted")
+            response = self.fetch("https://"+site+"/"+cat+f"&page={count}&sort=threadstarted")
             if response == False: return False
             if self.checkCF(response):
                 print("Failed to bypass CF")
