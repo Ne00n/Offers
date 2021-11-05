@@ -229,10 +229,11 @@ class Base:
                     data = {'id':url[1],'date':post[0][0],'user':url[2],'post':post[0][1]}
                     with open(file, 'w') as f:
                         json.dump(data, f)
+                    scans = 0
                 else:
                     print(url[1],"already exist")
                     scans = scans +1
-                    if scans == 20:
+                    if scans == 50:
                         return True
 
             count = count +1
