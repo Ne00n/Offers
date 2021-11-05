@@ -221,6 +221,8 @@ class Base:
                 if not os.path.exists(dataDir):
                     os.makedirs(dataDir)
                 file = dataDir+url[1]+"-"+url[2]+".json"
+                file = file.replace("/","")
+                file = file.replace(" ","")
                 print("Checking",url[0])
                 if not Path(file).is_file():
                     response = self.fetch("https://"+site+"/"+url[0])
