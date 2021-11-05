@@ -14,6 +14,7 @@ def update(headless=False):
     Update.xenforo("vps-hosting-offers.204","hostingdiscussion.com")
     #Update.xenforo("shared-hosting-offers.203","hostingdiscussion.com")
     #Update.xenforo("dedicated-hosting-offers.200","hostingdiscussion.com")
+    #Update.vBulletin("forumdisplay.php?f=104","www.webhostingtalk.com")
     Update.lowendbox()
     Update.close()
 

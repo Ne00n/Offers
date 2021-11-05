@@ -4,8 +4,9 @@ from fake_useragent import UserAgent
 from selenium import webdriver
 from pathlib import Path
 from random import randint
-import time, json, re, os
+import time, json, os
 import urllib.parse
+import regex as re
 
 class Base:
 
@@ -37,7 +38,7 @@ class Base:
         browser.set_page_load_timeout(60)
 
     def fetch(self,url):
-        wait,count = randint(7,80),0
+        wait,count = randint(7,60),0
         print("Getting",url)
         while count < 3:
             try:
@@ -187,6 +188,49 @@ class Base:
                         json.dump(data, f)
                 else:
                     print(topic['id'],"already exist")
+                    scans = scans +1
+                    if scans == 20:
+                        return True
+
+            count = count +1
+
+    def vBulletin(self,cat,site):
+        currentOffers,count = "",1
+        dataDir,scans = os.getcwd()+"/src/"+site+"/"+cat+"/",0
+
+        print("Checking",site)
+        response = self.fetch("https://"+site)
+        if response == False: return False
+        if self.checkCF(response):
+            print("Failed to bypass CF")
+            return False
+
+        while True:
+
+            print("Getting",cat)
+            response = self.fetch("https:/"+site+"/"+cat+f"/&page={count}&sort=threadstarted")
+            if response == False: return False
+            if self.checkCF(response):
+                print("Failed to bypass CF")
+                return False
+
+            urls = re.findall('threadbit.*?href=\"(showthread\.php\?t=([\d]+)).*?Started by (.*?) on',response, re.MULTILINE | re.DOTALL)
+            for url in urls:
+
+                print("Getting",cat)
+                if not os.path.exists(dataDir):
+                    os.makedirs(dataDir)
+                file = dataDir+url[1]+"-"+url[2]+".json"
+                print("Checking",url[0])
+                if not Path(file).is_file():
+                    response = self.fetch("https://"+site+"/"+url[0])
+                    if response == False: return False
+                    post = re.findall('postbit postbitim .*?date\">([\d-]+).*?postcontent(.*?)\class=\"postfoot\">',response, re.DOTALL | re.MULTILINE)
+                    data = {'id':url[1],'date':post[0][0],'user':url[2],'post':post[0][1]}
+                    with open(file, 'w') as f:
+                        json.dump(data, f)
+                else:
+                    print(url[1],"already exist")
                     scans = scans +1
                     if scans == 20:
                         return True
