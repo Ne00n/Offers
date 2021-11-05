@@ -225,7 +225,7 @@ class Base:
                 if not Path(file).is_file():
                     response = self.fetch("https://"+site+"/"+url[0])
                     if response == False: return False
-                    post = re.findall('postbit postbitim .*?date\">([\d-]+).*?postcontent(.*?)\class=\"postfoot\">',response, re.DOTALL | re.MULTILINE)
+                    post = re.findall('postbit postbitim .*?date\">([\d-]+|Today),.*?postcontent(.*?)\class=\"postfoot\">',response, re.DOTALL | re.MULTILINE)
                     data = {'id':url[1],'date':post[0][0],'user':url[2],'post':post[0][1]}
                     with open(file, 'w') as f:
                         json.dump(data, f)
